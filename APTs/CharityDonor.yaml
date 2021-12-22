@@ -1,0 +1,129 @@
+filename: CharityDonor.py
+name: CharityDonor
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def nameDonor(contributions)\n\t\"\"\"\n\tThe parameter contributions is a list of strings,\n\treturn stringthat is name of most\n\tgenerous donor. See description for details.\n\t\"\"\"\n\t\n\t# you write code here\n\treturn \"\""
+problem: |-
+  You are given information about donors and their contributions.
+  Return the name of the most generous donor, the donor who has given
+  the most to charity.
+
+
+  A donor
+  may give more than once. Determine the name of the
+  donor who has given the largest total amount to charity. If there is more
+  than one donor with the largest amount, return the name that comes first
+  in alphabetical order.
+
+  For example, if the donor list is the following you'll return "Blue".
+  <ol>
+  <li> "Sun:70.00"
+  <li> "Zebra:80.00"
+  <li> "Blue:30.00"
+  <li> "Edwards:50.00"
+  <li> "Blue:50.00"
+  </ol>
+   Both "Zebra" and "Blue" gave the most amount, $80.00. Return "Blue"
+  as it comes before "Zebra" alphabetically.
+
+
+  A donation is represented as a string with the name of the donor first
+  followed by ":" as the separator, followed by the dollar amount
+  given. The
+  dollar amount will represent a valid float.
+   Given a list of donations (a list of strings), return the
+  name of the donor with the largest donation. If there is more than one
+  donor with the maximal amount, return the name of the donor
+  that comes first alphabetically.
+constraints: >-
+  <ul>
+
+  <li> <code>contributions</code> is a nonempty list of strings.
+
+
+  <li> Each character of the strings in <code>contributions</code> will be a
+  lowercase
+
+  letter 'a'-'z', upper case 'A'-'Z', digits '0'-'9', '.' or a ':'.
+
+
+  <li> The format of each string in <code>contributions</code>
+
+  is  "name:amount" where amount is a valid flaot. That is, there will be
+  exactly one  ':' in each string
+
+  of <code>contributions</code>. To the right of the ":", the
+
+  remaining
+
+  characters in the string will be in the format of a valid float.
+
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  ["Zack:800.00", "Gregory:900.00"]
+
+  Returns "Gregory"
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  ["Zack:800.00", "Gregory:800.00"]
+
+  Returns: "Gregory"
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  ["Sun:70.00", "Zebra:80.00", "Blue:80.00", "Edwards:50.00"]
+
+
+  Returns: "Blue"
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  ["Sun:70.00", "Blue:60.00", "Zebra:80.00", "Edwards:50.00"]
+
+
+  Returns "Zebra"
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  ["Zack:800.00"]
+
+
+  Returns: "Zack"
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  ["French:30.00","Zack:10.00", "Tie:20.00", "Zack:10.00", "Mack:20.00",
+  "Zack:10.00", "Green:10.00", "Zack:10.00", "Mack:10.00"]
+
+  Returns "Zack"
+  </PRE>
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy;  Susan Rodger
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

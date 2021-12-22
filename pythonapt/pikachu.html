@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Pikachu</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Pikachu</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Pikachu.py
+
+  def check(word):
+      """
+      return String based on parameter
+      word, a String
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+
+Pikachu is a well-known character in the Pokemon anime series. Pikachu
+can speak, but only 3 syllables: "pi", "ka", and "chu". Therefore
+Pikachu can only pronounce strings that can be created as a
+concatenation of one or more syllables he can pronounce. For example, he
+can pronounce the words "pikapi" and "pikachu".
+<P>
+
+
+You are given a String word. Your task is to check whether Pikachu can
+pronounce the string. If the string can be produced by concatenating
+copies of the strings "pi", "ka", and "chu", return 
+<tt>"YES"</tt> (quotes for
+clarity). Otherwise, return <tt>"NO"</tt>.
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>word</code> contains between 1 and 50 characters, inclusive
+<P><li> each character of <code>word</code> will be a lower-case letter 'a'-'z'
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+word = "pikapi"
+
+Returns: "YES"
+
+</PRE>
+"pikapi" = "pi" + "ka" + "pi", so Pikachu can say it.
+<P>
+<li class="example-even">
+<PRE>
+word = "pipikachu"
+
+Returns: "YES"
+
+</PRE>
+This time we have "pipikachu" = "pi" + "pi" + "ka" + "chu", so Pikachu
+can say it as well.
+
+<P>
+<li class="example-odd">
+<PRE>
+
+word = "pikaqiu"
+
+Returns: "NO"
+
+</PRE>
+Pikachu can't say "pikaqiu" since 'q' does not appear in "pi", "ka", or
+"chu".
+<P>
+<li class="example-even">
+<PRE>
+word = "chupikachupipichu"
+Returns: "YES"
+
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+word = "duke"
+Returns: "NO"
+
+</PRE>
+</ol>
+<P>
+<div class="copyright">
+This problem statement is the exclusive and proprietary property of
+TopCoder, Inc. Any unauthorized use or reproduction of this information
+without the prior written consent of TopCoder, Inc. is strictly
+prohibited. &copy;2010, TopCoder, Inc. All rights reserved.
+</div>
+
+</body>
+</html>

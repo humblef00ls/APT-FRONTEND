@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: IsSpecial</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: IsSpecial</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: IsSpecial.py
+
+  def lovely(ingredients,inedible):
+      """
+      return int, number of items in 
+      ingredients, a string that are edible 
+      using informaion from  inedible, a string
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Some people have dietary restrictions
+because of health issues, some because
+of religious issues, and some for ethical, moral,
+or other reasons. You must write the function <code>lovely</code>
+that determines how many of the individual ingredients in
+some food/recipe are edible. The String <code>inedible</code>
+is a white-space delimited list of inedible food-stuffs. 
+Any ingredient that's not listed in <code>inedible</code> is,
+therefore, edible.
+<P>
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> All characters in <codE>inedible</code> and
+	  <code>ingredients</code>
+are upper or lower case 'A'-'Z', 'a'-z'
+<P><li> The number of "words" (character sequences separated by whitespace)
+in 
+<codE>inedible</code> is fewer than 50, similarly for
+	  <code>ingredients</code> .
+<p><li> Each word is separated from another word by exactly one space
+in both
+<codE>inedible</code> and
+	  <code>ingredients</code> .
+<P><li>All words in <code>ingredients</code> are distinct.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+ingredients = "honey sugar"
+inedible = "rice milk potato"
+
+returns: 2
+
+</PRE>
+Each of the two items in ingredients is edible since neither
+is inedible.
+<P>
+<li class="example-even">
+<PRE>
+ingredients = "pork shrimp marshmallow"
+inedible = "asparagus shrimp lobster crayfish bacon"
+
+returns: 2
+
+</PRE>
+shrimp isn't edible, but pork and marshmallow are
+<P>
+<li class="example-odd">
+<PRE>
+ingredients = "a e i o u"
+inedible = "b c d f g h j k l m n p q r s t v w x y z"
+
+returns: 5
+
+</PRE>
+All the vowels are edible since only the consonants are inedible
+<P>
+<li class="example-even">
+<PRE>
+ingredients = "stuff"
+inedible = "this that the other stuff nonsense"
+
+returns: 0
+
+</PRE>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

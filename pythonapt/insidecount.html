@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: InsideCount</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: InsideCount</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: InsideCount.py
+
+def howMany(phrase, letter):
+    '''
+    Given string parameters phrase and letter, 
+    where letter is one character and phrase is a
+    string of words separated by a blank, return 
+    the count of the unique words in phrase 
+    that have letter in them
+    '''
+      
+    # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Given a phrase of words and a single letter, your task is to determine
+which of the words in phrase have this letter as one of their letters, and
+to return the count of the unique words
+in phrase that have letter in them. 
+
+<p> 
+<p>
+Write function <em>howMany </em> that has two string parameters
+named <code>phrase</code> and  <code>letter</code>. 
+This function returns an integer representing the
+count of the unique words in phrase that have <code> letter</code> in
+them. 
+Ignore case for <code>phrase</code>, so the words "That", "that", "ThaT" and "THAT" would all be considered
+the same word. You can assume <code>letter</code> is always lowercase.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> phrase is of length 1 or more characters.  </li>
+<p><li> words in phrase are separated by blanks.</li>
+<p><li>phrase starts and ends with an alphabetic character, and if there
+    are blanks, there cannot be two adjacent blanks.    </li> 
+</li> 
+<p><li> phrase is only alphabetic characters, upper or lowercase </li> 
+<P><li> letter is of length 1   </li>
+<P><li> letter is only an alphabetic character and is lowercase</li> 
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+phrase = "Duke CompSci graduates are Jedi Masters of the technology sector"
+letter = "d"
+
+returns: 3
+There are three unique words that contain d: Duke, graduates, and Jedi 
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase = "This is a very long long long test of this phrase"
+letter = "g"
+
+returns: 1
+There is only one unique word with "g" in it: long 
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase = "How are you how are you how are you now"
+letter = "h"
+
+returns: 1
+
+There is just one word with h: how
+
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase = "How are you how are you how are you now"
+letter = "b"
+
+returns: 0
+
+There are no words that have a "b" in them. 
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase = "Go go go DUKE"
+letter = "d"
+
+returns: 1
+
+There is just one word with a d in it. 
+
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase = "so"
+letter = "s"
+
+returns: 1
+
+</PRE>
+
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

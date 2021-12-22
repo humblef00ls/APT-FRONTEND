@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Pancakes</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+    <h1>APT: Pancakes</h1>
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Pancakes.py
+
+  def minutesNeeded (numCakes, capacity):
+      """
+      return integer representing time to cook pancakes
+      based on integer parameters as described below
+      """
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+You're a short-order cook in a pancake restaurant, so you need to cook
+pancakes as fast as possible. You have one pan that can fit
+<code>capacity</code> pancakes at a time. Using this pan you must cook
+<code>numCakes</code> pancakes.  Each pancake must be cooked for five
+minutes on each side, and once a pancake starts cooking on a side it has
+to cook for five minutes on that side. However, you can take a pancake
+out of the pan when you're ready to flip it after five minutes and put
+it back in the pan later to cook it on the other side.
+<P>
+Write the method, <code>minutesNeeded,</code> that returns the shortest
+time needed to cook <code>numCakes</code> pancakes in a pan that holds
+<code>capacity</code> pancakes at once. See the examples.
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<LI>The integer <code>numCakes</code> is a non-negative number less than 1000 
+    (i.e., <code>0 &le; numCakes &lt; 1000</code>).
+    <P>
+<LI>The integer <code>capacity</code> is a positive number less than 101
+    (i.e., <code>1 &le; capacity &lt; 101</code>).
+    <P>  
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+numCakes = 0
+capacity = 4
+
+Returns: 0
+
+</PRE>
+
+It takes no time to cook 0 pancakes.
+<P>
+<li class="example-even">
+<PRE>
+numCakes = 2
+capacity = 2
+
+Returns: 10
+
+</PRE>
+You cook both pancakes on one side for five minutes, then flip them over 
+and cook each on the other side for another five minutes.
+<P>
+<li class="example-odd">
+<PRE>
+numCakes = 3
+capacity = 2
+
+Returns: 15
+
+</PRE>
+You cook pancakes 1 and 2 on one side for five minutes, then you take
+pancake 2 out of the pan, flip pancake 1 and start cooking pancake
+3. After 10 minutes, pancake 1 is done so you take it out, pancake 3 can
+be flipped, and you can put pancake 2 back in the pan (since you removed
+the first pancake). Total time: 15 minutes.
+</PRE>
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,197 @@
+filename: BuyGroceries.py
+name: BuyGroceries
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def pickBest(groceries):\n\t'''\n\tGiven the string parameter groceries,\n\twhich contains items and for each\n\titem its cost from a particular store,\n\treturn the total of the cheapest of\n\teach item.\n\t'''\n\t# you write code here"
+problem: >-
+  You are given a string that contains grocery store items and their cost. You
+  like
+
+  to look around at different stores so some items may appear more than once
+
+  with possibly a different cost. You want to buy one of each item and you
+
+  want to pay the smallest amount
+
+  possible for each item, even if you have to purchase the cheapest from
+
+  different stores.
+
+
+
+
+
+
+  Write function <em>pickBest </em> that has one string parameter named
+
+  <code>groceries</code>, which contains one or more items and their prices.
+
+  An item is separated by its price with a ":" and multiple items are
+
+  separated by a comma.
+
+  This function returns the cheapest total cost (as a decimal number) to
+  purchase one of each item.
+
+   For example, suppose that groceries is the following string.
+
+  <pre>
+
+  groceries = "peas:3.5,lotion:6.2,peas:3.5,peas:3.1,lotion:6.7"
+
+  </pre>
+
+   There are two items. The item <em>peas</em> has been found at three stores with the prices:
+  3.5, 3.5 and 3.1. The item <em>lotion</em> has been found at two stores
+
+  with the prices: 6.2 and 6.7. We would buy the cheapest peas at 3.1 and
+
+  the cheapest lotion at 6.2 for a total cost of 9.3.
+constraints: |-
+  <ul>
+  <li> <code>groceries </code> is a string of 5 or more characters. It
+  contains several items and their prices. Each item is formed of
+  lowercase alphabetic characters, and is followed by a colon, and the
+  price of the item as a decimal number with at least one digit before
+  the decimal and at least one digit after the decimal. An item and its
+  price are separated by other items and their prices by a comma. </li>
+  <li> There     are no blanks in <code> groceries</code>   </li>
+  <li> <code> groceries</code>  has at least one item, which has exactly
+  one price with it.
+  </li>
+   <li> Items may appear more than once in <code> groceries</code>. Each
+  time they appear they have a price with them.
+  </li>
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  groceries = "peas:3.5,lotion:6.2,peas:3.5,peas:3.1,lotion:6.7"
+
+
+  returns:  9.3
+
+
+  The example above.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+
+  groceries =
+  "pretzels:1.5,eggs:4.5,pretzels:2.2,bread:3.0,brownie:2.5,bread:3.3"
+
+
+  returns: 11.5
+
+
+  The cheapest prices of the four items are: 1.5, 4.5, 3.0 and 2.5, which sum
+
+  to 11.5.
+
+
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  "peas:9.0"
+
+
+  returns:  9.0
+
+
+  There is only one item.
+
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  "brownie:2.5,brownie:5.4,brownie:4.8,brownie:2.25,brownie:4.5"
+
+
+  returns: 2.25
+
+
+  The items are all the same type, the cheapest is 2.25.
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  groceries =
+  "brownie:2.5,brownie:4.3,bread:4.1,bread:3.3,brownie:1.9,bread:5.6,bread:4.2"
+
+
+  returns: 5.2
+
+
+  Cheapest brownie is 1.9 and cheapest bread is 3.3, so return 1.9 + 3.3 = 5.2
+
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  "pretzels:1.5,eggs:4.5,brownie:2.5,bread:3.3"
+
+
+  returns: 11.8
+
+
+  There is just one of each item.
+
+  </PRE>
+
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

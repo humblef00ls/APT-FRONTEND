@@ -1,0 +1,282 @@
+filename: WhichFirstNames.py
+name: WhichFirstNames
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def computeNames(team1, count, team2):\n\t'''\n\tYou have three parameters, team1,\n\tcount, and team2.\n\tThe two string parameters are\n\tnamed team1 and team2, where both\n\tof them are a string of peoples names,\n\twith words separated by blanks.\n\tEach name on a team is exactly two words.\n\tThe count parameter is an integer\n\tand indicates the number of teams. It\n\twill always have the value 2.\n\tThis function returns a string of the\n\tunique first names that are only\n\tin one of the teams. The names should\n\tappear in alphabetical order.\n\t'''\n\t\n\t# you write code here"
+problem: >-
+  Given the names of players for two teams, your
+
+  task is to determine the <strong> unique first names
+
+  that are only on one of the teams. </strong> Those names should be
+
+  returned in alphabetical order.
+
+  Note that there could be duplicate first names in a team, or between two
+
+  teams.
+
+
+
+
+
+  Write function <em>computeNames </em> that has three parameters that are two
+  string
+
+  parameters <code>team1</code> and <code>team2</code> and an integer
+
+  parameter <code> count</code>, indicating the number of teams, which will
+  always have the value 2. This function
+
+  returns a string of the unique first names that appear in only one of the
+
+  teams. Those names are returned in alphabetical order.
+
+
+  The format of both <code>team1</code>
+
+  and <code>team2</code> is a string of words separated by blanks, with each
+
+  name containing two words that are a first name followed by a last name.
+
+   The parameter count will always have the value 2 and is the second
+  parameter, between team1 and team2. We are only using this parameter
+
+  because the APT tester prints out team1 and team2 without quotation
+
+  marks. With count printed between them as 2, you can tell where team 1
+
+  ends and team2 begins when the APT tester shows you the input.
+
+
+
+
+  For example, suppose that <code> team1</code> and <code>team2</code> are
+
+  the following strings (and count will be 2):
+
+
+  <pre>
+
+  team1 = "Joe Smith Wes Smith Joe Wright Craig Wills"
+
+  count = 2
+
+  team2 = "Bill Carter Wes Mitchell Craig Smith"
+
+
+  </pre>
+
+
+
+
+  Then <code>team1</code> has four players on its  team: Joe Smith, Wes Smith,
+
+  Joe Wright and Craig Wills, and <code>team2</code> has three players on its
+  team:
+
+  Bill Carter, Wes Mitchell, and Craig Smith.
+
+
+  Then computeNames for these two teams would return the string "Bill Joe"
+
+  because Bill is a first name on team2 and not anyones first name on team1;
+
+  and Joe  is a first name on team1 and is not anyones first name on
+
+  team2. All the other first names appear on both teams.
+constraints: >-
+  <ul>
+
+  <li> <strong> count will always be 2 </strong>. There will always be
+
+  two teams. You don't need to do anything to this variable in your
+
+  code.  </li>
+
+
+  <li> Both <code>team1</code> and <code>team2</code> are a string of 2 or more
+  words,
+
+  separated by blanks. They both will have an even number of words.
+
+  Each word has at least one letter, its first letter is a capital letter
+
+  and the remaining letters are formed only of lowercase alphabetic
+
+  characters. </li>
+
+  <li> Both  <code>team1</code> and <code>team2</code> start with an alphabetic
+
+  character and end with an alphabetic character and cannot have two
+
+  adjacent blanks.</li>
+
+  <li> <code>team1</code> may have the same number or a different number of
+  words
+
+  than  <code>team2</code> </li>
+
+  <li> There could be duplicate words in team1 or team2 or between the
+
+  two.  </li>
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  team1 = "Joe Smith Wes Smith Joe Wright Craig Wills"
+
+  count = 2
+
+  team2 = "Bill Carter Wes Mitchell Craig Smith"
+
+
+  returns: "Bill Joe"
+
+
+  The example above.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  team1 = "Joe Smith Wes Smith Joe Wright Craig Wills"
+
+  count = 2
+
+  team2 = "John Pixel Bill Carter Wes Mitchell Craig Smith"
+
+
+
+  returns: "Bill Joe John"
+
+
+  "John and Bill are both in team2 but not team1, Joe is in team1 but not in
+
+  team2. The remaining names appear in both teams.
+
+
+  Note: Joe appears more than once, but only one Joe is returned. The names
+
+  returned  are in alphabetical order.
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+
+  team1 = "Wes Smith"
+
+  count = 2
+
+  team2 = "Wes Pixel"
+
+
+  returns: ""
+
+
+  There are no first names that appear only on one team.
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  team1 = "Wes Smith"
+
+  count = 2
+
+  team2 = "John Pixel"
+
+
+
+  returns: "John Wes"
+
+
+  Both first names appear only on one team.
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  team1 = "Mia Borger Sarah Espinosa Mia Harris Jason Rose Frank Taylor Jason
+  Keim"
+
+  count = 2
+
+  team2 = "Sarah Yang Hannah Walter Dustin Nicholson Sarah Borger Hannah Kim"
+
+
+
+  returns: "Dustin Frank Hannah Jason Mia"
+
+
+  Sarah is the only name that appears on both teams.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  team1 = "Annie Yang Thomas Zenker Thomas Wang"
+
+  count = 2
+
+  team2 = "Hannah Walter Dustin Nicholson Hannah Borger Sarah Kim"
+
+
+  returns: "Annie Dustin Hannah Sarah Thomas"
+
+
+  Every first name is only on one team.
+
+  </PRE>
+
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

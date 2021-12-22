@@ -1,0 +1,81 @@
+filename: LowerVowels.py
+name: LowerVowels
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def lower(phrase):\n\t'''\n\tThis function accepts one parameter, phrase, which is a string.\n\t\n\tThe function should return the number of lowercase vowels in phrase.\n\t'''\n\t# you write code here\n\t"
+problem: >-
+  We are interested in determining the number of lowercase vowels in a given
+  string.
+
+
+
+  Create the function named <code>lower</code> that contains one parameter
+
+  named phrase.
+
+  </p>
+
+
+  This function returns the number of lowercase vowels present in the
+  string.</p>
+constraints: |-
+  <ul>
+  <li>The string parameter phrase should contain at least one character.
+  <li>The number of lowercase vowels present ranges between 0 and 30.
+  <li>Uppercase vowels should not count.
+  </ul>
+examples: |-
+  <ol>
+
+  <li class="example-odd">
+  <PRE>
+  phrase="Why are you and I still trying to grade?"
+
+  Returns: 10
+  </PRE>
+  # There are 10 lowercase vowels in phrase. 'I' is not counted.
+
+
+  <li class="example-even">
+  <PRE>
+  phrase="Angela, Eric, Eve, and I are the same age."
+
+  Returns: 12
+  </PRE>
+  # There are 12 lowercase vowels.
+
+
+  <li class="example-odd">
+  <PRE>
+  phrase="ARE YOU OLD ENOUGH?"
+
+  Returns: 0
+  </PRE>
+  # There are no lowercase vowels present.
+
+
+  <li class="example-even">
+  <PRE>
+  phrase="Pass a pencil."
+
+  Returns: 4
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; A. Nicki Washington and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>APT: MedalTable</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+    <h1>APT: MedalTable</h1>
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+ filename: MedalTable.py
+
+ def generate(results):
+     """
+     return list of strings
+     based on data in results, a list of strings
+     """
+
+     # you write code here
+     return []
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+
+The Olympic Games will be held, and have been held (and might be being
+held).  Given the results of the olympic disciplines, generate and
+return the medal table.
+<P>
+The results of the disciplines are given as a <codE>String list</code> 
+results</code>, where each element is in the format "GGG SSS BBB". GGG,
+SSS and BBB are the 3-letter country codes (three capital letters from
+'A' to 'Z') of the countries winning the gold, silver and bronze medal,
+respectively.
+<P>
+The medal table is a <code>String list</code> with an element for each
+country appearing in results.  Each element has to be in the format "CCO
+G S B" (quotes for clarity), where G, S and B are the number of gold,
+silver and bronze medals won by country CCO, e.g. "AUT 1 4 1". The
+numbers should not have any extra leading zeros.
+<P>
+Sort the elements by the number of gold medals won in decreasing order.
+If several countries are tied, sort the tied countries by the number of
+silver medals won in decreasing order.  If some countries are still
+tied, sort the tied countries by the number of bronze medals won in
+decreasing order.  If a tie still remains, sort the tied countries by
+their 3-letter code in ascending alphabetical order.
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<LI> <code>results</code> contains between 1 and 50 elements, inclusive.
+<P>
+<LI>Each element of <code>results</code> is formatted as described in the problem statement.
+<P>
+<LI> No more than 50 different countries appear in <code>results</code>.
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+["ITA JPN AUS", "KOR TPE UKR", "KOR KOR GBR", "KOR CHN TPE"]
+
+Returns: 
+[ "KOR 3 1 0",  "ITA 1 0 0",  "TPE 0 1 1",  "CHN 0 1 0",  "JPN 0 1 0",  
+  "AUS 0 0 1",  "GBR 0 0 1",  "UKR 0 0 1" 
+]
+
+</PRE>
+These were the results of the archery competitions in Athens, 2004.
+<P>
+<li class="example-even">
+<PRE>
+["USA AUT ROM"]
+
+Returns: [ "USA 1 0 0",  "AUT 0 1 0",  "ROM 0 0 1" ]
+
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+["GER AUT SUI", "AUT SUI GER", "SUI GER AUT"]
+
+Returns: [ "AUT 1 1 1",  "GER 1 1 1",  "SUI 1 1 1" ]
+
+</PRE>
+<P>
+</ol>
+<P>
+<div class="copyright">
+This problem statement is the exclusive and proprietary property of
+TopCoder, Inc. Any unauthorized use or reproduction of this information
+without the prior written consent of TopCoder, Inc. is strictly
+prohibited. &copy;2002,2003,2004,2005,2006 TopCoder, Inc. All rights reserved.
+</div>
+
+  </body>
+</html>

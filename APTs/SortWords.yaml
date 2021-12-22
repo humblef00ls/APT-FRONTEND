@@ -1,0 +1,106 @@
+filename: SortWords.py
+name: SortWords
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def sortReverse(phrase):\n\t'''\n\tThe string parameter phrase is a string of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return a reverse sorted list of the\n\twords in the string.\n\t'''\n\t# you write code here\n\t"
+problem: >-
+  Given a string, we want to sort the words(in reverse order). Create the
+  function named
+
+  <code>sortReverse</code> that has one parameter named phrase, which is a
+  string.
+
+  </p>
+
+
+  This function returns a sorted list of the words from the string in reverse
+  order.</p>
+constraints: >-
+  <ul>
+
+  <li>The string parameter phrase is not empty.
+
+  <li>Words that are repeated in the string should be counted each time they
+  appear.
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  phrase="This is a tester string."
+
+
+  Returns: ['tester', 'string.', 'is', 'a', 'This']
+
+  </PRE>
+
+  # "tester" is the largest string in the list. "This" is the smallest string in
+  the list lexicographically.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  phrase="This is A tester is string."
+
+
+  Returns: ['tester', 'string.', 'is', 'is', 'This', 'A']
+
+  </PRE>
+
+  # "tester" is the largest string in the list. "A" is the smallest string. "is"
+  appears twice in the list.
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  phrase="What time is it?"
+
+
+  Returns: ['time', 'it?', 'is', 'What']
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  phrase="ARE YOU OLD ENOUGH?"
+
+
+  Returns:['YOU', 'OLD', 'ENOUGH?', 'ARE']
+
+  </PRE>
+
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; A. Nicki Washington and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.

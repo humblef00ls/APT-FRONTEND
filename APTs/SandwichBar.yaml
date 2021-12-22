@@ -1,0 +1,119 @@
+filename: SandwichBar.py
+name: SandwichBar
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def whichOrder(available, orders):\n\t\"\"\"\n\treturn zero-based index of first\n\tsandwich in orders, list of strings\n\tthat can be made from ingredients\n\tin available, list of strings\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  It's time to get something to eat and I've come across a sandwich
+  bar. Like most people, I prefer certain types of sandwiches. In fact, I
+  keep a list of the types of sandwiches I like.
+
+  The sandwich bar has certain ingredients available. I will list the
+  types of sandwiches I like in order of preference and buy the first
+  sandwich the bar can make for me. In order for the bar to make a
+  sandwich for me, it must include all of the ingredients I desire.
+
+  Given <code>available</code>, a list of Strings/ingredients the
+  sandwich bar can use, and a <code>orders</code>, a list of Strings
+  that represent the types of
+  sandwiches I like, in order of preference (most preferred first), return
+  the 0-based index of the sandwich I will buy. Each element of
+  <code>orders</code> represents one type of sandwich I like as a
+  space-separated list of ingredients in the sandwich. If the bar can make
+  no sandwiches I like, return -1.
+constraints: "<ul>\n<li>\t<code>available</code>\nwill contain between 1 and 50 elements, inclusive.\n<li>\tEach element of <code>available</code>\nwill contain between 1 and 50 lowercase letters ('a' - 'z'), inclusive.\n<li> <code>orders</ocde> will contain between 1 and 50 elements, inclusive.\n<li> Each element of <code>orders</code> will\ncontain between 1 and 50 lowercase letters ('a' - 'z') and spaces, inclusive.\n\n<li> Each element of <code>orders</code> will represent a list of\ndesired ingredients separated by single spaces, with no leading or\ntrailing spaces.\n</ul>"
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+
+  available = [ "ham", "cheese", "mustard" ]
+
+
+  orders = [ "ham cheese" ]
+
+
+  Returns: 0
+
+
+  </PRE>
+
+
+  I only like plain ham and cheese sandwiches, and since both ham and cheese are
+  available, I'll take that.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+
+
+  available = [ "cheese", "mustard", "lettuce" ]
+
+
+  orders = [ "cheese ham", "cheese mustard lettuce", "ketchup", "beer" ]
+
+
+  Returns: 1
+
+
+  </pre>
+
+  They've run out of ham, but I'll consider other options now.
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+
+  available = [ "cheese", "cheese", "cheese", "tomato" ]
+
+
+  orders = [ "ham ham ham", "water", "pork", "bread", "cheese tomato cheese",
+  "beef" ]
+
+
+  Returns: 4
+
+
+  </PRE>
+
+  Ignore any duplicate elements in the lists.
+
+
+  <li class="example-even">
+
+  <PRE>
+
+
+  available = [ "foo", "bar", "baz", "gazonk", "quux", "bat", "xyzzy",
+
+  "shme", "hukarz", "grault", "waldo", "bleh" ]
+
+
+  orders = [ "kalatehas", "spam eggs", "needle haystack", "bleh blarg", "plugh",
+
+  "the best sandwich in the universe" ]
+
+
+  Returns: -1
+
+
+  </PRE>
+
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2005, TopCoder, Inc. All rights reserved.

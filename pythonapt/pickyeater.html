@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Picky Eater</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Picky Eater</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: PickyEater.py
+
+  def dinner(foods, willEat, hunger, meal):
+    '''
+    foods (list of strings) - parallel list with willEat of the foods picky
+        eater is willing to eat.
+    willEat (list of ints) - parallel list with foods of how much of that food
+        the picky eater is willing to eat.
+    hunger (int) - how much food the picky eater needs to eat to be full.
+    meal (list of strings) - the list and order of the foods given to the picky
+        eater.
+
+    Return how much food the picky eater still needs to eat to be full.
+    '''
+
+    # Your code here
+    return 0
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+You are serving dinner to a picky eater. Who has only certain foods they are willing to eat that is in the list <code>foods</code>. They are only willing to eat that food a certain number of times, represented in <code>willEat</code>, which is a parallel list to <code>foods</code>. <code>hunger</code> is how much the picky eater wants to eat and <code>meal</code> is the list and order of foods you will offer the picky eater. Each item in the list <code>meal</code> will reduce their hunger by 1 and whether they are willing to eat it by 1.
+<p>
+Return how hungry the picky eater will be after the meal. If they have enough food return 0. If they did not have enough food return how much more food they need to eat to be full. The function should never return a negative number. The picky eater cannot become overfull.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li><code>foods</code> is a list of unique strings
+<P><li><code>willEat<code> is a list of ints
+<P><li><code>len(foods) == len(willEat)<code>
+<P><li>The ith item in <code>foods<code> maps to the ith item in <code>willEat<code>
+<P><li><code>meal<code> is lists of strings that are also in <code>foods<code>
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+foods = ['cheerios', 'cheese']
+willEat = [5, 2]
+hunger = 5
+meal = ['cheerios', 'cheese', 'cheerios', 'cheese', 'cheese']
+
+Returns 1
+# The picky eater ate the first four items in the list meal but wasn't willing to eat cheese a third time to become full and no more food was offered afterward. So the function returns 1.
+</PRE>
+<P>
+
+<li class="example-even">
+<PRE>
+foods = ['ice cream', 'chocolate', 'broccoli']
+willEat = [100, 10, 0]
+hunger = 3
+meal = ['broccoli', 'ice cream', 'ice cream', 'chocolate', 'ice cream']
+
+Returns 0
+# The picky eater skipped broccoli, ate the next three items in the list meal, and was full. Therefore, we return 0.
+</PRE>
+<P>
+
+<li class="example-odd">
+<PRE>
+foods = ['cheese', 'ham', 'applesauce']
+willEat = [1, 1, 1]
+hunger = 3
+meal = ['cheese', 'ham', 'cheese', 'ham']
+
+Returns 1
+# The picky eater ate the first 'cheese' and the first 'ham', but was not willing to eat them a second time to become full and 'applesauce' was never offered. So 1 is returned.
+</PRE>
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; Kristin Stephens-Martinez and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

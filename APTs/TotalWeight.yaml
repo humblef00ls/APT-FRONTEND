@@ -1,0 +1,126 @@
+filename: TotalWeight.py
+name: TotalWeight
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def weight3(ab,ac,bc):\n\t\"\"\"\n\treturn float indicating\n\tthe total amount of weight for objects a, b and c.\n\tYou are given the combined weight of a and b\n\ttogether as parameter ab, the combined weight of\n\ta and c together as parameter ac,\n\tand the weight of b and c together with parameter bc.\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Given three objects, a, b and c, we can only weigh two of them at a
+  time. You want to determine what the weight of all three of them is.
+
+  Write function <code>weight3</code> that is given the weight of the pairs
+  of objects a and b together (parameter ab), a and c together (parameter
+  ac),
+  and b and c together (parameter bc), and returns the total weight
+  of all three objects.
+constraints: |-
+  <ul>
+  <li> <code>ab, ac</code>, and <code>bc</code> will be greater than zero.
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  ab = 10
+
+  ac = 20
+
+  bc = 24
+
+
+  returns 27.0
+
+
+  </PRE>
+
+  a must weigh 3, b must weigh 7, and c must weigh 17, so the total weight is
+  27.
+
+
+  <li class="example-even">
+
+  <PRE>
+
+
+  ab = 1.5
+
+  ac = 2.5
+
+  bc = 3
+
+
+  returns 3.5
+
+
+  </PRE>
+
+  a must weigh .5, b must weigh 1, and c must weigh 2, so the total weight is
+  3.5.
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+
+  ab = 200
+
+  ac = 300
+
+  bc = 200
+
+
+  returns 350.0
+
+
+  </PRE>
+
+  a must weigh 150, b must weigh 50, and c must weigh 150, so the total weight
+  is 350.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  ab = 60
+
+  ac = 75
+
+  bc = 85
+
+
+  returns 110.0
+
+  </PRE>
+
+  a must weigh 25, b must weigh 35, and c must weigh 50, so the total weight is
+  110
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

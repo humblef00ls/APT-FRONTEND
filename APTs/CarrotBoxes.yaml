@@ -1,0 +1,89 @@
+filename: CarrotBoxes.py
+name: CarrotBoxes
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def theIndex(carrots,amount):\n\t\"\"\"\n\tcarrots is list of integers representing\n\tboxes of carrots, amount is int value.\n\treturn int that is the index/box number\n\tof the box from which the last of\n\tamount carrots are eaten\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Rabbit Hanako has N boxes of carrots numbered 0 through N-1. The i-th
+  box contains <code>carrots[i]</code> carrots. (Note that
+  <code>carrots</code> is the name of a list that contains information
+  about boxes of the vegetable named <em>carrot</em>.)
+
+
+
+  She decides to eat <code>amount</code> carrots from these boxes. She
+  will eat the carrots one at a time, each time choosing a carrot from the
+  box with the greatest number of carrots. If there are multiple such
+  boxes, she will choose the lowest numbered box among them.
+
+
+  Return the number of the box from which she will eat her last carrot.
+constraints: |-
+  <ul>
+  <li> <code>carrots</code> will contain between 1 and 50 elements, inclusive.
+  <li> Each element of <code>carrots</code> will be between 1 and 100, inclusive
+  <li> <code>amount</code> will be between 1 and the sum of all
+  elements of <codE>carrots</code>, inclusive
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  carrots = [5,8]
+
+  amount = 3
+
+  Returns: 1
+  </PRE>
+
+  She will choose three carrots from the box with index 1.
+
+  <li class="example-even">
+  <PRE>
+  carrots = [5,8]
+
+  amount = 4
+
+  Returns: 0
+  </PRE>
+
+  After she chooses three carrots from box 1, both boxes contain 5
+  carrots. She will choose the 4th carrot from the box with
+  the lowest index.
+
+  <li class="example-odd">
+  <PRE>
+  carrots = [4,9,5]
+
+  amount = 18
+
+  Returns: 2
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  carrots = [13, 75, 24, 55]
+
+  amount = 140
+
+  Returns: 0
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  carrots = [14,36,52,86,27,97,3,67]
+
+  amount = 300
+
+  Returns: 4
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

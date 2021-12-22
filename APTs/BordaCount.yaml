@@ -1,0 +1,95 @@
+filename: BordaCount.py
+name: BordaCount
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def winners(ballot):\n\t\"\"\"\n\treturn list of winners based on votes\n\tin list ballot\n\t\"\"\"\n\t\n\t# you write code here\n\treturn []"
+problem: |-
+  Some voting systems are more "fair" than others. You'll
+  write method <code>winners</code> to return a list
+  of the winners using a <em>Borda Count</em> voting scheme
+  that is typically viewed as consensus based.
+  (For more information on
+  Borda Count and related voting schemes
+  see <a href="https://en.wikipedia.org/wiki/Borda_count">
+  the Wikipedia article</a>).
+
+  Each string in parameter <code>ballots</code> represents
+  the ballot, or votes, by one eligible voter. These are
+  a single-space delimited string of names where the first
+  name is the most-preferred candidate for the voter and
+  the last name is the least-preferred candidate. Each voter
+  will cast a ballot with the same number of candidates being
+  voted for. This number, <tt>N</tt>, is the number of votes the
+  most-preferred candidate gets in each ballot. The least-preferred
+  candidate gets one vote. The number of votes decreases
+  by one from <tt>N</tt> to <tt>N-1</tt> (second name in a ballot) to
+  2 (second to last candidate) and 1.
+
+  Return a list of the candidates with the maximal number of votes. If
+  this is a single candidate, the list will contain one name. If there
+  are multiple candidates with the same number of maximal votes
+  return a list of all the candidates sorted alphabetically by name.
+constraints: |-
+  <ul>
+  <li><code>ballots</code> will contain between 1 and
+  50 strings, inclusive
+  </li>
+
+  Each string in <code>ballots</code> will be a single-space delimited
+  set of names. All strings will consist of lower-case letters only
+  </li>
+
+  <li>Each string in <code>ballots</code> will contain the same
+  number of names</li>
+
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  ballots = ["moe curly larry", "moe larry curly", "curly moe larry"]
+
+  returns ["moe"]
+  </PRE>
+  moe gets 3+3+2 = 8 votes, curly gets 2+1+3=6 votes, larry gets 1+2+1=4 votes.
+
+  <li class="example-even">
+  <PRE>
+  ballots = ["chris sam", "sam chris"]
+
+  returns ["chris", "sam']
+
+  </PRE>
+  Each candidate gets 3 votes, return the list of names in alphabetical order.
+
+  <li class="example-odd">
+  <PRE>
+  ballots = ["donald"]
+
+  returns ["donald"]
+
+  </PRE>
+  There is only one candidate who gets any votes.
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and Kristin Stephens-Martinez and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

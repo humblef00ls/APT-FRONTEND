@@ -1,0 +1,80 @@
+filename: Pikachu.py
+name: Pikachu
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def check(word):\n\t\"\"\"\n\treturn String based on parameter\n\tword, a String\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Pikachu is a well-known character in the Pokemon anime series. Pikachu
+  can speak, but only 3 syllables: "pi", "ka", and "chu". Therefore
+  Pikachu can only pronounce strings that can be created as a
+  concatenation of one or more syllables he can pronounce. For example, he
+  can pronounce the words "pikapi" and "pikachu".
+
+
+
+  You are given a String word. Your task is to check whether Pikachu can
+  pronounce the string. If the string can be produced by concatenating
+  copies of the strings "pi", "ka", and "chu", return
+  <tt>"YES"</tt> (quotes for
+  clarity). Otherwise, return <tt>"NO"</tt>.
+constraints: |-
+  <ul>
+  <li> <code>word</code> contains between 1 and 50 characters, inclusive
+  <li> each character of <code>word</code> will be a lower-case letter 'a'-'z'
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  word = "pikapi"
+
+  Returns: "YES"
+
+  </PRE>
+  "pikapi" = "pi" + "ka" + "pi", so Pikachu can say it.
+
+  <li class="example-even">
+  <PRE>
+  word = "pipikachu"
+
+  Returns: "YES"
+
+  </PRE>
+  This time we have "pipikachu" = "pi" + "pi" + "ka" + "chu", so Pikachu
+  can say it as well.
+
+
+  <li class="example-odd">
+  <PRE>
+
+  word = "pikaqiu"
+
+  Returns: "NO"
+
+  </PRE>
+  Pikachu can't say "pikaqiu" since 'q' does not appear in "pi", "ka", or
+  "chu".
+
+  <li class="example-even">
+  <PRE>
+  word = "chupikachupipichu"
+  Returns: "YES"
+
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  word = "duke"
+  Returns: "NO"
+
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

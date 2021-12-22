@@ -1,0 +1,118 @@
+filename: StringSearch.py
+name: StringSearch
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def findString(input):\n\t'''\n\tThe string parameter input is comprised of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return the number of words in\n\tthe string that end with a vowel.\n\t'''\n\t# you write code here\n\t"
+problem: >-
+  Given a string, we want to identify all the words contained in the
+
+  string that end with a vowel. Create the function named
+  <code>findString</code>
+
+  that has one parameter named input, which is a string.
+
+  </p>
+
+
+  This function returns the number of words in the string that contain end with
+  a vowel.</p>
+constraints: >-
+  <ul>
+
+  <li>The string parameter <code>input</code> cannot be empty.
+
+  <li>Words in the original string input that end with a vowel, but also are
+  followed by a symbol
+
+  (e.g., '.' or ',' or ':' or ';' should not be included in the final count.
+
+  <li>Words that are repeated in the string should be counted each time they
+  appear.
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  input="Hey you."
+
+
+  Returns: 0
+
+  </PRE>
+
+  # The last word is 'you.'. However, because a '.' follows the 'u', then it is
+  not the last character in the
+
+  substring. Thus, it is not included, and the count is 0.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  input="Hey you"
+
+
+  Returns: 1
+
+  </PRE>
+
+  # The last word is 'you' and it is the only substring that ends in a vowel.
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  input="Are you there? I can't hear you"
+
+
+  Returns: 4
+
+  </PRE>
+
+  # 'there?' is not included because '?'  is the last character in the
+  substring. Also, 'you'
+
+  appears twice in the sentence, and is thus counted twice.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  input="cat $13ha FIVE yellow submarine"
+
+
+  Returns: 3
+
+  </PRE>
+
+  # '$13ha' is included in the  count because the substring ends in a vowel.
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; A. Nicki Washington and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.

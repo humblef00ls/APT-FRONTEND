@@ -1,0 +1,77 @@
+filename: AnagramFree.py
+name: AnagramFree
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def getMaximumSubset(words):\n\t\"\"\"\n\treturn int value that represents\n\tsize of largest anagram-free subset\n\tof values in words, a list of strings\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  A string X is an anagram of string Y if X can be obtained by arranging
+  all characters of Y in some order, without removing any characters and
+  without adding new characters. For example, each of the strings "baba",
+  "abab", "aabb" and "abba" is an anagram of "aabb", and strings "aaab",
+  "aab" and "aabc" are not anagrams of "aabb".
+
+
+
+  A set of strings is anagram-free if it contains no pair of strings which
+  are anagrams of each other. Given a set of strings <codE>words</code>,
+  return the size of its largest anagram-free subset. Note that the entire
+  set is considered a subset of itself.
+constraints: |-
+  <ul>
+  <li> <code>words</code> will contain between 1 and 50 elements, inclusive
+  <li> Each element of <code>words</code> contains between 1 and 50
+  characters, inclusive
+  <li> Each element of <code>words</code> will consist of lowercase
+  letters 'a' -- 'z' only
+  <li> All elements of <code>words</code> will be distinct.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  words = ["abcd","abdc","dabc","bacd"]
+
+  Returns: 1
+
+
+  </PRE>
+  All of the strings in <code>words</code> are anagrams of each other, so
+  no two of them can simultaneously belong to an anagram-free set.
+
+
+  <li class="example-even">
+  <PRE>
+  words = ["abcd","abac","aabc","bacd"]
+
+  Returns: 2
+
+
+  </PRE>
+  One of the maximum anagram-free subsets is ["abcd","abac"].
+
+  <li class="example-odd">
+  <PRE>
+  words = ["aa","aaaaa","aaa","a","bbaaaa","aaababaa"]
+
+  Returns: 6
+
+  </PRE>
+  Note that strings of different length cannot be anagrams of each other.
+
+  <li class="example-even">
+  <PRE>
+  words = ["creation","sentence","reaction","sneak","star","rats","snake"]
+
+  Returns: 4
+
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

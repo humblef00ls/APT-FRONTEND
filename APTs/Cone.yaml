@@ -1,0 +1,71 @@
+filename: Cone.py
+name: Cone
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def volume(radius,height):\n\t\"\"\"\n\treturn volume of a cone in cubic inches\n\tgiven float parameters radius and height in inches\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  You're helping a group of Geometry students
+  by creating a function that returns
+  the volume of a cone given the radius of the
+  cone's base and the height of the cone.
+  The formula for a cone's volume is
+
+  1/3 * pi * r<sup>2</sup> * h
+
+  where r is the radius of the base, h is the height of the
+  cone, pi is 3.1415926 and 1/3 is 0.33333...
+constraints: |-
+  <ul>
+  <li> radius is a value greater than 0  </li>
+  <li> height is a value greater than 0 </li>
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  radius = 1
+  height = 1
+
+  returns: 1.04719733333
+  </PRE>
+  pi/3 is about 1.047197
+
+  <li class="example-even">
+  <PRE>
+  radius = 10
+  height = 10
+
+  returns: 1047.19733333
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  radius = 2
+  height = 3
+
+  returns: 12.566368
+  </PRE>
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,107 @@
+filename: Gravity.py
+name: Gravity
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def falling(time,velo):\n\t\"\"\"\n\treturn float indicating\n\tnumber of meters an object has\n\tfallen after being dropped/thrown\n\twith initial velocity given by\n\tfloat parameter velo\n\t(given in meters/second)\n\tand after falling for float parameter\n\ttime seconds\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Elphaba has decided to try to defy gravity. She's going to drop or throw
+  an object from the top of an infinitely tall building and see
+  how far it falls. She knows exactly what speed she throws the
+  object and has a stop watch she uses to time how long it falls.
+
+  Write function <code>falling</code> that returns the number of
+  <em>meters</em> the object has fallen after <code>time</code>
+  seconds have elapsed when the object is thrown with
+  an initial velocity of <code>velo</code> meters/sec.
+
+  Ignore any forces due to friction, air-resistance, etc. The infinitely
+  tall building is located in a vacuum. However, the building is on the
+  earth, so accelaration due to earth's gravity should be part
+  of your calculations.
+
+
+  You can find many resources online that give the equation for how far an
+  object falls when dropped. That equation is <tt>0.5*g*t<sup>2</sup>
+  </tt> where t is time in seconds and <b>g</b> is the gravitational
+  constant which is 9.8 meters/seconds<sup>2</sup> (units). When an object
+  is thrown the equation is
+  <PRE>
+  d = v*t + 0.5*g*t<sup>2</sup>
+
+  </PRE>
+  Where  v is initial velocity in meters/second and t is time in
+  seconds. So simply use that equation, and the value of <b>g =
+  9.8</b> in solving this problem.
+constraints: |-
+  <ul>
+  <li> <code>time</code> will be greater than zero and less than
+  the number of seconds in a week.
+
+  <li> <code>velo</code> will be non-negative.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  time = 3
+  velo = 5
+
+  returns 59.1
+
+  </PRE>
+  If you throw an object at 5 m/sec for 3 seconds it will
+  have fallen 59.1 meters. Note that 5*3 + 0.5*9.8*3*3 = 15 + 44.10 = 59.10
+
+  <li class="example-even">
+  <PRE>
+  time = 3
+  velo = 0
+
+  returns 44.1
+
+  </PRE>
+  If you drop the object instead of throwing it the distance
+  will be 44.1 meters.
+
+  <li class="example-odd">
+  <PRE>
+  time = 3600
+  velo = 0
+
+  returns 63504000.0
+
+  </PRE>
+  After an hour a dropped object has traveled 63,504 kilometers or nearly 40,000
+  miles.
+
+  <li class="example-even">
+  <PRE>
+  time = 86400
+  velo = 0
+
+  returns 36578304000.0
+
+  </PRE>
+  After a day the dropped object has traveled more than 22 million miles
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

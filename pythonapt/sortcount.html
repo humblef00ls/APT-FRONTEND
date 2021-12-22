@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: SortCount</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: SortCount</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: SortCount.py
+
+def occurrences(letter, words):
+    '''
+    letter is a string of one lowercase alphabetic letter
+    words is a list of words
+    return a sorted list of the unique words by the number of times
+       letter occurs in each word. Break ties alphabetically. 
+    '''
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Write the function named  <code>occurrences</code> that has two 
+parameters, <code>letter</code> that is a single lowercase alphabetic
+letter, 
+and <code>words</code>, a   list of words.
+This function returns 
+a sorted list of the unique words in order based on the number of
+occurrence of <code> letter</code>. Ties should be broken alphabetically.  
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> letter is a lowercase letter, one of a-z  
+<P><li> words  is a list of 0 or more words, each word is a String of
+    one or more lowercase letters from a-z   </li>
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+letter = "e" 
+words = ["one", "two", "three"] 
+
+returns: ["two", "one", "three"]
+ 
+"two" is first as it has no 'e', "one" is next as it has one 'e', and
+"three" is last as it has two 'e's.    
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+letter = "o" 
+words = ["one", "two", "three"] 
+
+returns: ["three", "one", "two"]
+ 
+"three" is first as it has no "o". Both "one" and "two" have one "o", so
+they are sorted alphabetically. 
+
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+letter = "t" 
+words = ["one", "two", "three", "wait", "one", "two", "three", "go"]
+
+returns: ["go", "one", "three", "two", "wait"]
+
+Both "go" and "one" have no "t", they are sorted and come first. The rest of
+the words all have one "t", they are sorted and come next.   
+ 
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+letter = "r" 
+words = ["plum", "apple", "lemon", "banana", "kiwi", "apricot", "blueberry", "pear"] 
+
+returns: ["apple", "banana", "kiwi", "lemon", "plum", "apricot", "pear", "blueberry"]
+
+The words "apricot" and "pear" each have one "r", and "blueberry" has two
+"r"s. The other words come first as they do not have any 'r's, followed by
+'apricot' and  'pear', followed by 'blueberry'.
+</PRE>
+
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

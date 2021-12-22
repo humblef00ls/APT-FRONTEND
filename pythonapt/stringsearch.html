@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: StringSearch</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: StringSearch</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: StringSearch.py
+
+  def findString(input):
+      '''
+      The string parameter input is comprised of one or 
+      more words or combinations of words, numbers, and 
+      symbols.
+	  
+      The function should return the number of words in  
+      the string that end with a vowel.
+      '''
+	# you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+<p>Given a string, we want to identify all the words contained in the
+string that end with a vowel. Create the function named <code>findString</code> 
+that has one parameter named input, which is a string.
+</p>
+
+<p>This function returns the number of words in the string that contain end with a vowel.</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>The string parameter <code>input</code> cannot be empty.
+<P><li>Words in the original string input that end with a vowel, but also are followed by a symbol
+(e.g., '.' or ',' or ':' or ';' should not be included in the final count.
+<P><li>Words that are repeated in the string should be counted each time they appear.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+input="Hey you."
+
+Returns: 0
+</PRE>
+# The last word is 'you.'. However, because a '.' follows the 'u', then it is not the last character in the 
+substring. Thus, it is not included, and the count is 0.
+<P>
+
+<li class="example-even">
+<PRE>
+input="Hey you"
+
+Returns: 1
+</PRE>
+# The last word is 'you' and it is the only substring that ends in a vowel.
+<P>
+
+<li class="example-odd">
+<PRE>
+input="Are you there? I can't hear you"
+
+Returns: 4
+</PRE>
+# 'there?' is not included because '?'  is the last character in the substring. Also, 'you'
+appears twice in the sentence, and is thus counted twice.
+<P>
+
+<li class="example-even">
+<PRE>
+input="cat $13ha FIVE yellow submarine"
+
+Returns: 3
+</PRE>
+# '$13ha' is included in the  count because the substring ends in a vowel.
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

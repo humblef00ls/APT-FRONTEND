@@ -1,0 +1,99 @@
+filename: TrophyShelf.py
+name: TrophyShelf
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def countVisible(trophies):\n\t\"\"\"\n\treturn two-element int list\n\tbased on trophies, an int list\n\t\"\"\"\n\t\n\t# you write code here"
+problem: >-
+  You have several trophies sitting on a shelf in a straight line. Their
+
+  heights are given in a list of int values, <code>trophies</code>, from left to
+  right. The shelf is
+
+  positioned so that whenever people enter your room, they see it directly
+
+  from the left side. In other words, the leftmost trophy is completely
+
+  visible to the viewer, the next trophy in line is directly behind it,
+
+  and so on.
+
+
+
+
+  Unfortunately, tall trophies near the left side of the shelf might block
+
+  the view of other trophies. A trophy is visible only if every trophy in
+
+  front of it (from the viewer's perspective) is strictly shorter than it
+
+  is. You wonder if rotating the shelf 180 degrees would increase the
+
+  number of visible trophies.
+
+
+
+
+  Return a int list containing exactly two elements. The first element
+
+  should be the number of trophies visible when viewing the shelf directly
+
+  from the left side, and the second element should be the number of
+
+  trophies visible when viewing the shelf directly from the right side.
+constraints: |-
+  <ul>
+  <li> <code>trophies</code> contains between 1 and 50 elements, inclusive
+  <li> Each element of <code>trophies</code> will be between 1 and 100,
+  inclusive
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  trophies = [1,2,3,4,5]
+
+  Returns: [5, 1]
+
+  </PRE>
+  When viewed from the left, each trophy is taller than all the trophies
+  in front of it. However, when viewed from the right, the first trophy
+  blocks the view of all the other trophies.
+
+
+  <li class="example-even">
+  <PRE>
+  trophies = [5,5,5,5]
+
+  Returns: [1,1]
+
+  </PRE>
+  Since all trophies have the same height, only the first is visible when
+  viewed from each direction.
+
+  <li class="example-odd">
+  <PRE>
+  trophies = [1,2,5,2,1]
+
+  Returns: [3, 3]
+
+  </PRE>
+  This trophy shelf is symmetric.
+
+  <li class="example-even">
+  <PRE>
+  trophies = [1,4,2,5,3,7,1]
+
+  Returns: [4,2]
+
+  </PRE>
+
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

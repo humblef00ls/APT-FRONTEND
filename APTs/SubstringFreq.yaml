@@ -1,0 +1,85 @@
+filename: SubstringFreq.py
+name: SubstringFreq
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "\t\ndef frequency(text, n):\n\t'''\n\ttext (string) - A string with at least one word\n\tn (int) - the length of the substring\n\t\n\tCounts the appearance of each substring in text and returns the most frequent ones as a list.\n\t'''\n\treturn []\n\t"
+problem: >-
+  Considering all substrings of length <code>n</code> within each word separated
+  by whitespace in <code>text</code>, return an alphabetically sorted list of
+  all the most popular substrings.
+constraints: >-
+  <ul>
+
+  <li><code>n</code> is > 0
+
+  <li><code>text</code> is a string with at least one word of length
+  <code>n</code>
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  text = 'roses are red'
+
+  n = 2
+
+
+  Returns ['re']
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  text = 'peter piper picked'
+
+  n = 1
+
+
+  Returns ['e', 'p']
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  text = 'the great'
+
+  n = 3
+
+
+  Returns ['eat', 'gre', 'rea', 'the']
+
+  # All the substrings of length 3 happened equally, notice there is no
+  whitespace in any of these substrings
+
+  </PRE>
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

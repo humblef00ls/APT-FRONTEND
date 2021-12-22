@@ -1,0 +1,67 @@
+filename: Bagels.py
+name: Bagels
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "\t\ndef bagelCount(orders) :\n\t\"\"\"\n\treturn number of bagels needed to fulfill\n\tthe orders in integer list parameter orders\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  You are in charge of web-based orders for your neighborhood bagel store,
+  <em>The Bagel Byte</em>. Each evening you must total the orders to be
+  picked up the next day. Some orders are simply for <em>N</em> bagels,
+  but each order of a dozen or more bagels is topped off with an extra
+  bagel, the so-called "baker's dozen".  This means, for example, that an
+  order for 25 bagels actually requires 27 bagels to fulfill since there
+  are two extra bagels needed for each dozen in the order. An order for 11
+  bagels doesn't require any extra since it's for less than a dozen.
+
+  Given a list of integers representing
+  bagel orders determine the number of bagels needed to
+  fulfill all the orders.
+constraints: |-
+  <ul>
+  <LI>  The list <code>orders</code> will contain between 0 and 50
+  elements.
+
+  <LI> Each element of <code>orders</code> will be between 1 and 60 (no
+  one orders more than five dozen at-a-time).
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  orders = [1,3,5,7]
+
+  Returns:  16
+
+  </PRE>
+  No order is for more than a dozen, return the total of all orders.
+
+  <li class="example-even">
+  <PRE>
+
+  orders = [11,22,33,44,55]
+
+  Returns: 175 since 11 + (22+1) +(33+2) + (44+3) + (55+4) = 175
+
+  </PRE>
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,131 @@
+filename: SortCount.py
+name: SortCount
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def occurrences(letter, words):\n\t'''\n\tletter is a string of one lowercase alphabetic letter\n\twords is a list of words\n\treturn a sorted list of the unique words by the number of times\n\tletter occurs in each word. Break ties alphabetically.\n\t'''"
+problem: |-
+  Write the function named  <code>occurrences</code> that has two
+  parameters, <code>letter</code> that is a single lowercase alphabetic
+  letter,
+  and <code>words</code>, a   list of words.
+  This function returns
+  a sorted list of the unique words in order based on the number of
+  occurrence of <code> letter</code>. Ties should be broken alphabetically.
+constraints: |-
+  <ul>
+  <li> letter is a lowercase letter, one of a-z
+  <li> words  is a list of 0 or more words, each word is a String of
+  one or more lowercase letters from a-z   </li>
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  letter = "e"
+
+  words = ["one", "two", "three"]
+
+
+  returns: ["two", "one", "three"]
+
+
+  "two" is first as it has no 'e', "one" is next as it has one 'e', and
+
+  "three" is last as it has two 'e's.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  letter = "o"
+
+  words = ["one", "two", "three"]
+
+
+  returns: ["three", "one", "two"]
+
+
+  "three" is first as it has no "o". Both "one" and "two" have one "o", so
+
+  they are sorted alphabetically.
+
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  letter = "t"
+
+  words = ["one", "two", "three", "wait", "one", "two", "three", "go"]
+
+
+  returns: ["go", "one", "three", "two", "wait"]
+
+
+  Both "go" and "one" have no "t", they are sorted and come first. The rest of
+
+  the words all have one "t", they are sorted and come next.
+
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  letter = "r"
+
+  words = ["plum", "apple", "lemon", "banana", "kiwi", "apricot", "blueberry",
+  "pear"]
+
+
+  returns: ["apple", "banana", "kiwi", "lemon", "plum", "apricot", "pear",
+  "blueberry"]
+
+
+  The words "apricot" and "pear" each have one "r", and "blueberry" has two
+
+  "r"s. The other words come first as they do not have any 'r's, followed by
+
+  'apricot' and  'pear', followed by 'blueberry'.
+
+  </PRE>
+
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

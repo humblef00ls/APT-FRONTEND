@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Family</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Family</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Family.py
+
+  def grandchildren(parents, children, person):
+      '''
+      parents (list of strings) - list of parent names corresponding to the
+          children list
+      children (list of strings) - list of child names corresponding to the
+          parents list
+      person (string) - a person listed in parents
+          
+      Return the number of grandchildren for the person in the person variable
+      '''
+      return 0
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+You have two lists: <code>parents</code> and <code>children</code>.
+The ith element in <code>parents</code> is the parent of the ith element in <code>children</code>.
+Count the number of grandchildren (the children of a person's children) for the person in the <code>person</code> variable.
+<p>
+Hint: Consider making a helper function that returns a list of a person's children.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>There is no incest (two siblings having a child together).
+<P><li>No one has the same name as another person.
+<P><li>The person in the person variable is in the parents list.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+parents = ['Sanjay', 'Ellie']
+children = ['Ellie', 'Nicolas']
+person =  'Sanjay'
+
+Returns 1
+</PRE>
+# Sanjay has one child, Ellie. Ellie has one child, Nicolas. Therefore, Sanjay has one grandchild, Nicolas.
+<P>
+
+<li class="example-even">
+<PRE>
+parents = ['Austin', 'Sanjay', 'Jiayi']
+children = ['Emily', 'Emily', 'Sanjay']
+person =  'Jiayi'
+
+Returns 1
+</PRE>
+# Jiayi has one child Sanjay. Austin and Sanjay (we do not judge people for the cultural gender of their name) have one child, Emily. Therefore, Jiayi has one grandchild, Emily.
+<P>
+
+<li class="example-odd">
+<PRE>
+parents = ['Nathan']
+children = ['Jachin']
+person =  'Nathan'
+
+Returns 0
+</PRE>
+# This just has a single relationship of Nathan is the parent of Jachin. Therefore, there are no grandchildren.
+<P>
+
+<li class="example-even">
+<PRE>
+parents = ['Isabella', 'Michael', 'Jacob', 'Isabella']
+children = ['Ashabur', 'Ashabur', 'Isabella', 'Lydia']
+person =  'Jacob'
+
+Returns 2
+</PRE>
+# Jacob has one child, Isabella. Isabella has two children, Ashabur (who’s other parent is Michael) and Lydia (who has no other parent, this is not a complete family tree). Therefore, Jacob has two grandchildren.
+<P>
+  
+<li class="example-odd">
+<PRE>
+parents = ['Junhua', 'Anshul', 'Junhua', 'Anshul', 'Kerry']
+children = ['Anshul', 'Jordan', 'Kerry', 'Paul', 'Kai']
+person =  'Junhua'
+
+Returns 3
+</PRE>
+# Junhua has two children, Anshula and Kerry. Anshul has two children (Jordan and Paul), while Kerry has one child (Kai). So Junhua has three grandchildren
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; Kristin Stephens-Martinez and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
     onMount(mountEditor)
     function mountEditor() {
         editor = monaco.editor.create(document.getElementById('coder'), {
-            value: initial.join('\n'),
+            value: initial,
             language: 'python',
             automaticLayout: true,
             minimap: {

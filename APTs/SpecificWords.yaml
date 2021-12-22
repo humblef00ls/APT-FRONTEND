@@ -1,0 +1,137 @@
+filename: SpecificWords.py
+name: SpecificWords
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def countwords(phrase, ending, item):\n\t'''\n\tGiven the three string parameters\n\tphrase, ending and item,\n\treturn the number of words in phrase\n\tthat end in ending and do not contain\n\titem as part of their word.\n\t'''\n\t\n\t# you write code here"
+problem: >-
+  Given a phrase, your task is to determine the number of words that end
+
+  in ending and do not contain item as part of their word.
+
+
+
+
+  Write function <em>countwords </em> that has three string parameters
+  <code>phrase</code>,
+
+  <code>ending</code> and
+
+  <code>item</code>.  This function returns an integer representing the
+
+  number of words in phrase that end in ending and  does not contain item as
+
+  part of their word.
+
+  You can assume all words are lowercase.
+constraints: |-
+  <ul>
+  <li> phrase, ending and item are all of length 1 or more characters  </li>
+  <li> ending and item are only lowercase alphabetic characters </li>
+  <li> ending and item are different words </li>
+  <li> phrase is only lowercase alphabetic characters or
+  blanks. It starts and ends with an alphabetic character, and if there
+  are blanks, there cannot be two adjacent blanks.    </li>
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  phrase =  "swim trim shop drop swap rim"
+  ending = "im"
+  item = "sh"
+
+
+  returns: 3
+  swim, trim and rim all end in "im", none of them have "sh" in them.
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  phrase =  "swim trim shop drop swap rim"
+  ending = "im"
+  item = "sw"
+
+  returns: 2
+  "trim" and "rim" all end in "im", and do not have "sw" in it. "swim" ends in
+  "im", but has "sw" as part of it.
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  phrase = "duck"
+  ending = "uck"
+  item = "d"
+
+
+  returns: 0
+  </PRE>
+
+
+
+  <li class="example-even">
+  <PRE>
+
+  phrase =  "i am lovely crazy silently happily smilingly funny"
+  ending = "ly"
+  item = "book"
+
+
+  returns: 4
+  lovely, silently, happily, and smilingly all end in "ly" and do not have
+  "book" in them.
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+
+
+  phrase = "book booklet redbook beautiful butterfly"
+  ending = "ly"
+  item = "book"
+
+
+
+  returns: 1
+
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+
+  phrase =  "long song long song some belong and some do not belong"
+  ending = "ong"
+  item = "son"
+
+  returns: 4
+  There are six words that end in "ong": long, song, long, song, belong,
+  and belong. Two of those words have "son" in them: song and song,
+  so those two do not count.
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

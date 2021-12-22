@@ -1,0 +1,80 @@
+filename: VoteRigging
+name: VoteRigging
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: java
+initial: |2-
+    def minimumVotes(votes):
+        """
+        returns minimum number of votes(int) to change
+        using values in votes (integer list)
+        """
+problem: |-
+  You have used your secret mind-reading device to find out how every
+  voter will vote in the next election. Your mind-reading device also
+  revealed to you that all the voters are prepared to change their vote if
+  you pay them enough.
+
+  The <code>i</code><sup>th</sup> element of <code>votes</code> (list of
+  integers) is the number of people who were originally planning to vote
+  for candidate <code>i</code>. Return the minimum number of votes that
+  you must change to ensure that candidate 0 (your favorite) will have
+  more votes than any other candidate.
+constraints: |-
+  <ul>
+  <LI> <code>votes</code> will contain between 1 and 50 elements,
+  inclusive.
+  <LI> Each element of <code>votes</code> will be between
+  1 and 100, inclusive.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+
+  [5, 7, 7]
+
+  Returns: 2
+
+  </PRE>
+  Buying one vote from each of the other two candidates leaves candidate 0
+  with 7 votes and the others with 6 each.
+
+  <li class="example-even">
+  <PRE>
+
+  [10, 10, 10, 10]
+
+  Returns: 1
+
+  </PRE>
+  You need strictly more votes than all other candidates, so you need to
+  buy one vote.
+
+  <li class="example-odd">
+  <PRE>
+
+  [1]
+
+  Returns: 0
+
+  </PRE>
+  If you are the only candidate, you automatically win.
+
+  <li class="example-even">
+  <PRE>
+
+  [5, 10, 7, 3, 8]
+
+  Returns: 4
+
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this
+  information without the prior written consent of TopCoder, Inc. is
+  strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

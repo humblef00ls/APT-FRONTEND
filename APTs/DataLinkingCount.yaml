@@ -1,0 +1,149 @@
+filename: DataLinkingCount.py
+name: DataLinkingCount
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def mergeCheck(data1, data2, dataLinking):\n\t'''\n\tdata1 (list of strs): list of two pieces of data A and B separated by a\n\tcolon ':' (ex: 'a1:b1')\n\tdata2 (list of strs): list of two pieces of data C and D separated by a\n\tcolon ':' (ex. 'c1:d1')\n\tdataLinking (list of strs): list of two pieces of data B and C separated\n\tby a colon ':' (ex: 'b1:c1')\n\t\n\tReturn a list of three ints as follows:\n\tIndex 0: The number of elements in data1 that do not have a corresponding\n\tvalue in dataLinking\n\tIndex 1: The number of elements that can be linked across all three data sets\n\tIndex 2: The number of elements in data2 that do not have a corresponding\n\tvalue in dataLinking\n\t'''\n\treturn [0,0,0]\n\t"
+problem: >-
+  A common task when analyzing data is linking multiple data sets together.
+  Sometimes the only way to connect two data sets together is by using a third
+  data set that has information shared with each of the other two data sets.
+
+  </p>
+
+
+  Implement the function mergeCheck that is checking how much data can be
+  linked. It takes three lists: data1, data2, and dataLinking. data1's elements
+  have two pieces of information (A,B) represented in a string and separated by
+  a colon (ex: 'a1:b1'). data2's elements have two pieces of information (C,D),
+  also represented in a string and separated by a colon (ex: 'c1:d1').
+  dataLinking's elements have two pieces of information (B,C) represented in a
+  string and separated by a colon (ex: 'b1:c1').
+
+  </p>
+
+
+  If dataLinking has an element where its B value matches a B in data1 and its C
+  value matches a C in data2, we can link all the information together to get
+  something with (A, B, C, D). However, we are also interested in how many
+  elements in data1 do not have a corresponding B value in dataLinking and the
+  same for data2 (the number of elements in data2 that have no corresponding C
+  value in dataLinking).
+
+  </p>
+
+
+  mergeCheck returns a list of three ints (like a "Venn diagram") of: (0) how
+  many data1's B values are not in dataLinking, (1) how many elements can be
+  linked across all three lists (a.k.a. there is an element in dataLinking that
+  has a matching B value in data1 and C value in data2), and (2) how many
+  data2's C values are not in dataLinking.
+
+  </p>
+
+
+  Assume that all the information within each column (A, B, C, and D) is unique
+  for all the data sets (ex: data1 has no two elements with the same B value).
+  Note, there is also the potential that there is a value for B in dataLinking
+  that correspondings to data1, but there is no matching value for C in data2
+  for that B value and vice versa (ex: data1 = ['a1:b1', ...], dataLinking =
+  ['b1:c1', ...], data2 has no element with 'c1' in it). Such cases should not
+  be counted in your output.
+
+  </p>
+constraints: |-
+  <ul>
+  <li>All lists have at least one element.
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data1 = ['a1:b1']
+
+  data2 = ['c1:d1']
+
+  dataLinking = ['b1:c1']
+
+
+  Returns [0, 1, 0]
+
+  # Each list only has one element and they are linked perfectly together to
+  create the single element (a1,b1,c1,d1)
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  data1 = ['a1:b1', 'a2:b2']
+
+  data2 = ['c1:d1', 'c2:d2']
+
+  dataLinking = ['b1:c1', 'b999:c999']
+
+
+  Returns [1, 1, 1]
+
+  # This has one fully linked element (a1,b1,c1,d1). Note the the element
+  (a2,b2,c2,d2) is not possible because there is no linking
+
+  # information in dataLinking of 'b2:c2'. In fact, dataLinking even has a
+  spurious linking element that can't be used with data1 nor data2. This
+
+  # results in data1's 'a2:b2' counting as an unused element in data1 and
+  data2's 'c2:d2' being counted as an unused element in data2. Hence the
+
+  # result [1,1,1]
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data1 = ['a1:b1', 'a2:b2']
+
+  data2 = ['c1:d1', 'c2:d2']
+
+  dataLinking = ['b1:c1', 'b2:c999']
+
+
+  Returns [0, 1, 1]
+
+  # The first element in the output is 0 because all of data1's B values are in
+  dataLinking. data1's first element is fully linked and 'a2:b2'
+
+  # has a linking element in dataLinking 'b2:c999', but since there is no c999
+  in data2, this element is not counted in the output at all. The
+
+  # second element is 1 because there is one fully linked element (a1,b1,c1,d1).
+  The third element is 1 because data2's element 'c2:d2'
+
+  # does not have an element in dataLinking with the value c2 after the colon.
+
+  </PRE>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Laundry</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+    <h1>APT: Laundry </h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Laundry.py
+  
+  def minutesNeeded(m): 
+      """
+      Return integer number of minutes to launder m (integer) loads
+      """
+
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Consider the problem of trying to do a number of loads of laundry, given
+only one washer and one dryer. Washing a load takes 25 minutes, drying a
+load takes 25 minutes, and folding the clothes in a load takes 10
+minutes, for a total of 1 hour per load (assuming that the time to
+transfer a load is built into the timings given). 10 loads of laundry can be
+done in 10 hours, 600 minutes, using the method of completing one load
+before starting the next one. Though it can be done faster, see examples.&nbsp;
+<P>
+Write the method, <code>minutesNeeded,</code> that  returns the shortest time needed to do <code>m</code> loads of laundry. In other words, given an 
+integer value representing the number of loads to complete, <code>m</code>, determine the smallest number of minutes
+needed to complete all loads of laundry.
+</p>
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<LI> The value of <code>m</code> &lt; 10000
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+m = 1
+
+returns: 60 
+
+</PRE>
+
+You must wash the laundry, 25 minutes, dry the laundry, 25 more minutes,
+and fold the laundry, 10 more minutes; for a total of 60 minutes.
+<P>
+
+<li class="example-even">
+<PRE>
+
+m = 2
+
+returns: 85
+
+</PRE>
+You wash the first load of laundry, then dry it, and fold it. While it
+is drying, you start washing the second load of laundry. When it
+finishes, the first load is done drying, so you can start drying the
+second load. You can fold the first load while the second load is
+drying, but you need ten extra minutes to fold the last load.
+
+<P>
+<li class="example-odd">
+<PRE>
+
+m = 3
+
+returns: 110
+
+</PRE>
+You wash the first load of laundry, then dry it, and fold it. While it
+is drying, you start washing the second load of laundry. When it
+finishes, the first load is done drying, so you can start drying the
+second load. Since the washer is free again, you can start the last
+load. When the second load finishes drying, the last load is finished
+washing so you can start it drying. You can fold the first two loads
+while the third load is drying, but you need ten extra minutes to fold
+the last load.
+<P>
+<li class="example-even">
+<PRE>
+
+m = 12
+
+returns: 335
+
+</PRE>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,130 @@
+filename: EatDrink.py
+name: EatDrink
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def winners(data):\n\t\"\"\"\n\treturn String list based on String list data\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Sometimes contests are based on speed, endurance, quality, or quantity
+  and various combinations of these traits. It might be who can
+  eat the most doughnuts, or who can quaff the most cans of a
+  beverage, or who can solve the most APTs, or who can run the
+  most consecutive sub 75-second 400 meter laps.
+
+  In this problem you'll be given data for a contest in which each
+  contestant has performed some task in some number of
+  minutes and seconds. The data will be given for all the tasks in the
+  format <tt>"name time"</tt> where name is separated from time
+  by one space. The time is in the format <tt>"min:sec"</tt> and
+  represents how long it took someone to complete
+  the task. The input <code>data</code> is
+  a list of tasks done in the contest,
+  each string in <data>data</code>
+  represents one task.
+
+  Return a list of contestant names in rank order from winner to
+  loser. The winningest contestant has performed the most tasks, or
+  if there is a tie with another contestant in number of tasks,
+  has performed the tasks most quickly.  No contestant will have
+  performed the same number of tasks in the same time as any
+  other contestant. See the examples for details.
+constraints: |-
+  <ul>
+  <li> <code>data</code> contains between 1 and 50 (inclusive) Strings
+  <li> Each element of <code>data</code> is in the proper format. Time
+  data will have at most two digits for minutes and for seconds,
+  (each) and these will each be values between 0 and 59,
+  inclusive.
+  <LI> No task takes more than one hour to complete.
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data = ["owen 2:00", "jeff 1:29", "owen 1:00", "jeff 1:30", "robert 0:21"]
+
+
+  Returns ["jeff", "owen", "robert"]
+
+
+  </PRE>
+
+  jeff and owen have each performed two tasks compared to robert's one
+
+  task. owen's total time is 3 minutes, jeff's is 2 minutes and
+
+  59 seconds, so jeff is the winner of the contest.
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  data = ["tyson 0:11", "usain 0:12", "carl 0:30", "carl 0:20", "usain 0:40",
+  "carl 1:00"]
+
+
+  Returns ["carl", "usain", "tyson"]
+
+
+  </PRE>
+
+  carl performed three tasks,  usain two tasks, and tyson one task.
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data = ["tyson 0:11", "usain 0:12", "carl 0:30", "carl 0:20", "usain 0:40",
+  "carl 1:00" "usain 0:57"]
+
+
+  Returns ["usain", "carl", "tyson"]
+
+
+  </PRE>
+
+  Like the previous example, but usain has peformed
+
+  one more task--his three tasks completed in in
+
+  57+12+40 seconds or 1:49, while carl's three tasks
+
+  were completed in 1:50.
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  data = ["kate 4:16", "kate 4:17"]
+
+
+  returns ["kate"]
+
+  </PRE>
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

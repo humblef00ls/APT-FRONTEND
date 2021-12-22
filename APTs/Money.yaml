@@ -1,0 +1,333 @@
+filename: Money.py
+name: Money
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def toMillion(principal, contribution, interest):\n\t\"\"\"\n\tprincipal (int) -  account starting value\n\tcontribution (int) - yearly contribution\n\tinterest (float) - yearly compounded interest\n\t\n\tReturn the number of years it would take for an account to reach a million\n\tdollars, where the account starts at PRINCIPAL, is compounded yearly at\n\tINTEREST, and CONTRIBUTION is added to the account at the beginning of\n\tevery year.\n\t\"\"\"\n\treturn 0"
+problem: >-
+  You want to figure out how many years it will take a retirement account to
+  reach $1,000,000. The formula to calculate the new value in an account for the
+  following year is below. <code>P</code> is the principal, the current amount
+  in the account. <code>C</code> is for contribution, the amount of money put
+  into the account that year (assume it was put in at the beginning of the
+  year). <code>i</code> is the interest, how much the account grew that year.
+
+
+
+  <code>(P + C) * (1 + i)</code>
+
+
+
+  Write a function that returns the number of years the account will need to
+  reach $1,000,000 given an initial principal, yearly contribution, and
+  interest. To simplify things, the contribution and interest do not change
+  regardless of how long it takes and fractions of a penny are kept in the
+  account.
+
+
+
+  <h3>Constraints/Assumptions</h3>
+
+
+  <ul>
+
+  <li><code>principal >= 0</code>
+
+  <li><code>contribution >= 0</code>
+
+  <li><code>i > 0</code>
+
+  <li><code>(principal > 0) or (contribution > 0)</code>, so an infinite loop is
+  not possible
+
+  <li>Fractions of a penny are kept in the account
+
+  </ul>
+
+
+
+  <h3>Examples</h3>
+
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  principal = 952380
+
+  contribution = 1
+
+  interest = 0.05
+
+
+  Returns 1
+
+  </PRE>
+
+  # Note: (952380+1)*1.05 = 1000000.05, which is over 1,000,000.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  principal = 863837
+
+  contribution = 1
+
+  interest = 0.05
+
+
+  Returns 3
+
+  </PRE>
+
+  # Note: We conclude the answer is 3 because of the below progression, notice
+  that fractions of a penny are kept.
+
+  <br>
+
+  Year 1: (863837 + 1) * (1 + 0.05) = 907029.9
+
+  <br>
+
+  Year 2: (907029.9 + 1) * (1 + 0.05) = 952382.4450000001
+
+  <br>
+
+  Year 3: (952382.4450000001 + 1) * (1 + 0.05) = 1000002.6172500001
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  principal = 999999
+
+  contribution = 1
+
+  interest = 0.03
+
+  Returns 1
+
+  </PRE>
+
+  # Note: The principal plus contribution result in 1,000,000, but it still
+  takes 1 year, rather than 0.
+
+
+
+  </ol>
+
+
+
+  <div class="copyright">
+
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.
+
+
+
+  </body>
+
+  </html>
+constraints: >-
+  <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+  <html>
+
+  <head>
+
+  <title>APT: Money</title>
+
+  <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+
+  </head>
+
+
+  <body>
+
+  <h1>APT: Money</h1>
+
+
+
+  <div class="container">
+
+  <div class="allclass">
+
+  <h3>Specification</h3>
+
+  <xmp>
+
+
+
+  def toMillion(principal, contribution, interest):
+
+  """
+
+  principal (int) -  account starting value
+
+  contribution (int) - yearly contribution
+
+  interest (float) - yearly compounded interest
+
+
+  Return the number of years it would take for an account to reach a million
+
+  dollars, where the account starts at PRINCIPAL, is compounded yearly at
+
+  INTEREST, and CONTRIBUTION is added to the account at the beginning of
+
+  every year.
+
+  """
+
+  return 0
+
+  </xmp>
+
+
+  <h2>Problem Statement</h2>
+
+
+  You want to figure out how many years it will take a retirement account to
+  reach $1,000,000. The formula to calculate the new value in an account for the
+  following year is below. <code>P</code> is the principal, the current amount
+  in the account. <code>C</code> is for contribution, the amount of money put
+  into the account that year (assume it was put in at the beginning of the
+  year). <code>i</code> is the interest, how much the account grew that year.
+
+
+
+  <code>(P + C) * (1 + i)</code>
+
+
+
+  Write a function that returns the number of years the account will need to
+  reach $1,000,000 given an initial principal, yearly contribution, and
+  interest. To simplify things, the contribution and interest do not change
+  regardless of how long it takes and fractions of a penny are kept in the
+  account.
+
+
+
+  <h3>Constraints/Assumptions</h3>
+
+
+  <ul>
+
+  <li><code>principal >= 0</code>
+
+  <li><code>contribution >= 0</code>
+
+  <li><code>i > 0</code>
+
+  <li><code>(principal > 0) or (contribution > 0)</code>, so an infinite loop is
+  not possible
+
+  <li>Fractions of a penny are kept in the account
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  principal = 952380
+
+  contribution = 1
+
+  interest = 0.05
+
+
+  Returns 1
+
+  </PRE>
+
+  # Note: (952380+1)*1.05 = 1000000.05, which is over 1,000,000.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  principal = 863837
+
+  contribution = 1
+
+  interest = 0.05
+
+
+  Returns 3
+
+  </PRE>
+
+  # Note: We conclude the answer is 3 because of the below progression, notice
+  that fractions of a penny are kept.
+
+  <br>
+
+  Year 1: (863837 + 1) * (1 + 0.05) = 907029.9
+
+  <br>
+
+  Year 2: (907029.9 + 1) * (1 + 0.05) = 952382.4450000001
+
+  <br>
+
+  Year 3: (952382.4450000001 + 1) * (1 + 0.05) = 1000002.6172500001
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  principal = 999999
+
+  contribution = 1
+
+  interest = 0.03
+
+  Returns 1
+
+  </PRE>
+
+  # Note: The principal plus contribution result in 1,000,000, but it still
+  takes 1 year, rather than 0.
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

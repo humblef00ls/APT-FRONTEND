@@ -1,0 +1,124 @@
+filename: PickyEater.py
+name: PickyEater
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def dinner(foods, willEat, hunger, meal):\n\t'''\n\tfoods (list of strings) - parallel list with willEat of the foods picky\n\teater is willing to eat.\n\twillEat (list of ints) - parallel list with foods of how much of that food\n\tthe picky eater is willing to eat.\n\thunger (int) - how much food the picky eater needs to eat to be full.\n\tmeal (list of strings) - the list and order of the foods given to the picky\n\teater.\n\t\n\tReturn how much food the picky eater still needs to eat to be full.\n\t'''\n\t\n\t# Your code here\n\treturn 0\n\t"
+problem: >-
+  You are serving dinner to a picky eater. Who has only certain foods they are
+  willing to eat that is in the list <code>foods</code>. They are only willing
+  to eat that food a certain number of times, represented in
+  <code>willEat</code>, which is a parallel list to <code>foods</code>.
+  <code>hunger</code> is how much the picky eater wants to eat and
+  <code>meal</code> is the list and order of foods you will offer the picky
+  eater. Each item in the list <code>meal</code> will reduce their hunger by 1
+  and whether they are willing to eat it by 1.
+
+
+  Return how hungry the picky eater will be after the meal. If they have enough
+  food return 0. If they did not have enough food return how much more food they
+  need to eat to be full. The function should never return a negative number.
+  The picky eater cannot become overfull.
+constraints: >-
+  <ul>
+
+  <li><code>foods</code> is a list of unique strings
+
+  <li><code>willEat<code> is a list of ints
+
+  <li><code>len(foods) == len(willEat)<code>
+
+  <li>The ith item in <code>foods<code> maps to the ith item in
+  <code>willEat<code>
+
+  <li><code>meal<code> is lists of strings that are also in <code>foods<code>
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  foods = ['cheerios', 'cheese']
+
+  willEat = [5, 2]
+
+  hunger = 5
+
+  meal = ['cheerios', 'cheese', 'cheerios', 'cheese', 'cheese']
+
+
+  Returns 1
+
+  # The picky eater ate the first four items in the list meal but wasn't willing
+  to eat cheese a third time to become full and no more food was offered
+  afterward. So the function returns 1.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  foods = ['ice cream', 'chocolate', 'broccoli']
+
+  willEat = [100, 10, 0]
+
+  hunger = 3
+
+  meal = ['broccoli', 'ice cream', 'ice cream', 'chocolate', 'ice cream']
+
+
+  Returns 0
+
+  # The picky eater skipped broccoli, ate the next three items in the list meal,
+  and was full. Therefore, we return 0.
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  foods = ['cheese', 'ham', 'applesauce']
+
+  willEat = [1, 1, 1]
+
+  hunger = 3
+
+  meal = ['cheese', 'ham', 'cheese', 'ham']
+
+
+  Returns 1
+
+  # The picky eater ate the first 'cheese' and the first 'ham', but was not
+  willing to eat them a second time to become full and 'applesauce' was never
+  offered. So 1 is returned.
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

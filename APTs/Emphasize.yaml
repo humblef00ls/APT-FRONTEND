@@ -1,0 +1,159 @@
+filename: Emphasize.py
+name: Emphasize
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def repeat(word, number):\n\t\"\"\"\n\treturn the word with the first part of it repeated\n\tif it is a valid part to repeat. The part to be\n\trepeated must be repeated \"number\" times.\n\tIf the first letter is not a vowel, and the third\n\tletter is a vowel, then the part to repeat is the\n\tfirst three letters.\n\tIf the first and third letters are not vowels, but\n\tthe second letter is, then the part to repeat is\n\tthe first two letters.\n\tOtherwise there is nothing to repeat.\n\tOnly the first letter of the returned word may be\n\ta capital letter, if the original word started with\n\ta capital letter.\n\t\"\"\"\n\t\n\t# you write code here"
+problem: >-
+  Given a word and a number we want to emphasize the first part of the word
+
+  by repeating the first part "number" times. But there are a few rules about
+
+  what you can repeat. Your code should follow these rules.
+
+
+
+  <ul>
+
+  <li> If the first letter starts with a vowel, there is <em>no change</em> to
+  the word.
+
+  </li>
+
+  <li> If none of the first three letters is a vowel, then
+
+  there is <em>no change</em> to the word.
+
+  </li>
+
+  <li> If the third letter is a vowel, then the first three letters are
+
+  repeated <tt>number</tt> times.
+
+  </li>
+
+  <li> If the third letter is not a vowel, but the second letter is a vowel,
+
+  the the first two letters are repeated <tt>number</tt> times.
+
+  </li>
+
+  <li> Only the first letter of the returned word may be a capital letter,
+
+  and then only if the original word started with a capital letter.
+
+  </li>
+
+
+  </ul>
+
+
+  Write function <code>repeat</code> that given a word and a number returns
+
+  the word with the first part repeated <tt>number</tt> times
+
+  if the first part is valid (there is a vowel, but the first letter
+
+  is not a vowel, see rules).
+constraints: |-
+  <ul>
+  <li> <code>word</code> is formed of alphabetic letters and only the
+  first letter will be a capital letter.
+  </li>
+
+   <li> There is at least one letter in
+  <code>word</code>. Be sure to consider how to handle words that are of
+  length one or two.
+  </li>
+
+  <li> <code>number </code> is greater than 1
+  </li>
+
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  word = "Chocolate"
+
+  number = 3
+
+  returns "Chochochocolate"
+  </PRE>
+  since the third letter is a vowel so "cho" is
+  repeated
+  three times
+
+  <li class="example-even">
+  <PRE>
+  word = "banana"
+
+  number = 4
+
+  returns "babababanana"
+  </PRE>
+  The second letter is a vowel, so "ba" is repeated four times.
+
+  <li class="example-odd">
+  <PRE>
+  word = "apple"
+
+  number = 2
+
+  returns "apple"
+  </PRE>
+  Starts with a vowel, so no change.
+
+  <li class="example-even">
+  <PRE>
+  word = "Foofy"
+
+  number = 4
+
+  returns "Foofoofoofoofy"
+
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  word = "stripe"
+
+  number = 3
+
+  returns "stripe"
+  </PRE>
+
+  Neither the second or third letter are a vowel, so no change.
+
+  <li class="example-even">
+  <PRE>
+  word = "Abercrombie"
+
+  number = 6
+
+  returns "Abercrombie"
+  </PRE>
+
+  Starts with a vowel, so no change.
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

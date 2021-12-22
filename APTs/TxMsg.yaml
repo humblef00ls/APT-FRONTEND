@@ -1,0 +1,86 @@
+filename: TxMsg.py
+name: TxMsg
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def getMessage(original):\n\t\"\"\"\n\treturn String that is 'textized' version\n\tof String parameter original\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Strange abbreviations are often used to write text messages on
+  uncomfortable mobile devices. One particular strategy for encoding texts
+  composed of alphabetic characters and spaces is the following:
+
+  <ul>
+  <li> Spaces are maintained, and each word is encoded individually. A word is
+  a consecutive string of alphabetic characters.
+  <li>
+  If the word is composed only of vowels, it is written exactly as in the
+  original message.
+  <li>
+  If the word has at least one consonant, write only the consonants that
+  do not have another consonant immediately before them. Do not
+  write any vowels.
+  <li>
+  The letters considered vowels in these rules are 'a', 'e', 'i', 'o' and
+  'u'. All other letters are considered consonants.
+  </ul>
+
+
+  For instance, "ps i love u" would be abbreviated as "p i lv u" while
+  "please please me" would be abbreviated as "ps ps m".  You will be given
+  the original message in the string
+  parameter <code>original</code>. Return a string with the
+  message abbreviated using the described strategy.
+constraints: |-
+  <ul>
+  <li> <code>original</code> will contain between 1 and 50 characters, inclusive
+  <li> Each character of <code>original</code> will be a lower case
+  letter 'a'-'z' or a space.
+
+  <li>  There will not be two consecutive spaces
+  in <code>original</code>.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  "text message"
+
+  Returns "tx msg"
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  "ps i love u"
+
+  Returns: "p i lv u"
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  "please please me"
+
+  Returns: "ps ps m"
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  "back to the ussr"
+
+  Returns "bc t t s"
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  "aeiou bcdfghjklmnpqrstvwxyz"
+
+  Returns: "aeiou b"
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

@@ -1,0 +1,84 @@
+filename: Grayscale.py
+name: Grayscale
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def convert(r,g,b):\n\t\"\"\"\n\treturn float value obtained by\n\tconverting integer r,g,b, into grayscale\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Converting color images into grayscale images is a common operation
+  using image/photo software. There are several formula for doing such
+  a conversion. For this problem you'll use a common <em>luminosity</em>
+  based formula. Given integer Red/Green/Blue values, so-called (r,g,b)
+  values, return the grayscale value given by the formula:
+  <PRE>
+  0.21R + 0.71G + 0.07B
+  </PRE>
+  Although there are other formulas, this one represents grayscale values
+  well, where the returned values are between 0 and 255.
+constraints: |-
+  <ul>
+  <li><code>r</code>, <code>g</code>, and <code>b</code> will each be
+  between 0 and 255 inclusive.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  r = 0
+  g = 0
+  b = 0
+
+  returns 0
+
+  </PRE>
+  Black is black
+
+  <li class="example-even">
+  <PRE>
+  r = 255
+  g = 255
+  b = 255
+
+  returns 252.45
+  </PRE>
+  White is almost white?
+
+  <li class="example-odd">
+  <PRE>
+  r = 0
+  g = 0
+  b = 255
+
+  returns 17.85
+
+  </PRE>
+  Blue, blue, my world is blue
+
+  <li class="example-even">
+  <PRE>
+  r = 1
+  g = 1
+  b = 1
+
+  returns 0.99
+  </PRE>
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

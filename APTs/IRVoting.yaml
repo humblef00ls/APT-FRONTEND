@@ -1,0 +1,156 @@
+filename: IRVoting.py
+name: IRVoting
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def winner3(data):\n\t'''\n\tdata (list of strs): A list of strings, each string represents a voter's\n\tranked preference for the three candidates. Each candidate is separated\n\tby a semicolon \";\"\n\t\n\tImplement instant runoff voting when there are only three candidates to\n\tchoose from. Return the candidate that wins or 'Tie' if there is a tie.\n\t'''\n\treturn ''\n\t"
+problem: >-
+  <a href="https://en.wikipedia.org/wiki/Instant-runoff_voting">Instant-runoff
+  voting</a> is a ranked preferential voting method where every voter strictly
+  ranks the candidates by who they would prefer in the position. Ballots are
+  then initially counted using each voter's first choice. If no candidate earns
+  the majority of the votes (strictly greater than half), the candidate with the
+  least votes is removed and all of their votes are distributed based on each of
+  those voter's next most preferred candidate.
+
+  </p>
+
+
+  Implement winner3, which returns the winner of an instant-runoff election
+  across three candidates. The input is a list of strings that represent
+  ballots. Each string has all three candidates separated by semicolons (;) in
+  that voter's ranking with the most preferred candidate first.
+
+  </p>
+
+
+  If there is no majority winner for the first round, then the candidate with
+  the least votes has their votes redistributions between the two other
+  candidates. If there is no winner after redistributing the votes, then the
+  function should return "Tie".
+
+  </p>
+
+
+  Assume that if there is no winner in the first round, there will not be a tie
+  for who has the least number of votes.
+constraints: >-
+  <ul>
+
+  <li>There is always at least one voter.
+
+  <li>Every string contains all three candidates under consideration and only
+  those candidates
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data = ['Ezekiel;Joyce;Lakia', 'Ezekiel;Joyce;Lakia']
+
+
+  Returns 'Ezekiel'
+
+  # Both voters most preferred Ezekiel and therefore they won
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  data = ['Jackqueline;Mckenzie;Angelena', 'Jackqueline;Mckenzie;Angelena',
+  'Jackqueline;Angelena;Mckenzie',
+
+  'Mckenzie;Jackqueline;Angelena',
+
+  'Angelena;Jackqueline;Mckenzie']
+
+
+  Returns 'Jackqueline'
+
+  # Three of the five voters ranked Jackqueline as their first choice and
+  therefore they won. Note there was no need to redistribute the
+
+  # votes of the candidate with the least votes, which means it did not matter
+  that there is tie for who has the least votes.
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  data = ['Caroline;Ezekiel;Mariano', 'Caroline;Ezekiel;Mariano',
+
+  'Ezekiel;Caroline;Mariano', 'Ezekiel;Caroline;Mariano',
+
+  'Mariano;Caroline;Ezekiel']
+
+
+  Returns 'Caroline'
+
+  # Two candidates received 2 votes each, with Mariano receiving only 1 vote
+  (the least). Mariano's vote was redistributed to the next person
+
+  # on that voter's ranking, which is Caroline. This resulted in Caroline
+  getting 3 votes and therefore receiving a majority of the 5 votes in
+
+  # the data set and winning.
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  data = ['Mckenzie;Barney;Isaac', 'Mckenzie;Isaac;Barney',
+  'Mckenzie;Barney;Isaac',
+
+  'Barney;Mckenzie;Isaac', 'Barney;Isaac;Mckenzie', 'Barney;Mckenzie;Isaac',
+  'Barney;Isaac;Mckenzie',
+
+  'Isaac;Barney;Mckenzie', 'Isaac;Barney;Mckenzie', 'Isaac;Mckenzie;Barney',
+  'Isaac;Mckenzie;Barney', 'Isaac;Mckenzie;Barney']
+
+
+  Returns 'Tie'
+
+
+  # In the first round Mckenzie had 3 votes, Barney had 4 votes, and Isaac had 5
+  votes. Isaac does not win because a majority vote must be
+
+  # more than 6. Mckenzie as the fewest votes, so those votes are redistributed,
+  resulting in both Barney and Isaac having 6 votes each,
+
+  # which is a tie, so "Tie" is returned.
+
+  </PRE>
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Midpoint</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Midpoint</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Midpoint.py
+
+  def getPoint(coordinates):
+      '''
+      The function accepts one parameter named coordinates, which is a list containing 
+      two strings in the format ["x1,y1", "x2,y2"], where:
+	  
+        "x1,y1" is an (x,y) coordinate pair for the first point
+			
+        "x2,y2" is an (x,y) coordinate pair for the second point
+			   
+      The function should return a list containing the x and y coordinates of the midpoint in the
+	  format [x,y].
+      '''
+      # you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+The midpoint between any two points on the Cartesian plane can be calculated using the formula:
+<br><br>
+
+((x1+x2)/2,  (y1+y2)/2)
+
+where (x1, y1) are the coordinates for the first point and (x2, y2) are the coordinates for the second point.
+
+<p>Create a function named <code>getPoint</code> that has one parameter named coordinates 
+(which is a list of two strings in the format ["x1,y1", "x2,y2"]).
+</p>
+
+<p> The function returns a list that contains two doubles [x,y], which correspond to the x and y coordinates of the midpoint.</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>All coordinates for the two points used to calculate the midpoint are integers between -30 and +30.
+<P><li>The coordinates of the midpoint are expressed as double values.
+<P><li>There is no space before or after the comma in each coordinate.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+coordinates=["2,2", "2,2"]
+
+Returns: [2.0, 2.0]
+</PRE>
+# The midpoint between two points that are the same is the same as the two points. Note this includes a double
+representation of the midpoint.
+<P>
+
+<li class="example-even">
+<PRE>
+coordinates=["-2,2", "2,2"]
+
+Returns: [0.0, 2.0]
+</PRE>
+The midpoint occurs at (0.0, 2.0).
+<P>
+
+<li class="example-odd">
+<PRE>
+coordinates=["-5,-10", "4,3"]
+
+Returns: [-0.5, -3.5]
+</PRE>
+
+<P>
+
+<li class="example-even">
+<PRE>
+coordinates=["1,0", "-10,-5"]
+
+Returns: [-4.5, -2.5]
+</PRE>
+
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

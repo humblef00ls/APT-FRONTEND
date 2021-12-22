@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: AnagramFree</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: AnagramFree</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: AnagramFree.py
+
+  def getMaximumSubset(words):
+      """
+      return int value that represents
+      size of largest anagram-free subset
+      of values in words, a list of strings
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+A string X is an anagram of string Y if X can be obtained by arranging
+all characters of Y in some order, without removing any characters and
+without adding new characters. For example, each of the strings "baba",
+"abab", "aabb" and "abba" is an anagram of "aabb", and strings "aaab",
+"aab" and "aabc" are not anagrams of "aabb".
+<P>
+
+
+A set of strings is anagram-free if it contains no pair of strings which
+are anagrams of each other. Given a set of strings <codE>words</code>,
+return the size of its largest anagram-free subset. Note that the entire
+set is considered a subset of itself.
+
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>words</code> will contain between 1 and 50 elements, inclusive
+<P><li> Each element of <code>words</code> contains between 1 and 50
+	  characters, inclusive
+<P><li> Each element of <code>words</code> will consist of lowercase
+	  letters 'a' -- 'z' only
+<p><li> All elements of <code>words</code> will be distinct.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+words = ["abcd","abdc","dabc","bacd"]
+
+Returns: 1
+
+
+</PRE>
+All of the strings in <code>words</code> are anagrams of each other, so
+no two of them can simultaneously belong to an anagram-free set.
+<P>
+
+<li class="example-even">
+<PRE>
+words = ["abcd","abac","aabc","bacd"]
+
+Returns: 2
+
+
+</PRE>
+One of the maximum anagram-free subsets is ["abcd","abac"].
+<P>
+<li class="example-odd">
+<PRE>
+words = ["aa","aaaaa","aaa","a","bbaaaa","aaababaa"]
+
+Returns: 6
+
+</PRE>
+Note that strings of different length cannot be anagrams of each other.
+<P>
+<li class="example-even">
+<PRE>
+words = ["creation","sentence","reaction","sneak","star","rats","snake"]
+
+Returns: 4
+
+</PRE>
+</ol>
+<P>
+<div class="copyright">
+This problem statement is the exclusive and proprietary property of
+TopCoder, Inc. Any unauthorized use or reproduction of this information
+without the prior written consent of TopCoder, Inc. is strictly
+prohibited. &copy;2010, TopCoder, Inc. All rights reserved.
+</div>
+
+</body>
+</html>
+
+
+
+

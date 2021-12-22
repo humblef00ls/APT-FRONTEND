@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: VenmoTracker</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: VenmoTracker</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: VenmoTracker.py
+
+  def networth(transactions):
+      """
+      return list of strings based on transactions,
+      which is also a list of strings
+      """
+      
+      # you write code here
+      return []
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+You've been asked to help manage reports on how
+often people spend money using Venmo and whether
+they receive more money than they pay out. The input
+to your program is a list of transactions from Venmo.
+Each transaction has the same form:
+<code>"from:to:amount"</code> where <em>from</em> is
+the name of the person paying <em>amount</em> dollars
+to the person whose name is <em>to</em>. The value
+of <em>amount</em> will be a valid float 
+<b>with at most
+two decimal places.</b>
+<P>
+Return a list of strings that has each person who appears in
+any transaction with the net cash flow through Venmo that
+person has received. Every cent paid by the person to
+someone else is a pay-out and every cent received by
+a person is a pay-in. The difference between pay-out and
+	  pay-in is the cash flow received. This will be negative for
+each person who pays out more than they get via pay-in. See the examples
+for details.
+<P>
+The list returned should be sorted by name. Strings in the list
+returned are in the format "name:netflow" where the netflow
+is obtained by using <code>str(val)</code> where val
+is a float representing the net cash flow for that person.
+<P>
+<b>Store money as <code>int</code> values, multiplying by 100 
+and dividing by 100 as needed for processing input and output,
+respectively.</b>
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li>All entries in <code>transactions</code> will be in the correct
+	  format, all characters are lower case letters and the amount
+	  is a valid float with at most two decimal values.</li>
+<P><li> There will be at most 50 elements of <code>transactions</code></li>
+<P><li>Each amount in <code>transactions</code> will be greater than 0
+	  and less than 1000.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+transactions: ["owen:susan:10", "owen:robert:10", "owen:drew:10"]
+
+returns ['drew:10.0', 'owen:-30.0', 'robert:10.0', 'susan:10.0']
+</PRE>
+Owen pays everyone. 
+<P>
+<li class="example-even">
+<PRE>
+transactions: ["fred:ricky:50", "ricky:fred:20", "fred:ethel:100", "ethel:fred:150.35"]
+
+returns: ['ethel:-50.35', 'fred:20.35', 'ricky:30.0']
+</PRE>
+Ethel is out $50.35 after taking in $100, but paying out $150.35. Fred
+	  gets money from two people, but pays ricky $50. Ricky
+pays out $20 and takes in $50, so his  cashflow  in is $30.
+<P>
+<li class="example-odd">
+<PRE>
+transactions = ["adam:eve:123"]
+
+returns ['adam:-123.0', 'eve:123.0']
+</PRE>
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

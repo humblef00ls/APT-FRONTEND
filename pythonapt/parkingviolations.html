@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: ParkingViolations</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: ParkingViolations</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: ParkingViolations.py
+
+  def amountOwed(ticket, months):
+      '''
+      The following parameters are input to the function:
+        ticket-the original ticket amount.
+        months-the number of months that the fine is late.
+	  
+     	   
+      The function should return the current amount owed, which includes
+      the parking fee plus all late fees.
+      '''
+	# you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Campus parking has instituted new policies for late parking violations. 
+For every month that a parking ticket remains unpaid, the penalty is
+5% of the current balance owed (including prior months late penalties, 
+if applicable). 
+
+<p>Create a function named <code>amountOwed</code> that has two parameters 
+named ticket (which is the original ticket amount) and months (which is the
+number of months that the fine is late).
+</p>
+
+<p>This function should return the current amount owed for the parking
+violation, rounding up to the nearest dollar amount (every penny counts!!).</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>The original parking fine is between 1 and 200 dollars.
+<P><li>The number of months a ticket can be late is 1 to 24 months.
+
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+ticket=100
+month=2
+
+Returns: 111
+</PRE>
+# The amount owed in fines is $110.25. However, because campus parking rounds up, the 
+total amount owed is $111.
+<P>
+
+<li class="example-even">
+<PRE>
+ticket=25
+month=15
+
+Returns: 52
+</PRE>
+
+<P>
+
+<li class="example-odd">
+<PRE>
+ticket=50
+month=5
+
+Returns: 64
+</PRE>
+
+<P>
+
+<li class="example-even">
+<PRE>
+ticket=75
+month=6
+
+Returns: 101
+</PRE>
+
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

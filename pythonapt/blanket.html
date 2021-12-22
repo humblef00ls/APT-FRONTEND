@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Blanket</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Banket</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  Filename: Blanket.py
+  
+  def order(preferences, size, yarn):
+      '''
+      preferences (list of strings) - the colors the customer prefers by order 
+          of preference
+      size (int) - the number of balls of yarn needed
+      yarn (list of strings) - list of strings of two values where the first is 
+          the color of yarn and the second is how much yarn is available
+          
+      Return a list of strings of two values where the first element is a color
+          and the second is how much yarn is needed sorted by the color.
+      '''
+      return []
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+A weaver needs a function to help decide how many yarn balls of each color to use per blanket. <code>preferences</code> is the customer's list of desired colors ordered by preference where index 0 has the most preferred color. <code>size</code> has the number of yarn balls needed for the blanket. <code>yarn</code> is a list of the weaver's stock of colors and yarn balls. Each element is a string with two values separated by whitespace. The first value is a color without any spaces and the second value is the number of yarn balls of that color. <b>It is not the case that all colors in <code>yarn</code> are in <code>preferences</code> and vice versa.</b>
+<p>
+Return how many yarn balls of each color the weaver should use. The return value should be a list of strings with two values separated by a single whitespace. The first value has the color and the second value has the number of balls to use. <b>This list should be sorted alphabetically by color.</b>
+<p>
+If there is not enough yarn, return an empty list. If there is enough yarn, distribute how much yarn to use for each color across the available yarn as evenly as possible and when needing to make a choice between colors use the order of <code>preferences</code> by giving the customer more of what they more prefer.
+<p>
+For example, if the customer's list is ['red', 'green', 'blue'], we need 9 balls of yarn, and there are 10 balls of red and blue yarn but only 2 of green return the list ['blue 3', 'green 2', 'red 4']. In this case, 2 balls were taken per color, 3 more balls were needed but there is not enough green! Since red is preferred over blue, the customer got 2 more red yarn balls and 1 blue one.
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li>All colors in <code>yarn</code> will have at least one ball of yarn.
+<P><li><code>size</code> > 0
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+preferences = ['red', 'blue']
+size = 10
+yarn = ['red 5', 'blue 5']
+
+Returns ['blue 5', 'red 5']
+</PRE>
+<P>
+
+<li class="example-even">
+<PRE>
+preferences = ['red', 'blue']
+size = 10
+yarn = ['red 5', 'blue 1', 'green 10']
+
+Returns []
+# There isn't enough red and blue yarn to fulfill this order so an empty list is returned
+</PRE>
+<P>
+
+<li class="example-odd">
+<PRE>
+preferences = ['yellow', 'red', 'blue']
+size = 7
+yarn = ['red 5', 'blue 5']
+
+Returns ['blue 3', 'red 4']
+# There is no yellow yarn, so the customer only gets red and blue yarn. The customer also gets one more ball of red yarn because they prefer red over blue.
+</PRE>
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; Kristin Stephens-Martinez and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

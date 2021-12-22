@@ -1,0 +1,77 @@
+filename: Bogsquare.py
+name: Bogsquare
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def score(word):\n\t\"\"\"\n\treturn integer obtained by squaring\n\tlength of String parameter word\n\t\"\"\""
+problem: |-
+  In some word games the score awarded depends to some
+  extent on the length of the word. For example, in Boggle&trade;
+  longer words receive higher scores than shorter words.
+
+  In the game <em>Bogsquare</em> the score of a word is the square
+  of the length of the word, e.g., "dog" has a score of 9 and
+  "carnivore" has a score of 81.
+
+  Write function  <code>score</code> to return the score
+  of a string in Bogsquare.
+constraints: |-
+  <ul>
+  <li> <code>word</code> is a String of at most 128 characters.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  word = "dog"
+
+  returns 9
+
+  </PRE>
+  3*3 = 9
+
+  <li class="example-even">
+  <PRE>
+  word = "I"
+
+  returns 1
+
+  </PRE>
+  One-letter words don't yield a high score.
+
+  <li class="example-odd">
+  <PRE>
+
+  word = "Antidisestablishmentarianism"
+
+  return 784
+
+  </PRE>
+  28*28=784
+
+  <li class="example-even">
+  <PRE>
+  word = "ox"
+
+  returns 4
+  </PRE>
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

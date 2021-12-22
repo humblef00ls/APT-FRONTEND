@@ -1,0 +1,96 @@
+filename: SortByFreqs.py
+name: SortByFreqs
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def sort(data):\n\t\"\"\"\n\treturn list of strings based on\n\tthe list of strings in parameter data\n\t\"\"\""
+problem: |-
+  The frequency with which data occurs is sometimes an important
+  statistic.  In this problem you are given
+  a list of strings and must determine how frequently the strings
+  occur. Return a list of strings that is sorted (ordered) by
+  frequency. The first element of the returned list is the most
+  frequently occurring string, the last element is the least frequently
+  occurring. Ties are broken by listing strings in
+  lexicographic/alphabetical order. The returned list contains one
+  occurrence of each
+  unique string from the list parameter.
+
+
+
+  Consider these strings (quotes for clarity, they're not part of the strings).
+  <pre>
+
+  ["apple", "pear", "cherry", "apple", "pear", "apple", "banana"]
+
+  </pre>
+  The list returned is:
+  <pre>
+  [ "apple", "pear", "banana", "cherry" ]
+  </pre>
+  since the most frequently occurring string is
+  <code>"apple"</code> which occurs 3 times; the string
+  <code>"pear"</code>
+  occurs twice and the other strings each occur once so they are
+  returned in alphabetical order.
+constraints: |-
+  <ul>
+  <LI> <code>data</code> will contain at most 500 elements
+  <LI> each element of <code>data</code> will contain at most 50 characters,
+  all characters are lowercase.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+
+  data = ["apple", "pear", "cherry", "apple", "pear", "apple", "banana"]
+
+  Returns: ["apple", "pear", "banana", "cherry" ]
+  </PRE>
+
+  This is the example given above.
+
+  <li class="example-even">
+  <PRE>
+  data = ["a","b","c",d"]
+
+  Returns: ["a","b","c",d"]
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  data = ["d","c","b","a"]
+
+  Returns: ["a","b","c",d"]
+
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+
+  data = ["a","a","a"]
+
+  Returns ["a"]
+
+  </PRE>
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Consensus</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Consensus</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  Filename: Consensus.py
+
+  def majorityWinner(voteA, voteB, voteC):
+      '''
+      voteA (int) - Number of votes received by candidate A
+      voteB (int) - Number of votes received by candidate B
+      voteC (int) - Number of votes received by candidate C
+    
+      Returns a string representing which candidate won the majority vote, based
+      on the three parameters. If there is no majority winner, return "No one".
+      '''
+      return ''
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+Winning the majority vote means receiving strictly more than half of the votes. Write a function that determines who won the majority vote among three candidates A, B, or C. If no one won the majority vote, return the string "No one" (note: A, B, C, and N are capitalized).
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li>Every candidate gets at least one vote.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+voteA = 6
+voteB = 3
+voteC = 1
+
+Returns "A"
+</PRE>
+<P>
+
+<li class="example-even">
+<PRE>
+voteA = 5
+voteB = 4
+voteC = 1
+
+Returns "No one"
+# There are a total of 10 votes so a candidate must win 6 or more votes to get a majority
+</PRE>
+<P>
+
+<li class="example-odd">
+<PRE>
+voteA = 1
+voteB = 1
+voteC = 1
+
+Returns "No one"
+</PRE>
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; Kristin Stephens-Martinez and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

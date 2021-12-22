@@ -20,6 +20,10 @@ font-size: .9rem;
 font-weight: 500;
 
 }
+code{
+	font-family: 'Courier New', monospace;
+
+}
 *{
     font-family: 'Outfit', sans-serif;
     /* font-family: 'Lato', sans-serif; */
@@ -105,4 +109,15 @@ body{
 			background: var(--back);
 			color: var(--text-inv);
 		}
+	  }
+
+
+	  .prob,
+	  .constr {
+		  margin-top: 10px;
+		  margin-bottom: 10px;
+	  }
+  
+	  .constr:nth-of-type(2n-1) pre {
+		  background: var(--section-f);
 	  }

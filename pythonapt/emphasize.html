@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Emphasize</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Emphasize</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Emphasize.py
+
+  def repeat(word, number):
+      """
+      return the word with the first part of it repeated 
+      if it is a valid part to repeat. The part to be 
+      repeated must be repeated "number" times.
+      If the first letter is not a vowel, and the third 
+      letter is a vowel, then the part to repeat is the 
+      first three letters.
+      If the first and third letters are not vowels, but 
+      the second letter is, then the part to repeat is 
+      the first two letters. 
+      Otherwise there is nothing to repeat. 
+      Only the first letter of the returned word may be 
+      a capital letter, if the original word started with 
+      a capital letter. 
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Given a word and a number we want to emphasize the first part of the word
+by repeating the first part "number" times. But there are a few rules about
+what you can repeat. Your code should follow these rules.
+
+<p>
+<ul> 
+<li> If the first letter starts with a vowel, there is <em>no change</em> to the word.
+</li> 
+<li> If none of the first three letters is a vowel, then 
+there is <em>no change</em> to the word.
+</li> 
+<li> If the third letter is a vowel, then the first three letters are
+  repeated <tt>number</tt> times. 
+</li> 
+<li> If the third letter is not a vowel, but the second letter is a vowel,
+  the the first two letters are repeated <tt>number</tt> times.
+</li> 
+<li> Only the first letter of the returned word may be a capital letter,
+and then only if the original word started with a capital letter. 
+</li> 
+
+</ul>
+<P>
+Write function <code>repeat</code> that given a word and a number returns
+the word with the first part repeated <tt>number</tt> times 
+if the first part is valid (there is a vowel, but the first letter
+is not a vowel, see rules). 
+
+<P>
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>word</code> is formed of alphabetic letters and only the
+    first letter will be a capital letter. 
+</li>
+
+<p> <li> There is at least one letter in
+    <code>word</code>. Be sure to consider how to handle words that are of
+    length one or two. 
+</li>
+
+<P><li> <code>number </code> is greater than 1
+</li>
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+word = "Chocolate"
+
+number = 3
+
+returns "Chochochocolate" 
+</PRE>
+since the third letter is a vowel so "cho" is
+repeated
+three times
+<P>
+<li class="example-even">
+<PRE>
+word = "banana"
+
+number = 4
+
+returns "babababanana"
+</PRE>
+The second letter is a vowel, so "ba" is repeated four times.
+<P>
+<li class="example-odd">
+<PRE>
+word = "apple"
+
+number = 2
+
+returns "apple"
+</PRE>
+Starts with a vowel, so no change.
+<P>
+<li class="example-even">
+<PRE>
+word = "Foofy"
+
+number = 4 
+
+returns "Foofoofoofoofy"
+
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+word = "stripe"
+
+number = 3
+
+returns "stripe"
+</PRE>
+
+Neither the second or third letter are a vowel, so no change.
+<P>
+<li class="example-even">
+<PRE>
+word = "Abercrombie"
+
+number = 6 
+
+returns "Abercrombie"
+</PRE>
+
+Starts with a vowel, so no change.
+
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

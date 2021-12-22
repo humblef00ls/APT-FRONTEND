@@ -1,0 +1,86 @@
+filename: NotFirst.py
+name: NotFirst
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def sortit(letter, words):\n\t'''\n\tletter is a string of one lowercase alphabetic letter\n\twords is a list of words\n\treturn a sorted list of the unique words that\n\tdo not start with letter\n\t'''\n\t# you write code here"
+problem: |-
+  Write the function named  <code>sortit</code> that has two
+  parameters, <code>letter</code> that is a single lowercase alphabetic
+  letter,
+  and <code>words</code>, a   list of words.
+  This function returns
+  a sorted list of the unique words that
+  do not start with letter.
+constraints: |-
+  <ul>
+  <li> letter is a lowercase letter, one of a-z
+  <li> words  is a list of 0 or more words, each word is a String of
+  one or more lowercase letters from a-z   </li>
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  letter = "s"
+  words = ["one", "two", "three"]
+
+  returns: ["one", "three", "two"]
+
+  None of the words start with "s". Note the words returned are sorted.
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  letter = "w"
+  words = ["one", "two", "three", "wait", "one", "two", "three", "go"]
+
+  returns: ["go", "one", "three", "two"]
+
+  The sorted list contains only unique words that do not start with w.
+
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  letter = "e"
+  words = ["duke", "devil"]
+
+  returns: ["devil", "duke"]
+
+  </PRE>
+
+
+
+  <li class="example-even">
+  <PRE>
+  letter = "d"
+  words = ["duke", "devil"]
+
+  returns: []
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

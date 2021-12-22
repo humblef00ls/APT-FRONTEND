@@ -128,8 +128,8 @@
 		position: fixed;
 		z-index: 2;
 		top: 100vh;
-		left: calc(40vw + 15px);
-		width: calc(60vw - 30px);
+		left: calc(45vw + 15px);
+		width: calc(55vw - 30px);
 		height: 50vh;
 		display: flex;
 		transition: 350ms ease-out;

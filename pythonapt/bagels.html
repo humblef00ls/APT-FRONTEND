@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>APT: Bagel Counting</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+    <h1>APT: Bagel Counting</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Class</h3>
+<xmp>
+   filename:  Bagels.py
+   
+   def bagelCount(orders) :
+       """
+       return number of bagels needed to fulfill
+       the orders in integer list parameter orders
+       """
+
+       # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+You are in charge of web-based orders for your neighborhood bagel store,
+<em>The Bagel Byte</em>. Each evening you must total the orders to be
+picked up the next day. Some orders are simply for <em>N</em> bagels,
+but each order of a dozen or more bagels is topped off with an extra
+bagel, the so-called "baker's dozen".  This means, for example, that an
+order for 25 bagels actually requires 27 bagels to fulfill since there
+are two extra bagels needed for each dozen in the order. An order for 11
+bagels doesn't require any extra since it's for less than a dozen.
+<P>
+Given a list of integers representing
+bagel orders determine the number of bagels needed to
+fulfill all the orders. 
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<LI>  The list <code>orders</code> will contain between 0 and 50
+	elements.
+<p>
+<LI> Each element of <code>orders</code> will be between 1 and 60 (no
+	one orders more than five dozen at-a-time).	
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+orders = [1,3,5,7]
+
+Returns:  16
+
+</PRE>
+No order is for more than a dozen, return the total of all orders.
+<P>
+<li class="example-even">
+<PRE>
+
+orders = [11,22,33,44,55]
+
+Returns: 175 since 11 + (22+1) +(33+2) + (44+3) + (55+4) = 175
+
+</PRE>
+<P>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+
+
+  </body>
+</html>

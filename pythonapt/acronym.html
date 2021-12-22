@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT Forming Acronyms</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+    <h1>APT Forming Acronyms</h1>
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: CreateAcronym.py
+
+  def acronym(phrase):
+      """
+      phrase is a string, zero or more spaces
+      return a string: acronym of the string 
+      parameter phrase
+      """
+
+      # you write code here
+</xmp>
+</div>
+
+<h2>Problem Statement</h2>
+
+<p>
+Some words are <em>acronyms</em>, e.g., scuba is an acronym for
+<em>self contained underwater breathing apparatus</em>. In this
+problem you'll determine the acronym for a string. The string
+is a space-separated sequence of words. You'll form the acronym
+by taking the first character of each word in the string and
+concatenating them to form the acronym. See the examples below for
+details.
+<P>
+The returned acronym has
+no spaces in it. The acronym for "International Business Machines" is 'IBM'.
+
+
+<P>
+Write the method <code>acronym</code> that 
+	  returns a string that is an acronym of its string parameter
+	  <code>phrase</code>.
+<P>
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<LI> The length of parameter <code>phrase</code> is greater than zero.
+<li> Each word in <code>phrase</code> is separated by one space from
+	  other words.
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<LI class="example-odd"> 
+<PRE>
+phrase = 'Self Contained Underwater Breathing Apparatus'
+
+Returns: 'SCUBA'
+
+</PRE>
+
+
+<p>
+<LI class="example-even"> 
+<PRE>
+phrase =  'Port Out Starboard Home'
+
+ Returns: 'POSH'
+
+</PRE>
+<P>
+
+<LI class="example-odd"> 
+
+<PRE>
+phrase = 'Johnnys Fried Chicken on 7th Avenue is the best!'
+
+Returns: 'JFCo7Aitb'
+
+</PRE>
+
+
+<P>
+
+<LI class="example-even"> 
+<PRE>
+'A B C'
+
+
+Returns: 'ABC'
+</PRE>
+
+<P>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and Owen Astrachan and 
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+  </body>
+</html>
+

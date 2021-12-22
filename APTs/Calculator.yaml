@@ -1,0 +1,119 @@
+filename: Calculator.py
+name: Calculator
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def toTen(lstOp, lstNum):\n\t'''\n\tlstOp (list of strings) - list of strings representing the\n\toperators +, -, *, /\n\tlstNum (list of ints) - list of integers\n\t\n\tReturn the number of operations it takes to reach 10. If 10 is never\n\treached, return -1. Starting at the beginning of the lists and with the\n\tvalue 0, add ('+'), subtract ('-'), multiply ('*'), or divide ('/') the\n\tcurrent value with the current element in LST_NUM according to the current\n\telement in LST_OP.\n\t'''\n\treturn -1"
+problem: >-
+  Implement the function toTen that takes two lists: <code>lstOp</code> and
+  <code>lstNum</code>.
+
+  <code>lstOp</code> is a list of math operators as strings: <code>'+'</code>
+  (add), <code>'-'</code> (subtract), <code>'*'</code> (multiply), or
+  <code>'/'</code> (divide).
+
+  <code>lstNum</code> is a list of integers.
+
+  The ith operator in <code>lstOp</code> should be used with the ith number in
+  <code>lstNum</code>. Starting with the number 0, return the number of
+  operations it takes to reach the value 10. If the code runs out of operators
+  or numbers without reaching 10, return -1.
+constraints: >-
+  <ul>
+
+  <li><code>lstOp</code> and <code>lstNum</code>'s lengths are not necessarily
+  the same
+
+  <li><code>lstOp</code> contains only the strings <code>'+'</code>,
+  <code>'-'</code>, <code>'*'</code>, and <code>'/'</code>
+
+  <li><code>lstNum</code> contains only integers
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  lstOp = ['+']
+
+  lstNum = [10]
+
+
+  Returns 1
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  lstOp = ['+', '+']
+
+  lstNum = [5, -5]
+
+
+  Returns -1
+
+  </PRE>
+
+  # 0 + 5 + -5 = 0, since we've run out operators and numbers and not reached
+  10, the code returns -1
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  lstOp = ['-']
+
+  lstNum = [-5, 5]
+
+
+  Returns -1
+
+  </PRE>
+
+  # 0 - -5 = 5, since we've run out of operators and have not reached 10, the
+  code returns -1
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  lstOp = ['-', '+', '-']
+
+  lstNum = [3, 13, 10]
+
+
+  Returns 2
+
+  </PRE>
+
+  # 0 - 3 + 13 = 10, since we've reached 10 with only 2 operations, we ignore
+  the rest of the list and return 2
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

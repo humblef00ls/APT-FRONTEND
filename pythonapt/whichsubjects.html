@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: WhichSubjects</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: WhichSubjects</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: WhichSubjects.py
+
+def computeSubjects(phrase):
+    '''
+    Given the string phrase, return a phrase 
+    that includes all the words from phrase that do
+    not contain a digit or "-" or ":". Those words must
+    be in the same order they were in  phrase. 
+    '''
+      
+    # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Given a phrase, your task is to create a new phrase that includes only
+those
+words from the original phrase that do not have digits in them nor the
+characters ":" or "-". 
+
+<p>
+You might use this method for example to extract out the subjects of the
+courses that someone is taking. For example if the phrase is:
+
+<pre>
+"CompSci 101 TuTh1:25pm Econ 101 MW10:05am"
+</pre>
+ 
+Then you would return the string "CompSci Econ". You would not include words
+that have digits, ":" or "-", so in this case you would not include any of
+these words: "101",  
+"TuTh1:25pm",  "101", and "MW10:05am".
+
+<p> 
+<p>
+Write function <em>computeSubjects </em> that has one string
+parameter <code>phrase</code>. 
+This function returns a string of the words from phrase, in the same order,
+that do not have a digit, ":", or "-".
+
+<p>You may want to consider writing a helper function.  
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> phrase is of length 1 or more characters  </li>
+<p><li> phrase is <strong>upper or lowercase </strong>alphabetic
+    characters, digits, ":", "-" or
+    blanks. 
+<p> <li> Blank is the separator between words in phrase. That means phrase starts and ends with a non-blank character, and if there
+    are blanks, there cannot be two adjacent blanks.    </li> 
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+phrase =  "CompSci 101 TuTh1:25pm Econ 101 MW10:05am"
+
+
+returns: "CompSci Econ"
+
+(example above)
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase =  "Math 112 CompSci 101 Bio 201 Chem 101"
+
+
+returns: "Math CompSci Bio Chem"
+
+
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase =  "CompSci101 Econ101"
+
+
+returns: ""
+
+Both words contain a digit, so there are no valid words to return.
+
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+
+
+phrase =  "153FS NEUROSCI MW10:05 to11:20 Sec01 Languages207 4989" 
+
+
+returns: "NEUROSCI"
+
+NEUROSCI is the only word that does not have a digit or ":" in it. 
+
+</PRE>
+
+<P>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

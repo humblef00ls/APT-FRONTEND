@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Badges</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Badges</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Badges.py
+
+  def findLabel(labels,deeds,needs):
+      """
+      return string based on parameters
+      labels a list of strings
+      deeds a list of strings
+      and needs a list of strings
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+You are helping to assign badges based on accomplishments.
+The accomplishments completed by a participant are specified
+in the list of strings <code>deeds</code> where each element
+of <code>deeds</code> is a completed accomplishment. 
+<P>
+The names of badges are specified in the list <code>labels</code>.
+For each element of <code>labels</code> there is a corresponding
+set of accomplishments in the list <code>needs</code> to earn that 
+corresponding badge, so that earning the badge with name <code>labels[0]</code>
+(the first element of <code>labels</code>) requires completing
+each of the accomplishments in <code>needs[0]</code>. Similarly,
+earning badge with name <code>labels[k]</code> requires
+completing each of the accomplishments in <code>needs[k]</code>.
+<P>
+Return the name of the first badge earned (lowest index), or return the
+string <code>"nobadge"</code> if no badge is earned. Strings
+in <code>needs</code> are space-delimited words that indicate
+the accomplishments needed to earn a badge. See examples for details.
+<P>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> There will be no more than 20 strings in
+	  <code>labels</code></li>
+<p><LI> The number of strings of <code>labels</code> will be the same
+	  as the number of strings in <code>needs</code>. </li>
+<P><li> The string <code>"nobadge"</code> will not appear in
+	      <code>labels</code>. </li>
+<p><li>Strings in <code>needs</code> consist of space-separated characters.
+<P><LI>All strings consist only of upper- and lower-case letters 'A'-'Z'
+	  and 'a'-'z' or spaces in <code>needs</code>.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+labels = ['wolf', 'bear', 'lion']
+deeds = ["fire", "camping", "spanish"]
+needs = ["fire knots camping", "spanish fire internet", "fire camping spanish"]
+
+Returns 'lion'
+</PRE>
+wolf requires three accomplishments, including knots, which is not in deeds. 
+bear requires internet which
+	  is not in deeds. All three accomplishments to earn lion
+are in deeds.
+<P>
+<li class="example-even">
+<PRE>
+labels = ['beginner', 'novice', 'intermediate', 'expert']
+deeds = ['skip', 'hop', 'wobble']
+needs = ['skip run walk talk', 'wobble teeter fall skip', 
+         'skip hop', 'skip hop wobble']
+
+returns 'intermediate'
+</PRE>
+Although both intermediate and expert badges can be earned, you must
+	  return
+the first badge (with the lowest index) earned. Since 'talk' is not in
+<tt>deeds</tt> and is required for the 'beginner' badge, that badge is
+not earned. Similarly neither 'fall' nor 'teeter' are in <tt>deeds</tt>,
+so 'novice' cannot be earned.
+<P>
+<li class="example-odd">
+<PRE>
+labels = ['first', 'second', 'third', 'fourth']
+deeds = ['code', 'talk', 'plan', 'run']
+needs = ['code talk plan think', 'talk plan run think', 'plan run code think', 'run code talk think']
+
+returns "nobadge"
+
+</PRE>
+All the badges require knowing how to think, which is not in <tt>deeds</tt>,
+so no badge can be earned.
+<P>
+<li class="example-even">
+<PRE>
+labels = ['first', 'second', 'third', 'fourth']
+deeds = ['code', 'talk', 'plan', 'run']
+needs = ['code talk plan think', 'talk plan run ', 'plan run code think', 'run code talk think']
+
+returns "second"
+
+</PRE>
+Only the second badge doesn't require thinking.
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

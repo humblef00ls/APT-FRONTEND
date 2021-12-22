@@ -1,0 +1,74 @@
+filename: ScoreIt.py
+name: ScoreIt
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def maxPoints(toss) :\n\t\"\"\"\n\treturn int representing the maximal Yahtzee\n\tscore based on rolls in integer list toss\n\t\"\"\""
+problem: |-
+  This task is about the scoring in the first phase of the die-game
+  Yahtzee, where five dice are used. The score is determined by the values
+  on the upward die faces after a roll. The player gets to choose a value,
+  and all dice that show the chosen value are considered active. The score
+  is simply the sum of values on active dice.
+
+
+  Say, for instance, that a player ends up with the die faces showing 2,
+  2, 3, 5 and 4. Choosing the value two makes the dice showing 2 active
+  and yields a score of 2 + 2 = 4, while choosing 5 makes the one die
+  showing 5 active, yielding a score of 5.
+
+
+  The method has one parameter <code>toss</code>, a five-element integer
+  list, where each element represents the upward face of a die. Return
+  the maximum possible score with these values.
+constraints: |-
+  <ul>
+  <LI>
+  <code>toss</code> will contain exactly 5 elements.
+
+  <LI>
+  Each element of <code>toss</code> will be between 1 and 6, inclusive.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+
+  [ 2, 2, 3, 5, 4 ]
+
+  Returns: 5
+
+  </PRE>
+  The example from the text.
+
+  <li class="example-even">
+  <PRE>
+
+  [ 6, 4, 1, 1, 3 ]
+
+  Returns: 6
+
+  </PRE>
+  Selecting 1 as active yields 1 + 1 = 2, selecting 3 yields 3, selecting
+  4 yields 4 and selecting 6 yields 6, which is the maximum number of
+  points.
+
+  <li class="example-odd">
+  <PRE>
+
+  [ 5, 3, 5, 3, 3 ]
+
+  Returns: 10
+
+  </PRE>
+  Two 5's is better than three 3's.
+
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. (c)2002, TopCoder, Inc. All rights reserved.

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: SpecificWords</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: SpecificWords</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: SpecificWords.py
+
+def countwords(phrase, ending, item):
+    '''
+    Given the three string parameters 
+    phrase, ending and item, 
+    return the number of words in phrase 
+    that end in ending and do not contain
+    item as part of their word.
+    '''
+      
+    # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Given a phrase, your task is to determine the number of words that end
+in ending and do not contain item as part of their word.
+
+<p> 
+<p>
+Write function <em>countwords </em> that has three string parameters <code>phrase</code>,
+<code>ending</code> and
+<code>item</code>.  This function returns an integer representing the
+number of words in phrase that end in ending and  does not contain item as
+part of their word.
+You can assume all words are lowercase.
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> phrase, ending and item are all of length 1 or more characters  </li>
+<p><li> ending and item are only lowercase alphabetic characters </li> 
+<p><li> ending and item are different words </li> 
+<p><li> phrase is only lowercase alphabetic characters or
+    blanks. It starts and ends with an alphabetic character, and if there
+    are blanks, there cannot be two adjacent blanks.    </li> 
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+phrase =  "swim trim shop drop swap rim" 
+ending = "im" 
+item = "sh" 
+
+
+returns: 3
+swim, trim and rim all end in "im", none of them have "sh" in them.
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase =  "swim trim shop drop swap rim" 
+ending = "im" 
+item = "sw" 
+
+returns: 2
+"trim" and "rim" all end in "im", and do not have "sw" in it. "swim" ends in
+"im", but has "sw" as part of it. 
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase = "duck" 
+ending = "uck" 
+item = "d"
+
+
+returns: 0
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+  <PRE>
+
+phrase =  "i am lovely crazy silently happily smilingly funny" 
+ending = "ly" 
+item = "book"    
+
+
+returns: 4 
+lovely, silently, happily, and smilingly all end in "ly" and do not have
+"book" in them. 
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+
+
+phrase = "book booklet redbook beautiful butterfly" 
+ending = "ly" 
+item = "book"
+
+
+
+returns: 1 
+
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+
+phrase =  "long song long song some belong and some do not belong" 
+ending = "ong" 
+item = "son" 
+
+returns: 4
+There are six words that end in "ong": long, song, long, song, belong,
+and belong. Two of those words have "son" in them: song and song,
+so those two do not count.
+</PRE>
+
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

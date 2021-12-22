@@ -1,0 +1,74 @@
+filename: Pangram.py
+name: Pangram
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def getStats(sentence):\n\t'''\n\tsentence (str) - a string with a potential pangram in it\n\t\n\tFor all the letters return a list where value at the kth index is the\n\tnumber of letters that occur k times.\n\t'''\n\treturn []"
+problem: >-
+  Pangrams are sentences where every letter of the alphabet is used at least
+  once. Some even have each letter appear only once. Implement
+  <code>getStats</code> that takes a sentence and returns a list where the value
+  at the k<sup>th</sup> index is the number of letters that appeared k times,
+  e.g., the
+
+  value at index 0 is the number of letters that did not appear at all, index 1
+  is the number of letters that only appeared once, index 2 is the number of
+  letters that only appeared twice, etc.
+
+
+  Do not count upper and lower case letters as different. And the list should
+  only be as long as needed (it shouldn't end with 0's).
+constraints: |-
+  <ul>
+  <li>The sentence may have punctuation, which should be ignored.
+  <li>There are only 26 letters in the alphabet: abcdefghijklmnopqrstuvwxyz
+  </ul>
+examples: |-
+  <ol>
+
+  <li class="example-odd">
+  <PRE>
+  sentence = 'g dd ee www hhh kkk pppp jjjj'
+
+  Returns [18, 1, 2, 3, 2]
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  sentence = 'Hello and Goodbye'
+
+  Returns [16, 6, 3, 1]
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  sentence = 'Mr. Jock, TV quiz PhD., bags few lynx.'
+
+  Returns [0, 26]
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  sentence = 'The quick brown fox jumps over the lazy dog.'
+
+  Returns [0, 20, 4, 1, 1]
+  </PRE>
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

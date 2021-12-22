@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: MorseLikeCode</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: MorseLikeCode</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: MorseLikeCode.py
+
+  def decrypt(library,message):
+      """
+      return String for parameters
+      library a list of Strings
+      and message a string
+      """
+      
+      # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+	
+Marge is rather concerned about who
+
+<!--   the hoodlums that
+  -->
+
+ her son has been
+spending time with. Aside from all of the time spent at the arcade, they
+communicate with each other through encrypted messages. As a concerned
+parent, Marge wants to discover what the boys are talking about.
+<P>
+
+Marge knows parts of the boys' code <code>library</code>, given as a
+	  list of strings. Each
+element is formatted as "C SEQUENCE" (quotes for clarity), where C is an
+uppercase letter, SEQUENCE consists of only '-' and '.'  characters, and
+exactly one space separates the two. When writing their message, the
+boys will replace C with SEQUENCE, separating multiple letters with
+spaces. So, if O is represented as "---" and S is represented as "...",
+then the message "SOS" can be encoded as "... --- ...".
+<P>
+
+Marge has recovered an encoded message that she would like to
+decode. Unfortunately, she does not have a full copy of the <code>library</code>, so
+there may be some SEQUENCEs that do not correspond to any entries in the
+<code>library</code>; if this happens, you are to replace it with a '?' (Marge is a
+smart mom, and might be able to figure out what the word is with only
+partial information). You are to return a String containing the decoded
+message.
+
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><LI>	<code>library</code> will contain between 1 and 50 elements, inclusive.
+<P><LI> Each element of <code>library</code> will contain between 3 and 50
+	  characters, inclusive.
+<P><LI> Each element of <code>library</code> will be formatted as "C SEQUENCE" as
+	  described in the problem statement.
+<P><LI> In each element of <code>library</code>, C will be an uppercase letter
+	  ('A'-'Z').
+<P><LI> In each element of <code>library</code>, SEQUENCE will consist only of '.'
+	  and '-'.
+<P><LI> There will be no duplicate SEQUENCEs in <code>library</code>.
+<P><LI> <code>message</code> will contain between 1 and 50 characters, inclusive.
+<P><LI> Each character of <code>message</code> will be '-', '.', or a space (' ').
+<P><LI> There will be no leading, trailing, or consecutive spaces in <code>message</code>.
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+library = ["O ---",
+           "S ..."]
+message = "... --- ..."
+
+Returns: "SOS"
+
+</PRE>
+The example from the problem statement.
+<P>
+<li class="example-even">
+<PRE>
+library = ["O ---"]
+message = "... --- ..."
+
+Returns: "?O?"
+
+</PRE>
+This time we don't have the S, so we replace the three dashes with
+question marks.
+<P>
+<li class="example-odd">
+<PRE>
+
+</PRE>
+library =
+["H -",
+ "E .",
+ "L --",
+ "L ..",
+ "O -."]
+message = "- . -- .. -."
+
+Returns: "HELLO"
+
+<P>
+Note that the clever boys can have multiple ways to encode the same letter.
+
+<li class="example-even">
+<PRE>
+library = [
+ "H -.-.-.-.-.-.-.-.-.-.",
+ "I .-.-.-.-.-.-.-.-.-.-",
+ "K -.-.-.-.-.",
+ "E .-.-.-.-.-"]
+message = "-.-.-.-.-.-.-.-.-.-. .-.-.-.-.-.-.-.-.-.-"
+
+Returns: "HI"
+
+</PRE>
+A long message doesn't always mean a long word.
+<li class="example-odd">
+<PRE>
+library = 
+["O ---",
+ "S ...",
+ "B -...",
+ "T -",
+ "R .-.",
+ "E .",
+ "N -.",
+ "X -..-",
+ "D -.." ]
+
+message = "-... --- ... - --- -. .-. . -.. ... --- -..-"
+
+Returns: "BOSTONREDSOX"
+
+</PRE>
+<li class="exmample=even">
+
+<PRE>
+library =
+["A --",
+ "B -.",
+ "N ...-",
+ "I --..",
+ "F -.-.-."]
+
+message = "-. -- -.-.-. -.-.-. --- --.. ...- .-..--."
+
+Returns: "BAFF?IN?"
+</PRE>
+</ol>
+<P>
+<div class="copyright">
+This problem statement is the exclusive and proprietary property of
+	  TopCoder, Inc. Any unauthorized use or reproduction of this
+	  information without the prior written consent of TopCoder,
+	  Inc. is strictly prohibited. &copy;2010, TopCoder, Inc. All
+rights reserved.
+<br><br>NOTE: Rodger modified the first sentence to remove its bias overtones. 
+
+</div>
+
+</body>
+</html>

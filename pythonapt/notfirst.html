@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: NotFirst</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: NotFirst</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: NotFirst.py
+
+def sortit(letter, words):
+    '''
+    letter is a string of one lowercase alphabetic letter
+    words is a list of words
+    return a sorted list of the unique words that 
+        do not start with letter
+    '''
+    # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Write the function named  <code>sortit</code> that has two 
+parameters, <code>letter</code> that is a single lowercase alphabetic
+letter, 
+and <code>words</code>, a   list of words.
+This function returns 
+a sorted list of the unique words that 
+do not start with letter.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> letter is a lowercase letter, one of a-z  
+<P><li> words  is a list of 0 or more words, each word is a String of
+    one or more lowercase letters from a-z   </li>
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+letter = "s"
+words = ["one", "two", "three"]
+
+returns: ["one", "three", "two"]
+ 
+None of the words start with "s". Note the words returned are sorted. 
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+letter = "w" 
+words = ["one", "two", "three", "wait", "one", "two", "three", "go"]
+
+returns: ["go", "one", "three", "two"]
+ 
+The sorted list contains only unique words that do not start with w. 
+
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+letter = "e" 
+words = ["duke", "devil"] 
+
+returns: ["devil", "duke"]
+ 
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+letter = "d" 
+words = ["duke", "devil"] 
+
+returns: []
+</PRE>
+
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

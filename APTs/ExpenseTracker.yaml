@@ -1,0 +1,135 @@
+filename: ExpenseTracker.py
+name: ExpenseTracker
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def expenses(spending, limit):\n\t'''\n\tThis function accepts two parameters:\n\tspending-list parameter of 12 integers that represent\n\tthe total expenses for each month of the year.\n\t\n\tlimit-the maximum amount that can be spent for the year.\n\t\n\tThe function should return a string representing the first\n\tmonth where the total expenses incurred for the year up to\n\tthat month exceed the yearly limit.\n\t'''\n\t# you write code here\n\t"
+problem: |-
+  You are always over your yearly budget at the end of the year.In an
+  effort to become more fiscally responsible, you've decided to
+  track your total amount spent, by month. You also want to understand
+  how much you've spent in total at any point in the year.
+
+  Given a list of your spending by month and a yearly limit, create
+  the function named <code>expenses</code> that has two parameters named
+  spending (a list of spending, by month)) and limit(the total amount that
+  can be spent for the year).
+  </p>
+
+  This function returns a string that represents the first month where
+  the total amount spent for the year (up through that month) exceeds
+  the yearly limit.</p>
+constraints: >-
+  <ul>
+
+  <li>The list named spending should only contain 12 integers.
+
+  <li>Each item in the list named spending should range between 0 and 700.
+
+  <li>The minimum amount that your yearly spending can total is 10.
+
+  <li>The limit must be an integer that is less than the total amount spent
+
+  over the entire year.
+
+  <li>The string returned as the month should have the full month name (no
+  abbreviations
+
+  allowed).
+
+  <li>The string returned as the month should only have the first letter of the
+
+  month capitalized (e.g., "January", "February", "March", etc.)
+
+
+
+
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  spending=[10,33,500,0,5,100,210,55,90,100,150,111]
+
+  limit=600
+
+
+  Returns: "June"
+
+  </PRE>
+
+  # The first month that the yearly limit (600) is exceeded is in June, when 100
+  is
+
+  spent for the month, making the total spent through June 648.
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  spending=[0,256,321,100,500,0,350,222,90,0,0,0]
+
+  limit=1000
+
+
+  Returns: "May"
+
+  </PRE>
+
+  # The total spent through May is 1177, which exceeds the 1000 yearly limit.
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  spending=[0,0,0,0,200,0,0,0,0,0,0,0]
+
+  limit=150
+
+
+  Returns: "May"
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  spending=[100,100,100,100,100,100,100,100,100,100,100,100]
+
+  limit=600
+
+
+  Returns: "July"
+
+  </PRE>
+
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; A. Nicki Washington and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,104 @@
+filename: RemoveMiddle.py
+name: RemoveMiddle
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def shorten(name):\n\t\"\"\"\n\treturn the name with the middle name(s) removed.\n\tname has at least one word.\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Xie needs to be able to shorten names to remove the middle names if there
+  are any.
+
+
+  Write function <code>shorten</code> that given a name returns the name with
+  all the middle names removed.
+constraints: |-
+  <ul>
+  <li> <code>name</code> will have at least one word
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  name = "Barak Hussein Obama"
+
+
+  returns "Barak Obama"
+
+
+  The middle name is removed.
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  name = "Prince"
+
+
+  returns "Prince"
+
+
+  There is no middle name.
+
+  </PRE>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  name = "Thomas Narten"
+
+
+  returns "Thomas Narten"
+
+
+  There is no middle name.
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  name = "Elizabeth Rosemond Hilton Wilding Todd Fisher Burton Warner Fortensky
+  Taylor"
+
+
+  returns "Elizabeth Taylor"
+
+
+  All the middle names are removed.
+
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

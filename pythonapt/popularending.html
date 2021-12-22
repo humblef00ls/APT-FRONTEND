@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: PopularEnding</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: PopularEnding</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: PopularEnding.py
+
+def popular(phrase):
+    '''
+    phrase is a string of words
+    Return the sorted list of unique words that have the most 
+        popular 3-character ending. Only consider words of length 
+        3 or more. Duplicate words only count once. Break ties with
+        the 3-character ending that comes last in alphabetical order.
+    '''
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Write the function named  <code>popular</code> that has one
+parameter, <code>phrase</code> is a string of lowercase words. 
+This function returns 
+a sorted  list of unique words that have the most popular 3-character
+ending. Only consider words of length three or more. Duplicate words only
+count once. Break ties with
+the 3-character ending that comes last in alphabetical order.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> phrase is a string of one or more words, each word is a String of
+    one or more lowercase letters from a-z   </li>
+<p><li> words in phrase are separated by one blank </li> 
+<p> <LI> Only consider words of length three or more.  </li>
+<p> <LI> 
+If a word appears more than once in phrase, its ending is only
+    counted once. </li>
+<p> <LI> 
+If there is more than one most-popular ending with the same number of
+words, break ties by choosing the 
+the 3-character ending that comes last in alphabetical order. </li>
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+phrase = "jingle bells in a single line" 
+
+returns: ["jingle", "single"]
+
+The 3-char endings are "gle", "lls" and "ine". "gle" occurs twice and the
+others occur just once. The list of words that end in "gle" are returned 
+in sorted order. 
+
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase = "string wider icing order string wider icing order" 
+
+returns: ["icing", "string"]
+
+There are two endings: "ing" and "der". Ignoring duplicate words, these
+endings both appear twice. "ing" appears later alphabetically, so a sorted 
+list of unique words that end in "ing" is returned. 
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase = "bad bad fat cat" 
+
+returns: ["fat"]
+
+There are three endings: "bad", "fat", and "cat". Each appear just once,
+and "fat" is the last of the endings in alphabetical order. Thus, words
+that end in "fat" are returned in sorted order, in this case, just one
+word. 
+ </PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase = "a b c d go" 
+
+returns: []
+
+There are no words with at least three characters. 
+
+
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase = "a problit for long loud strong song moonlit and sunlit 
+by the gong and slit and split" 
+
+
+returns: ["moonlit", "problit", "slit", "split", "sunlit"]
+
+The endings are: "lit", "for", "ong", "oud", "and", "the". Of those "lit"
+occurs 5 times, "ong" occurs 4 times. Each of "for", "oud", "and", and
+"the" occur just once (ignore duplicate words). 
+ </PRE>
+<P>
+
+<P>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Last Name First</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Last Name First</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: LastNameFirst.py
+
+  def modify(name):
+      """
+      name is a string with zero or more spaces
+      with one space between each "word"
+      return string "last, first MI. MI. MI. ..."
+      where MI is middle initial
+      """
+      
+      # you write code here
+      return name
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Sabrina needs to be able to reorganize names into the last name first and
+she wants to abbreviate any middle names with the first letter and a
+period. She respects middle names that are a single letter and does
+<b>not</b> abbreviate them.
+
+
+<P>
+Write function <code>modify</code> that given a name returns the name with
+the last name first, followed by a comma,
+      followed by the first name (if any), followed by the first letter of
+      each remaining/middle name with a period after each letter. If 
+a middle name is a single letter, do not abbreviate it/follow it by a period.	  
+<P>
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>name</code> will have at least one word
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+name = "Barak Hussein Obama"
+
+returns "Obama, Barak H."
+</PRE>
+<P>
+<li class="example-even">
+<PRE>
+name = "Prince"
+
+returns "Prince"
+
+There is only one name.
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+name = "Thomas Narten"
+
+returns "Narten, Thomas"
+
+There is no middle name.
+</PRE>
+<P>
+<li class="example-even">
+<PRE>
+name = "Elizabeth Rosemond Hilton Wilding Todd Fisher Burton Warner Fortensky Taylor"
+
+returns "Taylor, Elizabeth R. H. W. T. F. B. W. F."
+
+All the middle names are abreviated. 
+
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+name = "Bala X Krish"
+
+returns "Krish, Bala X"
+
+Don't abbreviate one letter words. 
+
+</PRE>
+<P>
+<li class="example-even">
+<PRE>
+name = "Liz A Bo To Joe"
+
+returns "Joe, Liz A B. T."
+
+All the middle names are abreviated except A which was of length 1"  
+
+</PRE>
+
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

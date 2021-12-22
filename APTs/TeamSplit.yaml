@@ -1,0 +1,116 @@
+filename: TeamSplit.py
+name: TeamSplit
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def difference(strengths):\n\t\"\"\"\n\treturn int based on int list parameter strengths\n\t\"\"\"\n\t\n\t# you write code here"
+problem: >-
+  You want to split some people into two teams to play a game. In order to
+
+  make the split, you first designate two team captains who take alternate
+
+  turns selecting players for their teams. During each turn, the captain
+
+  selects a single player for his team. Since each captain wants to make
+
+  the strongest possible team, he will always select the best available
+
+  player. The players have strengths, which are given in int list parameter
+
+  <code>strengths</code>, where higher numbers indicate better players. After
+  all the
+
+  players have been selected, the team strength is computed as the sum of
+
+  the strengths of the players on that team.
+
+
+  For example, if <code>strengths</code>=[5,7,8,4,2], then the first captain
+  selects
+
+  the player with strength 8 for his team, the second captain gets the
+
+  player with strength 7, the first gets the one with strength 5, the
+
+  second the one with strength 4, and the last one (strength 2) goes to
+
+  the first team. The first team now has a total strength 8+5+2=15, and
+
+  the second team has strength 7+4=11.
+
+
+  Return the absolute strength difference between the two teams. For the
+
+  example above you should return 4 (=15-11).
+constraints: |-
+  <ul>
+  <li>
+  <code>strengths</code> will have between 1 and 50 elements, inclusive.
+
+  <li>
+  Each element of <codE>strengths</code> will be between 1 and 1000, inclusive.
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  strengths = [5,7,8,4,2]
+
+  Returns: 4
+
+  </PRE>
+  The example from the problem statement.
+
+  <li class="example-even">
+  <PRE>
+  strengths = [100]
+
+  Returns: 100
+
+  </PRE>
+  A boring game with only one player. The second team has strength 0 (no
+  players).
+
+  <li class="example-odd">
+  <PRE>
+  strengths = [1000,1000]
+
+  Returns: 0
+
+  </PRE>
+  Both teams with equal strength.
+
+  <li class="example-even">
+  <PRE>
+  strengths = [9,8,7,6]
+
+  Returns: 2
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  strengths = [1,5,10,1,5,10]
+
+  Returns: 0
+  </PRE>
+
+  <li class="example-even">
+  <PRE>
+  strengths = [824, 581, 9, 776, 149, 493, 531, 558, 995, 637,
+  394, 526, 986, 548, 344, 509, 319,  37, 790, 491,
+  479,  34, 776, 321, 258, 851, 711, 365, 763, 355,
+  386, 877, 596,  96, 151, 166, 558, 109, 874, 959,
+  845, 181, 976, 335, 930,  22,  78, 120, 907, 584]
+
+  Returns: 478
+
+  </PRE>
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

@@ -1,0 +1,127 @@
+filename: WordCompositionGame.py
+name: WordCompositionGame
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def score(listA,listB,listC):\n\t\"\"\"\n\treturn String based on three string list parameters\n\t\"\"\"\n\t\n\t# you write code here"
+problem: |-
+  Three players are playing a game of word composition in which each
+  player writes down a list of words. After the time expires the scores
+  are calculated using the following rules. Each player gains 3 points for
+  each unique word that only he has, 2 points for each word that is shared
+  with exactly one other player, and 1 point for each word that is shared
+  with both of the other players.
+
+
+  You will be given three string lists <code>listA</code>,
+  <code>listB</code> and <code>listC</code> - the word lists of
+  playerA, playerB and playerC respectively. Your method should return
+  scores of playerA, playerB and playerC in the form of the string
+  "scoreA/scoreB/scoreC" (quotes for clarity).
+constraints: >-
+  <ul>
+
+
+  <LI>
+
+  <code>listA</code>, <code>listB</code> and <code>listC</code> will have
+  between 1 and 50 elements each,
+
+  inclusive.
+
+  <LI>
+
+  Each element of <code>listA</code>, <code>listB</code> and <code>listC</code>
+  will contain between 1 and 20
+
+  characters, inclusive.
+
+  <LI> Each element of <code>listA</code>, <code>listB</code> and
+  <code>listC</code> will contain only lowercase
+
+  letters ('a'-'z').
+
+  <P<LI> All elements in <code>listA</code> will be distinct.
+
+  <LI> All elements in <code>listB</code> will be distinct.
+
+  <LI> All elements in <code>listC</code> will be distinct.
+
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  listA = ["cat", "dog", "pig", "mouse"]
+
+  listB = ["cat", "pig"]
+
+  listC = ["dog", "cat"]
+
+
+  Returns: "8/3/3"
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  listA = ["mouse"]
+
+  listB = ["cat", "pig"]
+
+  listC = ["dog", "cat"]
+
+
+  Returns: "3/5/5"
+
+  </PRE>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  listA = ["dog", "mouse"]
+
+  listB = ["dog", "pig"]
+
+  listC = ["dog", "cat"]
+
+
+  Returns: "4/4/4"
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  listA = ["bcdbb","aaccd","dacbc","bcbda","cdedc","bbaaa","aecae"]
+
+  listB = ["bcdbb","ddacb","aaccd","adcab","edbee","aecae","bcbda"]
+
+  listC =
+  ["dcaab","aadbe","bbaaa","ebeec","eaecb","bcbba","aecae","adcab","bcbda"]
+
+
+  Returns: "14/14/21"
+
+  </PRE>
+
+  </ol>
+copyright: |-
+  This problem statement is the exclusive and proprietary property of
+  TopCoder, Inc. Any unauthorized use or reproduction of this information
+  without the prior written consent of TopCoder, Inc. is strictly
+  prohibited. &copy;2010, TopCoder, Inc. All rights reserved.

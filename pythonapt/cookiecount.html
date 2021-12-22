@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: CookieCount</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: CookieCount</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: CookieCount.py
+
+  def countOrders(orders):
+      '''
+      The list parameter orders contains a string in the format
+      "name:order:quant:name:order:quant:name:order:quant:name:order:quant", where:
+            
+           name-first name of a person.
+      
+           order-the type of cookie ordered.
+		   
+           quant-the number of boxes requested.
+	   
+      The function should return an integer that represents the maximum number of 
+      boxes ordered of any type of cookie.
+      '''
+      # you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+It's that time of year, where everyone is ordering Girl Scout Cookies. However, the system can only
+process four orders at a time, in the format 
+<br><br>
+<i>"name:order:quant:name:order:quant:name:order:quant:name:order:quant"</i>.
+<br>
+
+
+<p>If anyone is interested in buying more than one type of cookie (e.g., Thin Mints and Samoas), then 
+they must submit a separate order for each type of cookie. Thus, each string may contain the same person
+with multiple orders.
+</p>
+
+<p>Given a string representing four orders, we want to determine what is the largest quantity ordered in the submission. 
+Create the function named <code>countOrders</code> that has 
+one parameter named orders, which is a string in the format <i>name:order:quant</i>.
+</p>
+
+<p>This function returns the largest order quantity, based on the input.</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>Each name in a name:order:quant sequence is only one name. However, the same name may be included multiple times in the string.
+<P><li>Each order in a name:order:quant sequence will contain the name of one type of cookie.
+<P><li>Each quantity in a name:order:quant sequence must be at least 1 and no more than 50
+<P><li>Each string includes four orders.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+orders="Kim:Thin Mints:2:Erica:Do-si-dos:4:Kim:Thin Mints:6:Karen:Samoas:2"
+
+Returns: 8
+</PRE>
+# The largest quantity of cookies sold is Thin Mints, as Kim placed two orders of 2 and 6 boxes.
+<P>
+
+<li class="example-even">
+<PRE>
+orders="Teri:Samoas:2:Erica:Samoas:2:Luke:Samoas:2:Karen:Samoas:2"
+
+Returns: 8
+</PRE>
+# Everyone in this batch ordered 2 boxes of Samoas, totaling 8 boxes for Samoas.
+<P>
+
+<li class="example-odd">
+<PRE>
+orders="Kim:Tagalongs:4:Erica:Do-si-dos:1:Kim:Tagalongs:3:Karen:Tagalongs:2"
+
+Returns: 9
+</PRE>
+# A total of 9 boxes of Tagalongs were ordered.
+<P>
+
+<li class="example-even">
+<PRE>
+orders="Kim:Thin Mints:10:Kim:Lemonades:4:Kim:Lemonades:10:Kim:Samoas:14"
+
+Returns: 14
+</PRE>
+# A total of 14 Samoas were ordered.
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

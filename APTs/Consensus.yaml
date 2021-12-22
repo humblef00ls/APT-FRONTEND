@@ -1,0 +1,89 @@
+filename: Consensus.py
+name: Consensus
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def majorityWinner(voteA, voteB, voteC):\n\t'''\n\tvoteA (int) - Number of votes received by candidate A\n\tvoteB (int) - Number of votes received by candidate B\n\tvoteC (int) - Number of votes received by candidate C\n\t\n\tReturns a string representing which candidate won the majority vote, based\n\ton the three parameters. If there is no majority winner, return \"No one\".\n\t'''\n\treturn ''"
+problem: >-
+  Winning the majority vote means receiving strictly more than half of the
+  votes. Write a function that determines who won the majority vote among three
+  candidates A, B, or C. If no one won the majority vote, return the string "No
+  one" (note: A, B, C, and N are capitalized).
+constraints: |-
+  <ul>
+  <li>Every candidate gets at least one vote.
+  </ul>
+examples: >-
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  voteA = 6
+
+  voteB = 3
+
+  voteC = 1
+
+
+  Returns "A"
+
+  </PRE>
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  voteA = 5
+
+  voteB = 4
+
+  voteC = 1
+
+
+  Returns "No one"
+
+  # There are a total of 10 votes so a candidate must win 6 or more votes to get
+  a majority
+
+  </PRE>
+
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  voteA = 1
+
+  voteB = 1
+
+  voteC = 1
+
+
+  Returns "No one"
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

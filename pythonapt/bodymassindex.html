@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: BodyMassIndex</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: BodyMassIndex</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: BodyMassIndex.py
+
+  def calculateBMI(input):
+      '''
+      The list parameter input contains two integers in the 
+      format [weight, height], where:
+      
+           weight-person's weight (in pounds (lbs)).
+      
+           height-person's height (in inches (in)).
+	   
+      The function should return an integer that 
+      represents the calculated BMI.
+      '''
+	# you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Body mass index (BMI) is a measure of body size, which is often calculated
+by medical professionals. BMI is calculated based on a person's height and
+weight. How this calculation depends on the metrics used. 
+
+<p>For height in inches and weight in pounds, BMI is calculated as: 
+<br><br>
+(weight/height<sup>2</sup>) x 703
+</p>
+
+<p>Given a list of a patient's weight and height, we want to determine a
+person's BMI. Create the function named <code>calculateBMI</code> that has 
+one parameter named input, which is a list of integers. The list is in the 
+format [weight, height], where weight is the person's weight, and height 
+is a person's height.
+</p>
+
+<p>This function returns the BMI, based on the input.</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>The list only contains one weight and one height.
+<P><li>weight is an integer in the range of 1-800.
+<P><li>height is an integer in the range of 1-84.
+<P><li>The BMI returned is an integer value that rounds down to the closest 
+integer.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+input=[100,60]
+
+Returns: 19
+</PRE>
+# A person who is 5ft tall and weighs 100 lbs has a BMI of 19.527777777777775. 
+However, because we're only considering the integer portion, only 19 is returned
+<P>
+
+<li class="example-even">
+<PRE>
+input=[160,65]
+
+Returns: 26
+</PRE>
+# A person who is 5ft 5in tall and weighs 160 lbs has a BMI of 26.622485207100592. 
+However, because we're only considering the integer portion, only 26 is returned
+<P>
+
+<li class="example-odd">
+<PRE>
+input=[80,50]
+
+Returns: 22
+</PRE>
+# A person who is 4ft 2in tall and weighs 80 lbs.
+<P>
+
+<li class="example-even">
+<PRE>
+input=[325,77]
+
+Returns: 38
+</PRE>
+# A person who is 6ft 5in tall and weighs 325 lbs.
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

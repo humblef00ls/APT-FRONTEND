@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Intro</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Intro</h1>
+
+
+<div class="container">
+<div class="allclass">
+
+<h3>Specification</h3>
+<i>This section will tell you what your filename, function name, and parameter names (all case-specific) should be.
+It will also provide a skeleton of the function, including a description of what the function must include.</i>
+<xmp>
+  filename: Intro.py
+
+  def test(number1, number2):
+      '''
+      number1 (int)-this will represent an integer
+      number2 (int)-this will represent another integer
+
+      
+      '''
+      return the sum of the two parameters, number1 and number2.
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+<strong>It is important to read/work on this APT in the order you read it to ensure you understand how to upload/test APTs.</strong><br><br>
+
+<i>This section will give a general overview of the problem.</i>
+<br><br>
+This is just a simple APT designed to get you comfortable uploading/testing APTs. Other APT problems will be more detailed and
+require more design. They will also NOT include instructions on how to submit APTs, what to expect, etc. Refer to this as necessary.
+<br><br>
+Based on the specification above, this is a template for an APT function that you'll develop. You will learn more about what all this means in the next lecture discussing 
+programmer-defined functions. For now, create the exact code (case-specific) in a Python module named Intro.py:
+<xmp>
+   def test(number1, number2):
+	sum=number1 + number2
+	return sum
+</xmp>
+
+This may not be clear now. However, by next class, it will be. This code creates a function named <i>test</i> that accepts 
+two integer parameters: <i>number1</i> and <i>number2</i>. It then calculates the sum of these two parameters and 
+assigns (stores) it in a variable named <i>sum</i>. The third line returns the value stored in <i>sum</i> back to the 
+main part of your program. 
+<br><br>
+Copy this exactly as you see it. This should be the ONLY code in Intro.py.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<i>This section will tell you what constraints your solution should include</i>
+
+<ul>
+<P><li><i>number1</i> and <i>number2</i> are both integers. 
+</ul>
+
+
+<h3>Examples</h3>
+<i>This section will give a few examples of what the expected output is, given your program works as it should.
+Before you upload your code to the APT website, you can always test your code works as it should by adding the following code
+<b><strong>a few lines under</strong> the last line of the function created (it must be aligned with the 'd' in <i>def</i>, 
+not indented under that.</b> If you don't make sure this is correct, then your program won't work correctly. 
+You must also be sure to <strong>REMOVE OR COMMENT OUT THE CODE SEGMENT BELOW BEFORE UPLOADING THE APT.</strong> 
+Remember, this is only for testing it on your machine first:</i> 
+<xmp>
+if __name__ == '__main__':
+    num1=5
+    num2=4
+    value=test(num1, num2)
+    print(value)
+</xmp>
+<br>
+<i> The first line of the code above is where your program knows to begin executing the code. The third line tells the program
+to call (run) the test function and send it two parameters (comma-separated): num1(storing 5) and num2(storing4). This means 
+that eventually, value should store 9 in the fourth line and the fifth line should output 9 to the console (screen). 
+<br><br>
+Try to replace num1 and num2 with the values in the examples below and run your code to make sure you get the expected results. 
+Once you're certain it's correct, delete or comment out this code and save Intro.py again.</i>
+<ol>
+
+<li class="example-odd">
+<PRE>
+number1=5
+number2=5
+
+Returns 10
+</PRE>
+# Since both parameters are integers, the function test should return the sum, which is 10.
+<P>
+
+<li class="example-even">
+<PRE>
+number1=-11
+number2=5
+
+Returns -6
+</PRE>
+# Should return the sum of adding a negative and positive integer, which is -6.
+<P>
+
+<li class="example-odd">
+<PRE>
+number1=200
+number2=5
+
+Returns 205
+</PRE>
+</ol>
+<h2>SUBMITTING YOUR APT</h2>
+Once you've tested your code on your local machine, remember to comment out or delete the code that you 
+added from the Examples section.
+
+<ol>
+<li class="example-odd">
+Go to the APT-0 link, and select the radio button. Select the correct file to upload from your directory. 
+Select "test/run" to upload and run your code. <br><br>
+
+You should see in the top-half of the page the name of the problem (intro), language used (python), and name
+of the file uploaded (Intro.py). You should also see the total number of times you've run the APT test, netid,
+and a statement that notes "compile succeeded." This means the program compiled and executed.<br><br>
+
+In the second-half of the page is "Test Results Follow" with a total # of correct (in this case, 4 out of 4).
+This means there were 4 tests run on your code, and it passed all 4. The table contains 8 rows. The first four 
+rows (numbered 1-4) are a general pass/fail summary of each test. Each of these rows has a green "pass" in the 
+second column. This means the code you uploaded passed all 4 tests we run. The fifth and sixth rows (numbered 1 and 2)
+have a third column, which says:<br><br>
+got<br>
+11<br>
+: 5 6<br><br>
+This means when we ran your program, the value we got was 11. Because the green "pass" is there, this is the 
+expected value and your test passed.<br><br>
+The last two rows (numbered 3 and 4) only have a ":" in the third row. This means that you are not shown the
+input we used to test your program. It is important to remember that some tests we run will not display all
+info(input, expected output, and output we got),especially when errors are present in your program.<br><br>
+
+You should also see your netid in the list under "Logging Results for intro," as well as "logged entry score=1.00000."
+This means your code passed all tests and received the maximum score (1.0). Your score can range from 0.0-1.0. Your 
+code will receive the same fraction of points as the fraction of tests it passes, with the points rounded down.<br><br>
+
+<li class="example-even">
+Change sum=number1 + number2 to sum=number1 + number1 in your Intro.py file and save. Select the "Back" button in your browser to return
+to the APT upload page. Make sure Intro.py is loaded and the radio button selected, and run your code again.<br><br>
+
+<li class="example-odd">
+You should now see the second column in all rows says "fail." In addition, the third column includes the expected 
+result (11), what it got when it ran your program(10), and the values we used for the parameters number1 and number2 
+(5 and 6, respectively). You may have a combination of tests you pass and fail. Your goal is to pass all tests. 
+All future APTs will have 15-20 tests to pass. Some will show more information than the others to help you 
+debug your program (see #1).<br><br>
+
+<li class="example-even">
+Change your code to now state sum=number1+number0. Upload and run Intro.py again. You should now see all 4 tests failed, 
+with the more detailed test results showing something similar to "runtime exception:NameError: name 'number0' 
+is not defined 5 6" in the last four rows. NameError means a variable or function in your program is undefined. In this
+case, number0 is undefined and produces the error. This should help you understand how to identify errors that appear
+when running any APTs. Remember, NameError is only one type of Python error.<br><br>
+
+Change your code back to the original (correct) statement, sum=number1+number2.<br><br>
+
+<li class="example-odd">
+Rename your program to Introo.py. Upload Introo.py and test your program. You should see a line that says:<br><br>
+"upload ok, files moved: Introo.py Wrong file name, expected Intro got Introo"<br><br>
+
+This indicates the system expected a file named Intro.Py and you didn't upload that. Remember that <strong>filenames 
+are case-specific</strong>.
+
+<br><br>
+These are some of the basic results you can see when running your program. The goal is to get all green passes for
+all tests. In addition, you must ACTUALLY write code to implement the solutions. If you try to simply plug in answers
+to pass the test then we will know. More important, you will ultimately hurt yourself in this class. Don't take the 
+easy (and unethical) route.<br><br>
+
+All of your attempts are logged in the system. There's nothing else for you to do to ensure your highest submission is recorded!
+Please note that, if you select "check submission grades" from the APT submission page, you will ONLY see the most recent score.
+However, please remember we have a log that is tracking ALL of your submissions and scores.
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

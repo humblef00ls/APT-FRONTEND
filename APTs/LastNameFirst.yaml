@@ -1,0 +1,139 @@
+filename: LastNameFirst.py
+name: LastNameFirst
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def modify(name):\n\t\"\"\"\n\tname is a string with zero or more spaces\n\twith one space between each \"word\"\n\treturn string \"last, first MI. MI. MI. ...\"\n\twhere MI is middle initial\n\t\"\"\"\n\t\n\t# you write code here\n\treturn name"
+problem: |-
+  Sabrina needs to be able to reorganize names into the last name first and
+  she wants to abbreviate any middle names with the first letter and a
+  period. She respects middle names that are a single letter and does
+  <b>not</b> abbreviate them.
+
+
+
+  Write function <code>modify</code> that given a name returns the name with
+  the last name first, followed by a comma,
+  followed by the first name (if any), followed by the first letter of
+  each remaining/middle name with a period after each letter. If
+  a middle name is a single letter, do not abbreviate it/follow it by a period.
+constraints: |-
+  <ul>
+  <li> <code>name</code> will have at least one word
+
+  </ul>
+examples: >-
+  <ol>
+
+  <li class="example-odd">
+
+  <PRE>
+
+  name = "Barak Hussein Obama"
+
+
+  returns "Obama, Barak H."
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  name = "Prince"
+
+
+  returns "Prince"
+
+
+  There is only one name.
+
+  </PRE>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  name = "Thomas Narten"
+
+
+  returns "Narten, Thomas"
+
+
+  There is no middle name.
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  name = "Elizabeth Rosemond Hilton Wilding Todd Fisher Burton Warner Fortensky
+  Taylor"
+
+
+  returns "Taylor, Elizabeth R. H. W. T. F. B. W. F."
+
+
+  All the middle names are abreviated.
+
+
+  </PRE>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  name = "Bala X Krish"
+
+
+  returns "Krish, Bala X"
+
+
+  Don't abbreviate one letter words.
+
+
+  </PRE>
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  name = "Liz A Bo To Joe"
+
+
+  returns "Joe, Liz A B. T."
+
+
+  All the middle names are abreviated except A which was of length 1"
+
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

@@ -1,0 +1,260 @@
+filename: BookRating.py
+name: BookRating
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def calculate(readpages, totalpages, numdays, amazon)\n\t\"\"\"\n\treadpages - number of pages read\n\ttotalpages - number of pages in the book\n\tnumdays - number of days read book\n\tamazon - book rating on amazon\n\t\n\tReturn the result of the formula shown.\n\tCalculate the answer as a float, then\n\treturn it as a truncated int\n\t\"\"\"\n\treturn 0"
+problem: >-
+  Terry has created a new book rating system that is based on 1) the number of
+
+  pages read (sometimes Terry cannot finish a book) we will call readpages,
+
+  2) the total number of pages in the book, we will call totalpages, 3) the
+
+  number of days Terry read the book, we will call numdays, and 4) the rating of
+
+  the book on amazon, we will call amazon.
+
+  Here is the formula Terry has come up with:
+
+
+  <img src="formula.png">
+
+
+
+  Given the number of pages read, the total number of
+
+  pages in the book, the number of days Terry read the book and the rating of
+
+  the book on amazon, use Terry's formula to calculate the rating. Terry
+
+  doesn't like float numbers so after calculating the rating, convert the
+
+  rating to an integer by truncating it
+
+
+
+  <h3>Constraints/Assumptions</h3>
+
+
+  <ul>
+
+  <li><code>readpages > 0</code>
+
+  <li><code>totalpages > 0</code>
+
+  <li><code> numdays > 0</code>
+
+  <li><code>rating > 0.0</code>
+
+  </ul>
+
+
+
+  <h3>Examples</h3>
+
+  <ol>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  readpages = 356
+
+  totalpages = 356
+
+  numdays = 10
+
+  amazon = 4.12
+
+
+  returns 100
+
+
+  The calculated value is 100.08483601425343. That value is trucated to the
+
+  int 100.
+
+  </PRE>
+
+
+
+
+  <li class="example-even">
+
+  <PRE>
+
+  readpages = 580
+
+  totalpages = 580
+
+  numdays = 50
+
+  amazon = 4.89
+
+
+  returns 20
+
+  </PRE>
+
+
+  <li class="example-odd">
+
+  <PRE>
+
+  readpages = 250
+
+  totalpages = 267
+
+  numdays = 42
+
+  amazon = 3.1
+
+
+  returns 22
+
+
+  </PRE>
+
+
+
+
+  </ol>
+
+
+
+  <div class="copyright">
+
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Susan Rodger and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.
+
+
+
+  </body>
+
+  </html>
+constraints: |-
+  <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+  <html>
+  <head>
+  <title>APT: BookRating</title>
+  <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/>
+  </head>
+
+  <body>
+  <h1>APT: BookRating</h1>
+
+
+  <div class="container">
+  <div class="allclass">
+  <h3>Specification</h3>
+  <xmp>
+
+
+  def calculate(readpages, totalpages, numdays, amazon)
+  """
+  readpages - number of pages read
+  totalpages - number of pages in the book
+  numdays - number of days read book
+  amazon - book rating on amazon
+
+  Return the result of the formula shown.
+  Calculate the answer as a float, then
+  return it as a truncated int
+  """
+  return 0
+  </xmp>
+
+  <h2>Problem Statement</h2>
+
+
+  Terry has created a new book rating system that is based on 1) the number of
+  pages read (sometimes Terry cannot finish a book) we will call readpages,
+  2) the total number of pages in the book, we will call totalpages, 3) the
+  number of days Terry read the book, we will call numdays, and 4) the rating of
+  the book on amazon, we will call amazon.
+  Here is the formula Terry has come up with:
+
+  <img src="formula.png">
+
+
+  Given the number of pages read, the total number of
+  pages in the book, the number of days Terry read the book and the rating of
+  the book on amazon, use Terry's formula to calculate the rating. Terry
+  doesn't like float numbers so after calculating the rating, convert the
+  rating to an integer by truncating it
+
+
+  <h3>Constraints/Assumptions</h3>
+
+  <ul>
+  <li><code>readpages > 0</code>
+  <li><code>totalpages > 0</code>
+  <li><code> numdays > 0</code>
+  <li><code>rating > 0.0</code>
+  </ul>
+examples: |-
+  <ol>
+
+  <li class="example-odd">
+  <PRE>
+  readpages = 356
+  totalpages = 356
+  numdays = 10
+  amazon = 4.12
+
+  returns 100
+
+  The calculated value is 100.08483601425343. That value is trucated to the
+  int 100.
+  </PRE>
+
+
+
+  <li class="example-even">
+  <PRE>
+  readpages = 580
+  totalpages = 580
+  numdays = 50
+  amazon = 4.89
+
+  returns 20
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  readpages = 250
+  totalpages = 267
+  numdays = 42
+  amazon = 3.1
+
+  returns 22
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Susan Rodger and is licensed under a <a
+  rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+  Commons Attribution-Share Alike 3.0 Unported License</a>.

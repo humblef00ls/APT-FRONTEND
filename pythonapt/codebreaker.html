@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: CodeBreaker</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: CodeBreaker</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+filename: CodeBreaker.py
+
+def compute(phrase, one, two, sep):
+    '''
+    Given the four string parameters 
+    phrase, one, two and sep, 
+    return a string of the decoded
+    message. 
+    '''
+      
+    # you write code here
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+Given a phrase, and three additional letters, your task is to use those
+letters to help you in decoding the phrase, and return the decoded
+message. To decode a message, look at each word. 1) If the word starts with
+<code> one</code> then the last letter of the word is part of the message.
+2) If the word contains  <code>two</code> as part of it, then the <strong>third
+letter</strong> of the word is part of the message, if the third letter
+exists. 3) If
+the word starts or ends with <code>sep</code>, then a dash, '-', is part
+of the message.
+If more than one of 1), 2) or 3) match, use the first such one that matches.
+Put
+together those letters that are part of the message in the same order they
+are found in the phrase. 
+
+<p> 
+<p>
+Write function <em>compute </em> that has four string parameters <code>phrase</code>,
+<code>one</code>, <code>two</code> and <code>sep</code>.  
+This function returns a string of the decoded message. 
+
+<p>
+  For example, assume the phrase is "benny northo mary now beach nary",
+one is "n", two
+is "e" and sep is "y".  Then the decoded message adds a letter for each
+word that starts with "n" or "e" and adds a "-" for each word that contains
+  "y", based on the first criteria matched. Words that don't match any of these criteria are ignored.
+
+  <table border=1>
+<tr><th> Word </th> <th> Criteria matched</th> <th> Letter for message</th></tr>
+<tr><td> "benny"</td><td> 2) has "e" in it </td><td>"n" (third letter)</td></tr>
+<tr><td> "northo"</td><td> 1) starts with "n" </td><td>"o" (last letter) </td></tr>
+<tr><td> "mary"</td><td> 3) ends with "y" </td><td>"-" </td></tr>
+<tr><td> "now"</td><td> 1) starts with "n" </td><td>"w" (last letter)</td></tr>
+<tr><td> "beach"</td><td> 2) has "e" in it </td><td>"a" (third letter)</td></tr>
+<tr><td> "nary"</td><td> 1) starts with "n" </td><td>"y" (last
+    letter)</td></tr>
+</table>
+
+  This results in this function returning the word "no-way".
+
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> phrase is of length 1 or more characters  </li>
+<p><li> phrase is <strong>only lowercase </strong>alphabetic characters or
+    blanks. It starts and ends with an alphabetic character, and if there
+    are blanks, there cannot be two adjacent blanks.    </li> 
+<p><li> one, two and sep are each a single lowercase alphabetic character and they
+    are all different characters.   </li> 
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+phrase =  "benny northo mary now beach nary" 
+one = "n" 
+two = "e"
+sep = "y" 
+
+
+returns: "no-way"
+
+(example above)
+</PRE>
+
+<P>
+<li class="example-even">
+<PRE>
+phrase =  "tohs mre mill trljk myro" 
+one = "m" 
+two = "t" 
+sep = "v"
+
+
+returns: "hello"
+
+"h" from "tohs", "e" from "mre, "l" from "mill", "l" from "trljk" and "o"
+from "myro"
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase =  "floss teeth every day forever" 
+one = "f" 
+two = "b" 
+sep = "h" 
+
+
+returns: "s-r"
+
+"s" from "floss", "-" from "teeth", nothing from "every" or "day", "r" from "forever"
+</PRE>
+<P>
+
+<P>
+<li class="example-even">
+<PRE>
+
+
+phrase =  "word" 
+one = "w" 
+two = "d" 
+sep = "r" 
+
+
+returns: "d"
+
+
+</PRE>
+
+<P>
+<li class="example-odd">
+<PRE>
+phrase =  "this is a long story left" 
+one = "l" 
+two = "i" 
+sep = "s" 
+
+
+returns: "i-g-t"
+
+"i" from "this", "-" from "is", nothing from  "a", "g" from "long", "-"
+from "story", and "t" from "left"
+
+</PRE>
+<P>
+
+
+<P>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

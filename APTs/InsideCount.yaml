@@ -1,0 +1,133 @@
+filename: InsideCount.py
+name: InsideCount
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def howMany(phrase, letter):\n\t'''\n\tGiven string parameters phrase and letter,\n\twhere letter is one character and phrase is a\n\tstring of words separated by a blank, return\n\tthe count of the unique words in phrase\n\tthat have letter in them\n\t'''\n\t\n\t# you write code here"
+problem: >-
+  Given a phrase of words and a single letter, your task is to determine
+
+  which of the words in phrase have this letter as one of their letters, and
+
+  to return the count of the unique words
+
+  in phrase that have letter in them.
+
+
+
+
+  Write function <em>howMany </em> that has two string parameters
+
+  named <code>phrase</code> and  <code>letter</code>.
+
+  This function returns an integer representing the
+
+  count of the unique words in phrase that have <code> letter</code> in
+
+  them.
+
+  Ignore case for <code>phrase</code>, so the words "That", "that", "ThaT" and
+  "THAT" would all be considered
+
+  the same word. You can assume <code>letter</code> is always lowercase.
+constraints: |-
+  <ul>
+  <li> phrase is of length 1 or more characters.  </li>
+  <li> words in phrase are separated by blanks.</li>
+  <li>phrase starts and ends with an alphabetic character, and if there
+  are blanks, there cannot be two adjacent blanks.    </li>
+  </li>
+  <li> phrase is only alphabetic characters, upper or lowercase </li>
+  <li> letter is of length 1   </li>
+  <li> letter is only an alphabetic character and is lowercase</li>
+
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  phrase = "Duke CompSci graduates are Jedi Masters of the technology sector"
+  letter = "d"
+
+  returns: 3
+  There are three unique words that contain d: Duke, graduates, and Jedi
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  phrase = "This is a very long long long test of this phrase"
+  letter = "g"
+
+  returns: 1
+  There is only one unique word with "g" in it: long
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  phrase = "How are you how are you how are you now"
+  letter = "h"
+
+  returns: 1
+
+  There is just one word with h: how
+
+  </PRE>
+
+
+
+  <li class="example-even">
+  <PRE>
+  phrase = "How are you how are you how are you now"
+  letter = "b"
+
+  returns: 0
+
+  There are no words that have a "b" in them.
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  phrase = "Go go go DUKE"
+  letter = "d"
+
+  returns: 1
+
+  There is just one word with a d in it.
+
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  phrase = "so"
+  letter = "s"
+
+  returns: 1
+
+  </PRE>
+
+
+
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Susan Rodger and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

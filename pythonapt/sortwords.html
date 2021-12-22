@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: SortWords</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: SortWords</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: SortWords.py
+
+  def sortReverse(phrase):
+      '''
+      The string parameter phrase is a string of one or 
+      more words or combinations of words, numbers, and 
+      symbols.
+	  
+      The function should return a reverse sorted list of the 
+	  words in the string.
+      '''
+	# you write code here
+
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+<p>Given a string, we want to sort the words(in reverse order). Create the function named 
+<code>sortReverse</code> that has one parameter named phrase, which is a string.
+</p>
+
+<p>This function returns a sorted list of the words from the string in reverse order.</p>
+
+</div> 
+<P>
+<h3>Constraints</h3>
+<ul>
+<P><li>The string parameter phrase is not empty.
+<P><li>Words that are repeated in the string should be counted each time they appear.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+
+<li class="example-odd">
+<PRE>
+phrase="This is a tester string."
+
+Returns: ['tester', 'string.', 'is', 'a', 'This']
+</PRE>
+# "tester" is the largest string in the list. "This" is the smallest string in the list lexicographically.
+<P>
+
+<li class="example-even">
+<PRE>
+phrase="This is A tester is string."
+
+Returns: ['tester', 'string.', 'is', 'is', 'This', 'A']
+</PRE>
+# "tester" is the largest string in the list. "A" is the smallest string. "is" appears twice in the list.
+<P>
+
+<li class="example-odd">
+<PRE>
+phrase="What time is it?"
+
+Returns: ['time', 'it?', 'is', 'What']
+</PRE>
+
+<P>
+
+<li class="example-even">
+<PRE>
+phrase="ARE YOU OLD ENOUGH?"
+
+Returns:['YOU', 'OLD', 'ENOUGH?', 'ARE']
+</PRE>
+
+<P>
+
+</ol>
+
+<P>
+<div class="copyright">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+<br/>
+This work is copyright &copy; A. Nicki Washington and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

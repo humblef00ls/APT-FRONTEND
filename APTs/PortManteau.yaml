@@ -1,0 +1,92 @@
+filename: PortManteau.py
+name: PortManteau
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def combine(first,flen,second,slen):\n\t\"\"\"\n\treturn string that's a portmanteau\n\tof strings first and second\n\tusing flen chars from first\n\tand slen chars from second\n\t\"\"\"\n\t\n\t# you write code here\n\treturn \"\""
+problem: |-
+  A <em>portmanteau</em> is a word made by combining parts
+  of other words. Examples include <em>brunch</em> (from breakfast
+  and lunch), <em>jeggings</em> (from jeans and leggings),
+  <em>guesstimate</em> (from guess and estimate) and <em>digerati</em>
+  (from digital and literati).
+
+  Write a function <code>combine</code> that returns a portmanteau from
+  two words, <code>first</code> and <code>second</code> that are
+  parameters
+  to the function. Combine the first <code>flen</code> characters
+  of <codE>first</code> with the last <code>slen</code> characters
+  of <code>second</code>. See the examples for details.
+constraints: |-
+  <ul>
+  <li> <code>first</code> and <code>second</code> will
+  each contain between 1 and 250 characters.
+  <li> <code>flen</code> will be positive and less than or equal to the
+  length of <code>first</code> </li>
+  <li> <code>slen</code> will be positive and less than or equal to the
+  length of <code>second</code>
+  </ul>
+examples: |-
+  <ol>
+  <li class="example-odd">
+  <PRE>
+  first = "brain"
+  flen = 4
+  second = "maniac"
+  slen = 4
+  </PRE>
+  Returns <code>"brainiac"</code> by combining "brai" and "niac"
+
+  <li class="example-even">
+  <PRE>
+
+  </PRE>
+
+  <li class="example-odd">
+  <PRE>
+  first = "stay"
+  flen = 4
+  second = "vacation"
+  slen = 6
+  </PRE>
+  returns <code>"staycation"</code>
+
+  <li class="example-even">
+  <PRE>
+  first = "emotion"
+  flen = 5
+  second = "icon"
+  slen = 3
+  </PRE>
+  returns <code>"emoticon"</code>
+
+
+  <li class="example-odd">
+  <PRE>
+  first = "frappe"
+  flen = 3
+  second = "cappuccino"
+  slen = 8
+  </PRE>
+
+  returns <code>"frappuccino"</code>
+  </ol>
+copyright: >-
+  <a rel="license"
+
+  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+
+  alt="Creative Commons License" style="border-width:0"
+
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+
+  /></a><br />This work
+
+  is copyright &copy; Owen Astrachan and
+
+  is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.

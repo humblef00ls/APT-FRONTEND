@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: EatingGood</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: EatingGood</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: EatingGood.py
+
+def howMany(meals, restaurant):
+      """
+      Parameter meals a list of strings with each in the format
+      "name:place-ate". Parameter restaurant is a string
+      return # unique name values where place-ate == restaurant   
+      """
+      
+      # you write code here
+      return 0
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+We want to know how many different people have eaten at a restaurant
+this past week. The parameter <code>meals</code> has strings
+in the format <code>"name:restaurant"</code> for a period of
+time. Sometimes a person eats at the same restaurant often.
+<P>
+Return the number of different people who have eaten at
+the eating establishment specified by parameter <code>restaurant</code>.
+<P>
+For example, <code>"John Doe:Moes"</code> shows that John Doe ate one meal at Moes.
+<P>
+
+Write function <code>howMany</code> that given <code>meals</code>, a
+list of strings in the format above indicating where each person ate a
+meal, and <code> restaurant</code>, the name of a restaurant, returns
+the number of people that ate at least one meal at that restaurant.
+
+<P>
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>meals</code> is a list with 0 or more strings. Each string is
+    in the format above, so each string has length at least 3 and
+    contains a colon. The string before the ":" and the string after it
+	  are at least one character long.
+</li>
+
+<p> <li> 
+    <code>len(restaurant) &gt;=1 </code>
+</li>
+
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+meals = ["Sue:Elmos", "Sue:Elmos", "Sue:Elmos"]
+
+restaurant = "Elmos"
+
+returns 1
+
+Sue ate at the restaurant three times, so only one unique person ate at the
+restaurant Elmos.  
+</PRE>
+<P>
+<li class="example-even">
+<PRE>
+meals = ["Sue:Elmos", "Joe:Mad Hatter", "Sue:Mad Hatter", "Kristin:Sitar"]
+
+restaurant = "Mad Hatter"
+
+returns 2
+
+Joe and Sue ate at the Mad Hatter.  
+</PRE>
+<P>
+<li class="example-odd">
+<PRE>
+meals = ["Sue:Elmos", "Joe:Mad Hatter", "Sue:Mad Hatter", "Bill:Elmos",
+"Owen:Elmos", "Joe:Mad Hatter", "Sue:Mad Hatter", "Nora:Elmos",
+"Nora:Sitar", "Joe:Elmos","Mary:Sitar"]
+
+restaurant = "Mad Hatter"
+
+returns 2
+
+Only Joe and Sue ate at the Mad Hatter
+
+</PRE>
+<P>
+<li class="example-even">
+<PRE>
+meals = ["Sue:Elmos", "Joe:Mad Hatter", "Sue:Mad Hatter", "Bill:Elmos", "Kristin:Sitar",
+"Owen:Elmos", "Joe:Mad Hatter", "Sue:Mad Hatter", "Nora:Elmos",
+"Nora:Sitar", "Joe:Elmos", "Mary:Sitar", "Joe:Elmos", "Mary:Sitar", "Kristin:Sitar"]
+
+restaurant = "Elmos"
+
+returns 5
+
+Five different people ate at least once at Elmos.
+</PRE>
+
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Susan Rodger and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

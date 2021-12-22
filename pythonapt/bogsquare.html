@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>APT: Bogsquare</title>
+    <link href="apt.css" rel="stylesheet" type="text/css" media="screen, print"/> 
+  </head>
+
+  <body>
+    <h1>APT: Bogsquare</h1>
+
+
+<div class="container">
+<div class="allclass">
+<h3>Specification</h3>
+<xmp>
+  filename: Bogsquare.py
+
+  def score(word):
+      """
+      return integer obtained by squaring
+      length of String parameter word
+      """
+</xmp>
+</div>
+<h2>Problem Statement</h2>
+
+In some word games the score awarded depends to some
+extent on the length of the word. For example, in Boggle&trade;
+longer words receive higher scores than shorter words.
+<P>
+In the game <em>Bogsquare</em> the score of a word is the square
+of the length of the word, e.g., "dog" has a score of 9 and
+"carnivore" has a score of 81.
+<P>
+Write function  <code>score</code> to return the score
+of a string in Bogsquare.
+
+</div> 
+<P>
+<h3>Constraints</h3>
+
+<ul>
+<P><li> <code>word</code> is a String of at most 128 characters.
+</ul>
+
+
+<h3>Examples</h3>
+<ol>
+<li class="example-odd">
+<PRE>
+word = "dog"
+
+returns 9
+
+</PRE>
+3*3 = 9
+<P>
+<li class="example-even">
+<PRE>
+word = "I"
+
+returns 1
+
+</PRE>
+One-letter words don't yield a high score.
+<P>
+<li class="example-odd">
+<PRE>
+
+word = "Antidisestablishmentarianism" 
+
+return 784
+
+</PRE>
+28*28=784
+<P>
+<li class="example-even">
+<PRE>
+word = "ox"
+
+returns 4
+</PRE>
+</ol>
+<P>
+<div class="copyright">
+<a rel="license"
+	  href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+	    alt="Creative Commons License" style="border-width:0"
+	    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"
+	    /></a><br />This work 
+is copyright &copy; Owen Astrachan and
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+filename: ReadQuizScore.py
+name: ReadQuizScore
+description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
+lang: python
+initial: "def grade(total, availablePoints, cutOff):\n\t\"\"\"\n\treturn a student's reading quiz grade as a float percentage based on\n\tthe integer values in total, availablePoints, and cutOff.\n\t\"\"\"\n\t\n\t# you write code here\n\treturn 0.0"
+problem: >-
+  You are a student in a class with reading quizzes. To help you always know
+  your current reading quiz grade you've decided to write a function that will
+  return the percentage score on your reading quizzes!
+
+
+  An example syllabus is: "You will receive full credit for the reading quizzes
+  if you earn 75% of the available points. We calculate your reading quiz score
+  by counting up all of the points you earned and divide by 75% of all the
+  points possible."
+
+
+  Your function has three parameters. <code>total</code> is the number of points
+  you received on all of the reading quizzes combined.
+  <code>availablePoints</code> is the total number of points across all of the
+  reading quizzes were worth. <code>cutOff</code> is an integer between 0 and
+  100 representing the percent of points you need to earn full credit. The
+  function's return value is the percentage score and therefore between 0.0 and
+  100.0 of type float.
+constraints: |-
+  <ul>
+  <li>The integer <code>total</code> is greater than or equal to 0
+  <li>The integer <code>availablePoints</code> is greater than or equal to 0
+  <li>The integer <code>cutOff</code> is between 0 and 100 inclusive
+
+  </ul>
+examples: |-
+  <ol>
+
+  <li class="example-odd">
+  <PRE>
+  total = 60
+  availablePoints = 100
+  cutOff = 75
+
+  Returns 80.0
+
+  In this case, 75% of the points would be 75. You got 60,
+  so your score is 60/75 = 80%
+  </PRE>
+
+
+  <li class="example-even">
+  <PRE>
+  total = 6
+  availablePoints = 16
+  cutOff = 75
+
+  Returns 50.0
+
+  In this case, 75% of the points would be 12 points.
+  You got 6 points, which is 50% of the total points
+  you needed to get.
+  </PRE>
+
+
+  <li class="example-odd">
+  <PRE>
+  total = 81
+  availablePoints = 100
+  cutOff = 80
+
+  Returns 100.0
+
+  In this case, the cutoff is 80, meaning you must get at least 80% of the
+  points.  Since the total number of points available is 100, that means you
+  must get at least 80 points. You got 81 points, which is more than 80% of the
+  points, so you get 100%.
+  </PRE>
+
+
+  </ol>
+copyright: >-
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+
+  <img alt="Creative Commons License" style="border-width:0"
+  src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>
+
+  <br/>
+
+  This work is copyright &copy; Kristin Stephens-Martinez and is licensed under
+  a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+  Attribution-Share Alike 3.0 Unported License</a>.
+
+  Explanations of the examples added by Susan Rodger.
