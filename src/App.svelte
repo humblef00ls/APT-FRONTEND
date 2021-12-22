@@ -10,14 +10,14 @@ See lib to see the components rendered here  -->
 	import { onMount } from "svelte";
 	let urlPath = window.location.hash;
 	let previous = false;
-
+	const statusx = ["","correct","wrong"]
 	const toggleLight = () => {
 		$lightMode = !$lightMode;
 		setColors($lightMode);
 	};
 	const apt_list = config.apt_sections.map((x) => ({
 		...x,
-		apts: x.apts.map((y) => ({ ...y, status: "" })),
+		apts: x.apts.map((y) => ({ ...y, status: statusx[Math.floor(Math.random() * statusx.length)] })),
 	}));
 	let help = false;
 	let tagview = false;
@@ -68,8 +68,6 @@ See lib to see the components rendered here  -->
 		if (sugb) f.unshift(sugb);
 		if (chalb) f.unshift(chalb);
 		if (reqb) f.unshift(reqb);
-
-
 	});
 	$: if (tagview) sptc = f;
 	else sptc = apt_list;
@@ -285,7 +283,7 @@ See lib to see the components rendered here  -->
 		{/if}
 	</main>
 {:else if $url.split("/")[1] == "APT"}
-	<APT data={aptsX.filter(x=> x.name == $url.split("/")[2])[0]}  />
+	<APT data={aptsX.filter((x) => x.name == $url.split("/")[2])[0]} />
 {:else}
 	Y
 {/if}

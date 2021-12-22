@@ -4,12 +4,14 @@
     import { editor_val, submitting } from "../stores.js";
     let editor
     let init = false;
-    export let initial = []
+    export let initial 
+    export let filename
+    export let lang
     onMount(mountEditor)
     function mountEditor() {
         editor = monaco.editor.create(document.getElementById('coder'), {
             value: initial,
-            language: 'python',
+            language: lang,
             automaticLayout: true,
             minimap: {
                 enabled: false
@@ -37,7 +39,16 @@
         $editor_val = editor.getValue()
         console.log($editor_val)
         $submitting = true
-        
+        var file = new File([editor.getValue()], filename, {
+  type: "text/plain",
+});
+const elem = window.document.createElement('a');
+        elem.href = window.URL.createObjectURL(file);
+        elem.download = filename
+        document.body.appendChild(elem);
+        elem.click();        
+        document.body.removeChild(elem);
+        console.log(file)
     }
   </script>
   {#if !init}

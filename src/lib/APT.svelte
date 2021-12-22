@@ -69,7 +69,7 @@ Also uses components from lib. -->
                     <span class="tag">{tag}</span>
                 {/each}
             </p>
-            <p class="prob">{@html data.problem.split('\n').map(x=> x == '' ? '<br>' : x).join(' ')}</p>
+            <p class="prob">{@html data.problem.split('\n').map(x=> x == '' ? '<br><br>' : x).join(' ').replace('<br><br> <br><br>', '<br><br>')}</p>
         </div>
         <div class="question">
             <h2>Constraints</h2>
@@ -91,7 +91,7 @@ Also uses components from lib. -->
         </div>
     </section>
     <section class="editor">
-        <Ex initial={data.initial} />
+        <Ex initial={data.initial} filename={data.filename}  lang = {data.lang}/>
     </section>
 </main>
 

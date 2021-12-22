@@ -160,8 +160,8 @@ try {
                     // console.log(cpr_desc)
                     
                     cpr_desc = cpr_desc.join('\n')
-                    if('Intro' == filename.split('.')[0]){
-                        console.log(code)
+                    if('SentenceLength' == filename.split('.')[0]){
+                        console.log(prob_desc)
                     }
                     
                     fs.writeFileSync('./APTS/' + filename.split('.')[0] + '.yaml', yaml.dump(
