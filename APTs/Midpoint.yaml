@@ -1,12 +1,8 @@
 filename: Midpoint.py
 name: Midpoint
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def getPoint(coordinates):\n\t'''\n\tThe function accepts one parameter named coordinates, which is a list containing\n\ttwo strings in the format [\"x1,y1\", \"x2,y2\"], where:\n\t\n\t\"x1,y1\" is an (x,y) coordinate pair for the first point\n\t\n\t\"x2,y2\" is an (x,y) coordinate pair for the second point\n\t\n\tThe function should return a list containing the x and y coordinates of the midpoint in the\n\tformat [x,y].\n\t'''\n\t# you write code here\n\t"
+initial: "def getPoint(coordinates):\n\t'''\n\tThe function accepts one parameter named coordinates, which is a list containing\n\ttwo strings in the format [\"x1,y1\", \"x2,y2\"], where:\n\t\n\t\"x1,y1\" is an (x,y) coordinate pair for the first point\n\t\n\t\"x2,y2\" is an (x,y) coordinate pair for the second point\n\t\n\tThe function should return a list containing the x and y coordinates of the midpoint in the\n\tformat [x,y].\n\t'''\n\t# you write code here"
 problem: >-
   The midpoint between any two points on the Cartesian plane can be calculated
   using the formula:

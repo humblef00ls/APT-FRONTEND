@@ -1,10 +1,6 @@
 filename: NotFirst.py
 name: NotFirst
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def sortit(letter, words):\n\t'''\n\tletter is a string of one lowercase alphabetic letter\n\twords is a list of words\n\treturn a sorted list of the unique words that\n\tdo not start with letter\n\t'''\n\t# you write code here"
 problem: |-

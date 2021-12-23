@@ -1,10 +1,6 @@
 filename: FriendScore.py
 name: FriendScore
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def highestScore(friends):\n\t\"\"\"\n\treturn int based on popularity of\n\tdata in string list friends\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-

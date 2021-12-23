@@ -1,12 +1,8 @@
 filename: BodyMassIndex.py
 name: BodyMassIndex
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def calculateBMI(input):\n\t'''\n\tThe list parameter input contains two integers in the\n\tformat [weight, height], where:\n\t\n\tweight-person's weight (in pounds (lbs)).\n\t\n\theight-person's height (in inches (in)).\n\t\n\tThe function should return an integer that\n\trepresents the calculated BMI.\n\t'''\n\t# you write code here\n\t"
+initial: "def calculateBMI(input):\n\t'''\n\tThe list parameter input contains two integers in the\n\tformat [weight, height], where:\n\t\n\tweight-person's weight (in pounds (lbs)).\n\t\n\theight-person's height (in inches (in)).\n\t\n\tThe function should return an integer that\n\trepresents the calculated BMI.\n\t'''\n\t# you write code here"
 problem: |-
   Body mass index (BMI) is a measure of body size, which is often calculated
   by medical professionals. BMI is calculated based on a person's height and

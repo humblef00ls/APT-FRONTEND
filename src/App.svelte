@@ -3,7 +3,7 @@ See lib to see the components rendered here  -->
 <script>
 	import aptsX from "./aptsX.js";
 
-	import { lightMode, mainTitle, url, config } from "./stores.js";
+	import { lightMode, mainTitle, url, config , APTXInfo } from "./stores.js";
 	import Submissions from "./lib/Submissions.svelte";
 	import APT from "./lib/APT.svelte";
 	import { setColors } from "./lib/utils.js";
@@ -15,7 +15,7 @@ See lib to see the components rendered here  -->
 		$lightMode = !$lightMode;
 		setColors($lightMode);
 	};
-	const apt_list = config.apt_sections.map((x) => ({
+	let apt_list = config.apt_sections.map((x) => ({
 		...x,
 		apts: x.apts.map((y) => ({ ...y, status: statusx[Math.floor(Math.random() * statusx.length)] })),
 	}));
@@ -23,7 +23,12 @@ See lib to see the components rendered here  -->
 	let tagview = false;
 	let sptc = apt_list;
 	let f = [];
+
+	let allapts = apt_list.map((x) => x.apts).reduce((a, b) => a.concat(b)).map((λ,i) => ({...λ, index:i }));
+	$APTXInfo.total = allapts.length
+	$APTXInfo.apts = allapts.map(x => x.name)
 	onMount(() => {
+		
 		$lightMode =
 			JSON.parse(window.localStorage.getItem("lightMode")) ??
 			!(
@@ -33,7 +38,8 @@ See lib to see the components rendered here  -->
 
 		setColors($lightMode);
 
-		let allapts = apt_list.map((x) => x.apts).reduce((a, b) => a.concat(b));
+		
+		
 		let tx = [
 			...new Set(
 				allapts.map((x) => x.tags).reduce((a, b) => a.concat(b))
@@ -44,7 +50,7 @@ See lib to see the components rendered here  -->
 		let chalb;
 		let sugb;
 
-		console.log(aptsX);
+		
 
 		for (let i = 0; i < tx.length; i++) {
 			const obx = {
@@ -71,6 +77,8 @@ See lib to see the components rendered here  -->
 	});
 	$: if (tagview) sptc = f;
 	else sptc = apt_list;
+
+	$: if ($url.includes("/APTX/")) $APTXInfo.index = allapts.filter((x) =>  $url.includes("/"+ x.name))[0].index
 </script>
 
 <svelte:head>
@@ -179,7 +187,7 @@ See lib to see the components rendered here  -->
 				</button>
 				{#if help}
 					<div class="helper">
-						{config.setup.helpsection}
+						{@html config.setup.helpsection}
 					</div>
 				{/if}
 			</div>
@@ -234,7 +242,7 @@ See lib to see the components rendered here  -->
 					</div>
 					<div class="apt-container">
 						{#each apt.apts as aptp}
-							<a href={`#/APT/${aptp.name}`}>
+							<a href={`#/APTX/${aptp.name}`}>
 								<div class="apt-item">
 									<div
 										class={`apt-status ${
@@ -282,8 +290,8 @@ See lib to see the components rendered here  -->
 			</footer>
 		{/if}
 	</main>
-{:else if $url.split("/")[1] == "APT"}
-	<APT data={aptsX.filter((x) => x.name == $url.split("/")[2])[0]} />
+{:else if $url.includes("/APTX/")  }
+	<APT data={   {...aptsX.filter(x=>x.name == allapts[$APTXInfo.index].name)[0],tags: allapts[$APTXInfo.index].tags }  }  />
 {:else}
 	Y
 {/if}

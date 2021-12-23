@@ -46,10 +46,12 @@ try {
     logRows2[6] = ":root{" + Object.keys(data.setup.theme).map(x => "--" + (x.includes('_') ? x.split('_').join('-') : x) + ":" + data.setup.theme[x]).join(";") + "}"
     fs.writeFileSync('./public/global.css', logRows2.join('\n'));
 
+
     // console.log(data.apt_sections)
 
     if (process.argv.slice(2)[0] == 'parse') {
         fs.readdir('./pythonapt', (err, files) => {
+
             if (err) console.log(err)
             else
                 files.forEach(file => {
@@ -100,8 +102,13 @@ try {
                     lang = filename.split('.')[1] == 'py' ? 'python' : 'java';
 
                     code = logRows3.slice(codes + 1, codee)
-                    while (code[0] == '') code = code.slice(1)
 
+                    while (code[0] == '' ||  code[0] == '   ' || code[0] ==  '  ') code = code.slice(1)
+                    while (code[code.length - 1] == '') code = code.slice(0, code.length - 1)
+
+                    if('SubstringFreq' == filename.split('.')[0]){
+                        console.log(code,filename)
+                    }
                     if (lang == 'python') code = code.map(x => (x.trim().slice(0, 3) == 'def' ? '' : '\t') + x.trim())
 
                     code = code.join('\n')
@@ -160,38 +167,34 @@ try {
                     // console.log(cpr_desc)
                     
                     cpr_desc = cpr_desc.join('\n')
-                    if('SentenceLength' == filename.split('.')[0]){
-                        console.log(prob_desc)
-                    }
+
                     
                     fs.writeFileSync('./APTS/' + filename.split('.')[0] + '.yaml', yaml.dump(
                         {
                             filename,
                             name: filename.split('.')[0],
                             description: "",
-                            tags: ['TAG1', 'TAG2', 'Required'],
                             lang,
                             initial: code,
                             problem: prob_desc,
                             constraints: const_desc,
                             examples: examp_desc,
                             copyright: cpr_desc,
-
                         }
                     ))
                 });
         })
     }
 
+
     fs.readdir('./APTs', (err, files) => {
-        
+
         if (err) console.log(err)
         else{
             const aptsλ = files.map(file => yaml.safeLoad(fs.readFileSync('./APTs/'+file, 'utf8')))
             fs.writeFileSync('./src/aptsX.js', 'export default ' + JSON.stringify(aptsλ));
         }
     })
-
 
 
 

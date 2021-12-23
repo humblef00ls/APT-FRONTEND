@@ -1,12 +1,8 @@
 filename: ParkingViolations.py
 name: ParkingViolations
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def amountOwed(ticket, months):\n\t'''\n\tThe following parameters are input to the function:\n\tticket-the original ticket amount.\n\tmonths-the number of months that the fine is late.\n\t\n\t\n\tThe function should return the current amount owed, which includes\n\tthe parking fee plus all late fees.\n\t'''\n\t# you write code here\n\t"
+initial: "def amountOwed(ticket, months):\n\t'''\n\tThe following parameters are input to the function:\n\tticket-the original ticket amount.\n\tmonths-the number of months that the fine is late.\n\t\n\t\n\tThe function should return the current amount owed, which includes\n\tthe parking fee plus all late fees.\n\t'''\n\t# you write code here"
 problem: >-
   Campus parking has instituted new policies for late parking violations.
 

@@ -1,10 +1,6 @@
 filename: Consensus.py
 name: Consensus
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def majorityWinner(voteA, voteB, voteC):\n\t'''\n\tvoteA (int) - Number of votes received by candidate A\n\tvoteB (int) - Number of votes received by candidate B\n\tvoteC (int) - Number of votes received by candidate C\n\t\n\tReturns a string representing which candidate won the majority vote, based\n\ton the three parameters. If there is no majority winner, return \"No one\".\n\t'''\n\treturn ''"
 problem: >-

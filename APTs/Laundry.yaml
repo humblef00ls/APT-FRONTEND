@@ -1,12 +1,8 @@
 filename: Laundry.py
 name: Laundry
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "\t\ndef minutesNeeded(m):\n\t\"\"\"\n\tReturn integer number of minutes to launder m (integer) loads\n\t\"\"\"\n\t\n\t# you write code here"
+initial: "def minutesNeeded(m):\n\t\"\"\"\n\tReturn integer number of minutes to launder m (integer) loads\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-
   Consider the problem of trying to do a number of loads of laundry, given
 

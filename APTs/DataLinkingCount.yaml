@@ -1,12 +1,8 @@
 filename: DataLinkingCount.py
 name: DataLinkingCount
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def mergeCheck(data1, data2, dataLinking):\n\t'''\n\tdata1 (list of strs): list of two pieces of data A and B separated by a\n\tcolon ':' (ex: 'a1:b1')\n\tdata2 (list of strs): list of two pieces of data C and D separated by a\n\tcolon ':' (ex. 'c1:d1')\n\tdataLinking (list of strs): list of two pieces of data B and C separated\n\tby a colon ':' (ex: 'b1:c1')\n\t\n\tReturn a list of three ints as follows:\n\tIndex 0: The number of elements in data1 that do not have a corresponding\n\tvalue in dataLinking\n\tIndex 1: The number of elements that can be linked across all three data sets\n\tIndex 2: The number of elements in data2 that do not have a corresponding\n\tvalue in dataLinking\n\t'''\n\treturn [0,0,0]\n\t"
+initial: "def mergeCheck(data1, data2, dataLinking):\n\t'''\n\tdata1 (list of strs): list of two pieces of data A and B separated by a\n\tcolon ':' (ex: 'a1:b1')\n\tdata2 (list of strs): list of two pieces of data C and D separated by a\n\tcolon ':' (ex. 'c1:d1')\n\tdataLinking (list of strs): list of two pieces of data B and C separated\n\tby a colon ':' (ex: 'b1:c1')\n\t\n\tReturn a list of three ints as follows:\n\tIndex 0: The number of elements in data1 that do not have a corresponding\n\tvalue in dataLinking\n\tIndex 1: The number of elements that can be linked across all three data sets\n\tIndex 2: The number of elements in data2 that do not have a corresponding\n\tvalue in dataLinking\n\t'''\n\treturn [0,0,0]"
 problem: >-
   A common task when analyzing data is linking multiple data sets together.
   Sometimes the only way to connect two data sets together is by using a third

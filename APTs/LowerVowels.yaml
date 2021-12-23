@@ -1,12 +1,8 @@
 filename: LowerVowels.py
 name: LowerVowels
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def lower(phrase):\n\t'''\n\tThis function accepts one parameter, phrase, which is a string.\n\t\n\tThe function should return the number of lowercase vowels in phrase.\n\t'''\n\t# you write code here\n\t"
+initial: "def lower(phrase):\n\t'''\n\tThis function accepts one parameter, phrase, which is a string.\n\t\n\tThe function should return the number of lowercase vowels in phrase.\n\t'''\n\t# you write code here"
 problem: >-
   We are interested in determining the number of lowercase vowels in a given
   string.

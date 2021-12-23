@@ -1,10 +1,6 @@
 filename: TeamSplit.py
 name: TeamSplit
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def difference(strengths):\n\t\"\"\"\n\treturn int based on int list parameter strengths\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-

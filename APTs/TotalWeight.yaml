@@ -1,10 +1,6 @@
 filename: TotalWeight.py
 name: TotalWeight
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def weight3(ab,ac,bc):\n\t\"\"\"\n\treturn float indicating\n\tthe total amount of weight for objects a, b and c.\n\tYou are given the combined weight of a and b\n\ttogether as parameter ab, the combined weight of\n\ta and c together as parameter ac,\n\tand the weight of b and c together with parameter bc.\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

@@ -1,10 +1,6 @@
 filename: VenmoTracker.py
 name: VenmoTracker
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def networth(transactions):\n\t\"\"\"\n\treturn list of strings based on transactions,\n\twhich is also a list of strings\n\t\"\"\"\n\t\n\t# you write code here\n\treturn []"
 problem: |-

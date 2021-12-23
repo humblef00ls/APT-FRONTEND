@@ -1,10 +1,6 @@
 filename: CreateAcronym.py
 name: CreateAcronym
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def acronym(phrase):\n\t\"\"\"\n\tphrase is a string, zero or more spaces\n\treturn a string: acronym of the string\n\tparameter phrase\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

@@ -1,10 +1,6 @@
 filename: WhichFirstNames.py
 name: WhichFirstNames
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def computeNames(team1, count, team2):\n\t'''\n\tYou have three parameters, team1,\n\tcount, and team2.\n\tThe two string parameters are\n\tnamed team1 and team2, where both\n\tof them are a string of peoples names,\n\twith words separated by blanks.\n\tEach name on a team is exactly two words.\n\tThe count parameter is an integer\n\tand indicates the number of teams. It\n\twill always have the value 2.\n\tThis function returns a string of the\n\tunique first names that are only\n\tin one of the teams. The names should\n\tappear in alphabetical order.\n\t'''\n\t\n\t# you write code here"
 problem: >-

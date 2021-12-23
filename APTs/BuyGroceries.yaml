@@ -1,10 +1,6 @@
 filename: BuyGroceries.py
 name: BuyGroceries
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def pickBest(groceries):\n\t'''\n\tGiven the string parameter groceries,\n\twhich contains items and for each\n\titem its cost from a particular store,\n\treturn the total of the cheapest of\n\teach item.\n\t'''\n\t# you write code here"
 problem: >-

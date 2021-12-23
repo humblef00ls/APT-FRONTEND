@@ -1,10 +1,6 @@
 filename: SentenceLength.py
 name: SentenceLength
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def average(sentenceList):\n\t\"\"\"\n\treturns the average sentence length\n\tof all the sentences in sentenceList, a\n\tlist of white-space delimited strings.\n\t\"\"\"\n\t\n\t# you write code here\n\treturn 0.0"
 problem: |-

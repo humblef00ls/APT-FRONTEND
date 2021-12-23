@@ -1,10 +1,6 @@
 filename: Gravity.py
 name: Gravity
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def falling(time,velo):\n\t\"\"\"\n\treturn float indicating\n\tnumber of meters an object has\n\tfallen after being dropped/thrown\n\twith initial velocity given by\n\tfloat parameter velo\n\t(given in meters/second)\n\tand after falling for float parameter\n\ttime seconds\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

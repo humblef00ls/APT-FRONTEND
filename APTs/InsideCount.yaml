@@ -1,10 +1,6 @@
 filename: InsideCount.py
 name: InsideCount
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def howMany(phrase, letter):\n\t'''\n\tGiven string parameters phrase and letter,\n\twhere letter is one character and phrase is a\n\tstring of words separated by a blank, return\n\tthe count of the unique words in phrase\n\tthat have letter in them\n\t'''\n\t\n\t# you write code here"
 problem: >-

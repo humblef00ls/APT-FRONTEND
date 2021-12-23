@@ -1,10 +1,6 @@
 filename: BordaCount.py
 name: BordaCount
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def winners(ballot):\n\t\"\"\"\n\treturn list of winners based on votes\n\tin list ballot\n\t\"\"\"\n\t\n\t# you write code here\n\treturn []"
 problem: |-

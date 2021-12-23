@@ -1,10 +1,6 @@
 filename: Calculator.py
 name: Calculator
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def toTen(lstOp, lstNum):\n\t'''\n\tlstOp (list of strings) - list of strings representing the\n\toperators +, -, *, /\n\tlstNum (list of ints) - list of integers\n\t\n\tReturn the number of operations it takes to reach 10. If 10 is never\n\treached, return -1. Starting at the beginning of the lists and with the\n\tvalue 0, add ('+'), subtract ('-'), multiply ('*'), or divide ('/') the\n\tcurrent value with the current element in LST_NUM according to the current\n\telement in LST_OP.\n\t'''\n\treturn -1"
 problem: >-

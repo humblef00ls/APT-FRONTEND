@@ -1,10 +1,6 @@
 filename: EatDrink.py
 name: EatDrink
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def winners(data):\n\t\"\"\"\n\treturn String list based on String list data\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

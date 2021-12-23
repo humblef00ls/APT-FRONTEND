@@ -1,12 +1,8 @@
 filename: MaxOrder.py
 name: MaxOrder
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def forItem(orders, item):\n\t'''\n\torders (list of strs) - list of orders for items in format \"ITEM:QUANTITY\"\n\titem (str) - item of interest in ORDERS\n\t\n\tReturn in a list the largest ordered quantity for ITEM in ORDERS\n\tand how many times that quantity was ordered.\n\t'''\n\treturn [0, 0]\n\t"
+initial: "def forItem(orders, item):\n\t'''\n\torders (list of strs) - list of orders for items in format \"ITEM:QUANTITY\"\n\titem (str) - item of interest in ORDERS\n\t\n\tReturn in a list the largest ordered quantity for ITEM in ORDERS\n\tand how many times that quantity was ordered.\n\t'''\n\treturn [0, 0]"
 problem: >-
   Write the function <code>forItem</code> that takes <code>orders</code>, a list
   of strings that represent orders, and <code>item</code>, a string for a

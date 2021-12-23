@@ -1,12 +1,8 @@
 filename: ExpenseTracker.py
 name: ExpenseTracker
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def expenses(spending, limit):\n\t'''\n\tThis function accepts two parameters:\n\tspending-list parameter of 12 integers that represent\n\tthe total expenses for each month of the year.\n\t\n\tlimit-the maximum amount that can be spent for the year.\n\t\n\tThe function should return a string representing the first\n\tmonth where the total expenses incurred for the year up to\n\tthat month exceed the yearly limit.\n\t'''\n\t# you write code here\n\t"
+initial: "def expenses(spending, limit):\n\t'''\n\tThis function accepts two parameters:\n\tspending-list parameter of 12 integers that represent\n\tthe total expenses for each month of the year.\n\t\n\tlimit-the maximum amount that can be spent for the year.\n\t\n\tThe function should return a string representing the first\n\tmonth where the total expenses incurred for the year up to\n\tthat month exceed the yearly limit.\n\t'''\n\t# you write code here"
 problem: |-
   You are always over your yearly budget at the end of the year.In an
   effort to become more fiscally responsible, you've decided to

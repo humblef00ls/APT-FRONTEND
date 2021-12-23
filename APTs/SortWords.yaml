@@ -1,12 +1,8 @@
 filename: SortWords.py
 name: SortWords
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def sortReverse(phrase):\n\t'''\n\tThe string parameter phrase is a string of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return a reverse sorted list of the\n\twords in the string.\n\t'''\n\t# you write code here\n\t"
+initial: "def sortReverse(phrase):\n\t'''\n\tThe string parameter phrase is a string of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return a reverse sorted list of the\n\twords in the string.\n\t'''\n\t# you write code here"
 problem: >-
   Given a string, we want to sort the words(in reverse order). Create the
   function named

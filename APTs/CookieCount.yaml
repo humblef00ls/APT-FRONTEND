@@ -1,12 +1,8 @@
 filename: CookieCount.py
 name: CookieCount
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def countOrders(orders):\n\t'''\n\tThe list parameter orders contains a string in the format\n\t\"name:order:quant:name:order:quant:name:order:quant:name:order:quant\", where:\n\t\n\tname-first name of a person.\n\t\n\torder-the type of cookie ordered.\n\t\n\tquant-the number of boxes requested.\n\t\n\tThe function should return an integer that represents the maximum number of\n\tboxes ordered of any type of cookie.\n\t'''\n\t# you write code here\n\t"
+initial: "def countOrders(orders):\n\t'''\n\tThe list parameter orders contains a string in the format\n\t\"name:order:quant:name:order:quant:name:order:quant:name:order:quant\", where:\n\t\n\tname-first name of a person.\n\t\n\torder-the type of cookie ordered.\n\t\n\tquant-the number of boxes requested.\n\t\n\tThe function should return an integer that represents the maximum number of\n\tboxes ordered of any type of cookie.\n\t'''\n\t# you write code here"
 problem: >-
   It's that time of year, where everyone is ordering Girl Scout Cookies.
   However, the system can only

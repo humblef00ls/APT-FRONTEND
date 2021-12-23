@@ -1,10 +1,6 @@
 filename: TrophyShelf.py
 name: TrophyShelf
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def countVisible(trophies):\n\t\"\"\"\n\treturn two-element int list\n\tbased on trophies, an int list\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-

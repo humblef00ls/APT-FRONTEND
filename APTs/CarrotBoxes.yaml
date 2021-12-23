@@ -1,10 +1,6 @@
 filename: CarrotBoxes.py
 name: CarrotBoxes
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def theIndex(carrots,amount):\n\t\"\"\"\n\tcarrots is list of integers representing\n\tboxes of carrots, amount is int value.\n\treturn int that is the index/box number\n\tof the box from which the last of\n\tamount carrots are eaten\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

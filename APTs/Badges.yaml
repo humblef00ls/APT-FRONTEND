@@ -1,10 +1,6 @@
 filename: Badges.py
 name: Badges
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def findLabel(labels,deeds,needs):\n\t\"\"\"\n\treturn string based on parameters\n\tlabels a list of strings\n\tdeeds a list of strings\n\tand needs a list of strings\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-

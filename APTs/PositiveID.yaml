@@ -1,10 +1,6 @@
 filename: PositiveID.py
 name: PositiveID
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def maximumFacts(suspects):\n\t\"\"\"\n\treturn int based on information in\n\tparameter results, a list of strings\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

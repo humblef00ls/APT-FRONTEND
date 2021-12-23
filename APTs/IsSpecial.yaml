@@ -1,10 +1,6 @@
 filename: IsSpecial.py
 name: IsSpecial
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def lovely(ingredients,inedible):\n\t\"\"\"\n\treturn int, number of items in\n\tingredients, a string that are edible\n\tusing informaion from  inedible, a string\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

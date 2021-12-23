@@ -1,10 +1,6 @@
 filename: TxMsg.py
 name: TxMsg
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def getMessage(original):\n\t\"\"\"\n\treturn String that is 'textized' version\n\tof String parameter original\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

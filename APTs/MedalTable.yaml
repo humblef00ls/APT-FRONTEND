@@ -1,12 +1,8 @@
 filename: MedalTable.py
 name: MedalTable
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def generate(results):\n\t\"\"\"\n\treturn list of strings\n\tbased on data in results, a list of strings\n\t\"\"\"\n\t\n\t# you write code here\n\treturn []\n\t"
+initial: "def generate(results):\n\t\"\"\"\n\treturn list of strings\n\tbased on data in results, a list of strings\n\t\"\"\"\n\t\n\t# you write code here\n\treturn []"
 problem: |-
   The Olympic Games will be held, and have been held (and might be being
   held).  Given the results of the olympic disciplines, generate and

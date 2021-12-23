@@ -1,12 +1,8 @@
 filename: SubstringFreq.py
 name: SubstringFreq
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "\t\ndef frequency(text, n):\n\t'''\n\ttext (string) - A string with at least one word\n\tn (int) - the length of the substring\n\t\n\tCounts the appearance of each substring in text and returns the most frequent ones as a list.\n\t'''\n\treturn []\n\t"
+initial: "def frequency(text, n):\n\t'''\n\ttext (string) - A string with at least one word\n\tn (int) - the length of the substring\n\t\n\tCounts the appearance of each substring in text and returns the most frequent ones as a list.\n\t'''\n\treturn []"
 problem: >-
   Considering all substrings of length <code>n</code> within each word separated
   by whitespace in <code>text</code>, return an alphabetically sorted list of

@@ -1,10 +1,6 @@
 filename: SortedFreqs.py
 name: SortedFreqs
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def freqs(data):\n\t\"\"\"\n\treturn list of int values corresponding\n\tto frequencies of strings in data, a list\n\tof strings\n\t\"\"\""
 problem: |-

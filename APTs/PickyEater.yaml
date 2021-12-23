@@ -1,12 +1,8 @@
 filename: PickyEater.py
 name: PickyEater
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def dinner(foods, willEat, hunger, meal):\n\t'''\n\tfoods (list of strings) - parallel list with willEat of the foods picky\n\teater is willing to eat.\n\twillEat (list of ints) - parallel list with foods of how much of that food\n\tthe picky eater is willing to eat.\n\thunger (int) - how much food the picky eater needs to eat to be full.\n\tmeal (list of strings) - the list and order of the foods given to the picky\n\teater.\n\t\n\tReturn how much food the picky eater still needs to eat to be full.\n\t'''\n\t\n\t# Your code here\n\treturn 0\n\t"
+initial: "def dinner(foods, willEat, hunger, meal):\n\t'''\n\tfoods (list of strings) - parallel list with willEat of the foods picky\n\teater is willing to eat.\n\twillEat (list of ints) - parallel list with foods of how much of that food\n\tthe picky eater is willing to eat.\n\thunger (int) - how much food the picky eater needs to eat to be full.\n\tmeal (list of strings) - the list and order of the foods given to the picky\n\teater.\n\t\n\tReturn how much food the picky eater still needs to eat to be full.\n\t'''\n\t\n\t# Your code here\n\treturn 0"
 problem: >-
   You are serving dinner to a picky eater. Who has only certain foods they are
   willing to eat that is in the list <code>foods</code>. They are only willing

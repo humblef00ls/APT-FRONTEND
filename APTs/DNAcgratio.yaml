@@ -1,19 +1,8 @@
-filename: DNAcgratio
+filename: DNAcgratio.py
 name: DNAcgratio
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
-lang: java
-initial: |2
-          def ratio(dna):
-          """
-          return float that's the cg ratio of the 
-          nucleotides in the string parameter dna
-          """
-
-          # write code here
+lang: python
+initial: "def ratio(dna):\n\t\"\"\"\n\treturn float that's the cg ratio of the\n\tnucleotides in the string parameter dna\n\t\"\"\"\n\t\n\t# write code here"
 problem: |-
   protein have a relatively high ratio of CG content.  Given a strand of
   DNA determine the percentage of cytosine and guanine nucleotides present

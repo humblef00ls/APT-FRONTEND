@@ -1,10 +1,6 @@
 filename: EatingGood.py
 name: EatingGood
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def howMany(meals, restaurant):\n\t\"\"\"\n\tParameter meals a list of strings with each in the format\n\t\"name:place-ate\". Parameter restaurant is a string\n\treturn # unique name values where place-ate == restaurant\n\t\"\"\"\n\t\n\t# you write code here\n\treturn 0"
 problem: >-

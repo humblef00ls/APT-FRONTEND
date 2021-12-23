@@ -1,12 +1,8 @@
 filename: Bagels.py
 name: Bagels
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "\t\ndef bagelCount(orders) :\n\t\"\"\"\n\treturn number of bagels needed to fulfill\n\tthe orders in integer list parameter orders\n\t\"\"\"\n\t\n\t# you write code here"
+initial: "def bagelCount(orders) :\n\t\"\"\"\n\treturn number of bagels needed to fulfill\n\tthe orders in integer list parameter orders\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-
   You are in charge of web-based orders for your neighborhood bagel store,
   <em>The Bagel Byte</em>. Each evening you must total the orders to be

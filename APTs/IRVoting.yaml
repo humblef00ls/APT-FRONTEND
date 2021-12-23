@@ -1,12 +1,8 @@
 filename: IRVoting.py
 name: IRVoting
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def winner3(data):\n\t'''\n\tdata (list of strs): A list of strings, each string represents a voter's\n\tranked preference for the three candidates. Each candidate is separated\n\tby a semicolon \";\"\n\t\n\tImplement instant runoff voting when there are only three candidates to\n\tchoose from. Return the candidate that wins or 'Tie' if there is a tie.\n\t'''\n\treturn ''\n\t"
+initial: "def winner3(data):\n\t'''\n\tdata (list of strs): A list of strings, each string represents a voter's\n\tranked preference for the three candidates. Each candidate is separated\n\tby a semicolon \";\"\n\t\n\tImplement instant runoff voting when there are only three candidates to\n\tchoose from. Return the candidate that wins or 'Tie' if there is a tie.\n\t'''\n\treturn ''"
 problem: >-
   <a href="https://en.wikipedia.org/wiki/Instant-runoff_voting">Instant-runoff
   voting</a> is a ranked preferential voting method where every voter strictly

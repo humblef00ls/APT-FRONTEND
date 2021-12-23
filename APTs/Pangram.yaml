@@ -1,10 +1,6 @@
 filename: Pangram.py
 name: Pangram
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def getStats(sentence):\n\t'''\n\tsentence (str) - a string with a potential pangram in it\n\t\n\tFor all the letters return a list where value at the kth index is the\n\tnumber of letters that occur k times.\n\t'''\n\treturn []"
 problem: >-

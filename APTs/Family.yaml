@@ -1,12 +1,8 @@
 filename: Family.py
 name: Family
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def grandchildren(parents, children, person):\n\t'''\n\tparents (list of strings) - list of parent names corresponding to the\n\tchildren list\n\tchildren (list of strings) - list of child names corresponding to the\n\tparents list\n\tperson (string) - a person listed in parents\n\t\n\tReturn the number of grandchildren for the person in the person variable\n\t'''\n\treturn 0\n\t"
+initial: "def grandchildren(parents, children, person):\n\t'''\n\tparents (list of strings) - list of parent names corresponding to the\n\tchildren list\n\tchildren (list of strings) - list of child names corresponding to the\n\tparents list\n\tperson (string) - a person listed in parents\n\t\n\tReturn the number of grandchildren for the person in the person variable\n\t'''\n\treturn 0"
 problem: >-
   You have two lists: <code>parents</code> and <code>children</code>.
 

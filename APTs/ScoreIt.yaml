@@ -1,10 +1,6 @@
 filename: ScoreIt.py
 name: ScoreIt
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def maxPoints(toss) :\n\t\"\"\"\n\treturn int representing the maximal Yahtzee\n\tscore based on rolls in integer list toss\n\t\"\"\""
 problem: |-

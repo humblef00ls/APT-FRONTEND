@@ -1,10 +1,6 @@
 filename: LastNameFirst.py
 name: LastNameFirst
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def modify(name):\n\t\"\"\"\n\tname is a string with zero or more spaces\n\twith one space between each \"word\"\n\treturn string \"last, first MI. MI. MI. ...\"\n\twhere MI is middle initial\n\t\"\"\"\n\t\n\t# you write code here\n\treturn name"
 problem: |-

@@ -1,10 +1,6 @@
 filename: SandwichBar.py
 name: SandwichBar
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def whichOrder(available, orders):\n\t\"\"\"\n\treturn zero-based index of first\n\tsandwich in orders, list of strings\n\tthat can be made from ingredients\n\tin available, list of strings\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

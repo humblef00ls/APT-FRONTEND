@@ -1,10 +1,6 @@
 filename: WhichSubjects.py
 name: WhichSubjects
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def computeSubjects(phrase):\n\t'''\n\tGiven the string phrase, return a phrase\n\tthat includes all the words from phrase that do\n\tnot contain a digit or \"-\" or \":\". Those words must\n\tbe in the same order they were in  phrase.\n\t'''\n\t\n\t# you write code here"
 problem: |-

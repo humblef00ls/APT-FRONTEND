@@ -1,12 +1,8 @@
 filename: Intro.py
 name: Intro
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def test(number1, number2):\n\t'''\n\tnumber1 (int)-this will represent an integer\n\tnumber2 (int)-this will represent another integer\n\t\n\t\n\t'''\n\treturn the sum of the two parameters, number1 and number2.\n\t"
+initial: "def test(number1, number2):\n\t'''\n\tnumber1 (int)-this will represent an integer\n\tnumber2 (int)-this will represent another integer\n\t\n\t\n\t'''\n\treturn the sum of the two parameters, number1 and number2."
 problem: >-
   <strong>It is important to read/work on this APT in the order you read it to
   ensure you understand how to upload/test APTs.</strong><br><br>

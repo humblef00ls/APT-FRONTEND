@@ -1,12 +1,8 @@
 filename: BagFitter.py
 name: BagFitter
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def bags(strength, food):\n\t\"\"\"\n\treturn int based on parameters strength, an int\n\tand food a list of Strings\n\t\"\"\"\n\t"
+initial: "def bags(strength, food):\n\t\"\"\"\n\treturn int based on parameters strength, an int\n\tand food a list of Strings\n\t\"\"\""
 problem: >-
   You have just begun working as a grocery bagger at a
 

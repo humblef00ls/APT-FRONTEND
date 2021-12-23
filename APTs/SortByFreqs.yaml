@@ -1,10 +1,6 @@
 filename: SortByFreqs.py
 name: SortByFreqs
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def sort(data):\n\t\"\"\"\n\treturn list of strings based on\n\tthe list of strings in parameter data\n\t\"\"\""
 problem: |-

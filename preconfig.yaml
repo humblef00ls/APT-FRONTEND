@@ -73,7 +73,7 @@ apt_sections:
             tags : ["Lec 10","Required"]
           - name : "Bagels" 
             tags : ["Lec 9","Required"]
-          - name : "Acronym" 
+          - name : "CreateAcronym" 
             tags : ["Loop","Indexing","Challenge"]
           - name : "Emphasize" 
             tags : ["Required"]

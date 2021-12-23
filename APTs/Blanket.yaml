@@ -1,12 +1,8 @@
 filename: Blanket.py
 name: Blanket
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "\t\ndef order(preferences, size, yarn):\n\t'''\n\tpreferences (list of strings) - the colors the customer prefers by order\n\tof preference\n\tsize (int) - the number of balls of yarn needed\n\tyarn (list of strings) - list of strings of two values where the first is\n\tthe color of yarn and the second is how much yarn is available\n\t\n\tReturn a list of strings of two values where the first element is a color\n\tand the second is how much yarn is needed sorted by the color.\n\t'''\n\treturn []"
+initial: "def order(preferences, size, yarn):\n\t'''\n\tpreferences (list of strings) - the colors the customer prefers by order\n\tof preference\n\tsize (int) - the number of balls of yarn needed\n\tyarn (list of strings) - list of strings of two values where the first is\n\tthe color of yarn and the second is how much yarn is available\n\t\n\tReturn a list of strings of two values where the first element is a color\n\tand the second is how much yarn is needed sorted by the color.\n\t'''\n\treturn []"
 problem: >-
   A weaver needs a function to help decide how many yarn balls of each color to
   use per blanket. <code>preferences</code> is the customer's list of desired

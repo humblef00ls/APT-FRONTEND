@@ -1,12 +1,8 @@
 filename: Moving.py
 name: Moving
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def boxes(items, weights, n):\n\t'''\n\titems (list of str) - List of item names\n\tweights (list of int) - List where the kth element is the weight of the\n\tkth item in the list items\n\tn (int) - Number of boxes to pack the items into\n\t\n\tReturn a list of strings where each string represents the items to pack in\n\tthat box.\n\t'''\n\treturn []\n\t"
+initial: "def boxes(items, weights, n):\n\t'''\n\titems (list of str) - List of item names\n\tweights (list of int) - List where the kth element is the weight of the\n\tkth item in the list items\n\tn (int) - Number of boxes to pack the items into\n\t\n\tReturn a list of strings where each string represents the items to pack in\n\tthat box.\n\t'''\n\treturn []"
 problem: >-
   To make packing faster you've decided to implement the function
 

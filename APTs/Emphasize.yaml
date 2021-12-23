@@ -1,10 +1,6 @@
 filename: Emphasize.py
 name: Emphasize
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def repeat(word, number):\n\t\"\"\"\n\treturn the word with the first part of it repeated\n\tif it is a valid part to repeat. The part to be\n\trepeated must be repeated \"number\" times.\n\tIf the first letter is not a vowel, and the third\n\tletter is a vowel, then the part to repeat is the\n\tfirst three letters.\n\tIf the first and third letters are not vowels, but\n\tthe second letter is, then the part to repeat is\n\tthe first two letters.\n\tOtherwise there is nothing to repeat.\n\tOnly the first letter of the returned word may be\n\ta capital letter, if the original word started with\n\ta capital letter.\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-

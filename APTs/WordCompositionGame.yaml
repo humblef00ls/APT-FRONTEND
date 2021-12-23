@@ -1,10 +1,6 @@
 filename: WordCompositionGame.py
 name: WordCompositionGame
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def score(listA,listB,listC):\n\t\"\"\"\n\treturn String based on three string list parameters\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-

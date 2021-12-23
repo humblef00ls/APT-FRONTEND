@@ -1,10 +1,6 @@
 filename: Pancakes.py
 name: Pancakes
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def minutesNeeded (numCakes, capacity):\n\t\"\"\"\n\treturn integer representing time to cook pancakes\n\tbased on integer parameters as described below\n\t\"\"\""
 problem: |-

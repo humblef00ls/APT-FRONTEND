@@ -1,10 +1,6 @@
 filename: Decade.py
 name: Decade
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def nickname(year):\n\t'''\n\tyear (int) - A year between 1950 and 2019 inclusively\n\t\n\tReturn a string with the nickname of the year in the parameter.\n\t'''\n\treturn ''"
 problem: >-

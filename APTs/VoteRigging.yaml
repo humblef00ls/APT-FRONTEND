@@ -1,17 +1,8 @@
-filename: VoteRigging
+filename: VoteRigging.py
 name: VoteRigging
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
-lang: java
-initial: |2-
-    def minimumVotes(votes):
-        """
-        returns minimum number of votes(int) to change
-        using values in votes (integer list)
-        """
+lang: python
+initial: "def minimumVotes(votes):\n\t\"\"\"\n\treturns minimum number of votes(int) to change\n\tusing values in votes (integer list)\n\t\"\"\""
 problem: |-
   You have used your secret mind-reading device to find out how every
   voter will vote in the next election. Your mind-reading device also

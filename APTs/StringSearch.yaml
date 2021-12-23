@@ -1,12 +1,8 @@
 filename: StringSearch.py
 name: StringSearch
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
-initial: "def findString(input):\n\t'''\n\tThe string parameter input is comprised of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return the number of words in\n\tthe string that end with a vowel.\n\t'''\n\t# you write code here\n\t"
+initial: "def findString(input):\n\t'''\n\tThe string parameter input is comprised of one or\n\tmore words or combinations of words, numbers, and\n\tsymbols.\n\t\n\tThe function should return the number of words in\n\tthe string that end with a vowel.\n\t'''\n\t# you write code here"
 problem: >-
   Given a string, we want to identify all the words contained in the
 

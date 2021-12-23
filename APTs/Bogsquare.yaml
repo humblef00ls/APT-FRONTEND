@@ -1,10 +1,6 @@
 filename: Bogsquare.py
 name: Bogsquare
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def score(word):\n\t\"\"\"\n\treturn integer obtained by squaring\n\tlength of String parameter word\n\t\"\"\""
 problem: |-

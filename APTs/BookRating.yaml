@@ -1,10 +1,6 @@
 filename: BookRating.py
 name: BookRating
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def calculate(readpages, totalpages, numdays, amazon)\n\t\"\"\"\n\treadpages - number of pages read\n\ttotalpages - number of pages in the book\n\tnumdays - number of days read book\n\tamazon - book rating on amazon\n\t\n\tReturn the result of the formula shown.\n\tCalculate the answer as a float, then\n\treturn it as a truncated int\n\t\"\"\"\n\treturn 0"
 problem: >-

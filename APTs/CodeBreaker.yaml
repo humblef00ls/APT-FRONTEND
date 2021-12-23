@@ -1,10 +1,6 @@
 filename: CodeBreaker.py
 name: CodeBreaker
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def compute(phrase, one, two, sep):\n\t'''\n\tGiven the four string parameters\n\tphrase, one, two and sep,\n\treturn a string of the decoded\n\tmessage.\n\t'''\n\t\n\t# you write code here"
 problem: >-

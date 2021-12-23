@@ -1,10 +1,6 @@
 filename: Money.py
 name: Money
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def toMillion(principal, contribution, interest):\n\t\"\"\"\n\tprincipal (int) -  account starting value\n\tcontribution (int) - yearly contribution\n\tinterest (float) - yearly compounded interest\n\t\n\tReturn the number of years it would take for an account to reach a million\n\tdollars, where the account starts at PRINCIPAL, is compounded yearly at\n\tINTEREST, and CONTRIBUTION is added to the account at the beginning of\n\tevery year.\n\t\"\"\"\n\treturn 0"
 problem: >-

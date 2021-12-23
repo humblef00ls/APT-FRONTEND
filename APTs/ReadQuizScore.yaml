@@ -1,10 +1,6 @@
 filename: ReadQuizScore.py
 name: ReadQuizScore
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def grade(total, availablePoints, cutOff):\n\t\"\"\"\n\treturn a student's reading quiz grade as a float percentage based on\n\tthe integer values in total, availablePoints, and cutOff.\n\t\"\"\"\n\t\n\t# you write code here\n\treturn 0.0"
 problem: >-

@@ -1,10 +1,6 @@
 filename: PopularEnding.py
 name: PopularEnding
 description: ''
-tags:
-  - TAG1
-  - TAG2
-  - Required
 lang: python
 initial: "def popular(phrase):\n\t'''\n\tphrase is a string of words\n\tReturn the sorted list of unique words that have the most\n\tpopular 3-character ending. Only consider words of length\n\t3 or more. Duplicate words only count once. Break ties with\n\tthe 3-character ending that comes last in alphabetical order.\n\t'''"
 problem: |-
