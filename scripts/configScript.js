@@ -87,7 +87,7 @@ try {
                         if (logRows3[i].includes('<h2>Problem Statement</h2>')) {
                             prob_m = i
                         }
-                        if (logRows3[i].includes('<h3>Constraints</h3>')) {
+                        if (logRows3[i].includes('<h3>Constraints</h3>') || logRows3[i].includes('<h3>Constraints/Assumptions</h3>') ) { 
                             const_m = i
                         }
                         if (logRows3[i].includes('<h3>Examples</h3>')) {
@@ -180,6 +180,7 @@ try {
                             constraints: const_desc,
                             examples: examp_desc,
                             copyright: cpr_desc,
+                            formName:file.split('.')[0]
                         }
                     ))
                 });

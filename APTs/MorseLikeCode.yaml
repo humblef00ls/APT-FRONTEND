@@ -4,15 +4,7 @@ description: ''
 lang: python
 initial: "def decrypt(library,message):\n\t\"\"\"\n\treturn String for parameters\n\tlibrary a list of Strings\n\tand message a string\n\t\"\"\"\n\t\n\t# you write code here"
 problem: >-
-  Marge is rather concerned about who
-
-
-  <!--   the hoodlums that
-
-  -->
-
-
-  her son has been
+  Marge is rather concerned about who her son has been
 
   spending time with. Aside from all of the time spent at the arcade, they
 
@@ -150,3 +142,4 @@ copyright: |-
   Inc. is strictly prohibited. &copy;2010, TopCoder, Inc. All
   rights reserved.
   <br><br>NOTE: Rodger modified the first sentence to remove its bias overtones.
+formName: morselike

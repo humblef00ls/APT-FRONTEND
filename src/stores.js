@@ -19,6 +19,10 @@ export const editorValues = writable(JSON.parse(localStorage.getItem('editorValu
 
 editorValues.subscribe((value) => localStorage.editorValues = JSON.stringify(value))
 
+export const sliderX = writable(localStorage.getItem('sliderX') ?? 0);
+
+sliderX.subscribe((value) => localStorage.sliderX = value)
+
 export const url =  readable(window.location.hash, set => {
   const update = () => set(window.location.hash)
   window.addEventListener("hashchange", update)

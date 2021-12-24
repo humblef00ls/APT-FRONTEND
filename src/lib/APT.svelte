@@ -5,21 +5,33 @@ Also uses components from lib. -->
     export let data;
     import { draggable } from "svelte-drag";
     import Submission from "./Submission.svelte";
-    import { submitting } from "../stores.js";
+    import { submitting , sliderX } from "../stores.js";
     $submitting = false;
     import { onMount } from "svelte";
-    let sliderX = 0;
+
     import Ex from "./Ex.svelte";
   
-
+    let lefx = 100
+    let sliderEl
     onMount(() => {
+        lefx =  $sliderX
+        // sliderEl.style.left =  `calc(50% - 6px - ${sliderX}px);`
         const lists = document.getElementsByTagName("li");
  
         for (let item of lists) {
             item.className = "constr";
         }
+
+
     });
+    const handleSubmitAPT = (e) => {
+        e.preventDefault();
+
+   
+    }
+
 </script>
+
 
 <Submission />
 
@@ -30,15 +42,19 @@ Also uses components from lib. -->
 <main>
     <div
     class="slider-X"
+    bind:this={sliderEl}
+    
     use:draggable={{
         axis: "x",
         bounds: { left: 350, right: 400 },
+        position: { x:lefx },
         onDrag: ({ offsetX, offsetY }) => {
-            sliderX = offsetX
+            $sliderX = offsetX
+            lefx = offsetX
         },
     }}
 />
-   <section class="info" style={`width: calc(50% + ${sliderX}px);`}>
+   <section class="info" style={`width: calc(50% + ${$sliderX}px);`}>
         <div class="question">
             <h1>{data.name}</h1>
             <p class="descp">
@@ -54,9 +70,10 @@ Also uses components from lib. -->
                     .replace("<br><br> <br><br>", "<br><br>")
                     .replace(" <br><br> <br><br> <br><br> ", "<br><br>")
                     .replace("<br><br> <br><br>", "<br><br>")
-                   
-                }
-
+                    .replace("<br><br> </ul> <br>", "</ul> <br>")
+                    .replace("<br><br> <br><br>", "<br><br>")
+                    .replace("<br><br> <br><br> <br><br>", "<br><br>")
+                       }
             </p>
         </div>
         <div class="question">
@@ -78,9 +95,9 @@ Also uses components from lib. -->
             </ol> -->
         </div>
     </section>
-    <section class="editor" style={`width: calc(50% - ${sliderX}px);`}>
+    <section class="editor" style={`width: calc(50% - ${$sliderX}px);`}>
 
-        <Ex initial={data.initial} filename={data.filename} lang={data.lang} />
+        <Ex  {...data} />
     </section>
 </main>
 

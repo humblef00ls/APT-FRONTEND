@@ -8,12 +8,9 @@
     export let initial;
     export let filename;
     export let lang;
-
+    export let formName;
     onMount(mountEditor);
     function mountEditor() {
-
-
-        
         editor = monaco.editor.create(document.getElementById("coder"), {
             value: $editorValues[filename] || initial,
             language: lang,
@@ -27,17 +24,14 @@
             theme: "vs-dark",
         });
         editor.layout();
-        
-        
+
         init = true;
     }
-function saveCode(){
-
-    const storeVal = {};
-    storeVal[filename] = editor.getValue();
-    $editorValues = { ...$editorValues, ...storeVal };
-    
-}
+    function saveCode() {
+        const storeVal = {};
+        storeVal[filename] = editor.getValue();
+        $editorValues = { ...$editorValues, ...storeVal };
+    }
     onDestroy(destroyEditor);
     function destroyEditor() {
         if (editor) {
@@ -47,24 +41,56 @@ function saveCode(){
         }
     }
 
-    function handleSubmit() {
+    async function handleSubmit() {
+        try {
+            var file = new File([editor.getValue()], filename, {
+                type: "text/plain",
+            });
+            let formData = new FormData();
+            formData.append("upfile", file);
+            formData.append("problem", formName);
+            formData.append("course", "compsci101");
+            formData.append("language", "python");
+            // const elem = window.document.createElement("a");
+            // elem.href = window.URL.createObjectURL(file);
+            // elem.download = filename;
+            // document.body.appendChild(elem);
+            // elem.click();
+            // document.body.removeChild(elem);
+            const response = await fetch(
+                "https://apt.cs.duke.edu/aptsec/pythonupload3.php",
+                {
+                    method: "POST",
+                    body: formData,
+                }
+            );
+            console.log(await response.json());
+        } catch (e) {
+            console.log(e);
+        }
         $submitting = true;
-        var file = new File([editor.getValue()], filename, {
-            type: "text/plain",
-        });
-        const elem = window.document.createElement("a");
-        elem.href = window.URL.createObjectURL(file);
-        elem.download = filename;
-        document.body.appendChild(elem);
-        elem.click();
-        document.body.removeChild(elem);
-        console.log(file);
     }
 
-    $: if ($url.includes("/APTX/") && editor){  
+    $: if ($url.includes("/APTX/") && editor) {
         editor.getModel().setValue($editorValues[filename] || initial);
-        }
+    }
 </script>
+
+<form method="POST" enctype="multipart/form-data" action="">
+    <input type="file" name="upfile" />
+    <!-- needs to be manufactured by you -->
+
+    <input type="hidden" name="problem" value={formName} />
+    <!-- set per problem -->
+
+    <input type="hidden" name="course" value="compsci101" />
+    <!-- constant for semester -->
+
+    <input type="hidden" name="language" value="python" />
+    <!-- constant for semester -->
+
+    <input type="submit" />
+</form>
 
 {#if !init}
     <div class="loader">
@@ -104,13 +130,12 @@ function saveCode(){
     <div class="buttons">
         <span>
             <button class="save" on:click={handleSubmit}> Submit</button>
-           
+
             <button class="cancel" on:click={saveCode}> Save </button>
-                
         </span>
         <span>
             <a href="/">
-                <button > Home</button>
+                <button> Home</button>
             </a>
             {#if $APTXInfo.index > 0}
                 <a href={"#/APTX/" + $APTXInfo.apts[$APTXInfo.index - 1]}>
