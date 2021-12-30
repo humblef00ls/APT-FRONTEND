@@ -1,6 +1,10 @@
 filename: AnagramFree.py
 name: AnagramFree
 description: ''
+tags:
+  - TAG1
+  - TAG2
+  - Required
 lang: python
 initial: "def getMaximumSubset(words):\n\t\"\"\"\n\treturn int value that represents\n\tsize of largest anagram-free subset\n\tof values in words, a list of strings\n\t\"\"\"\n\t\n\t# you write code here"
 problem: |-
@@ -9,7 +13,6 @@ problem: |-
   without adding new characters. For example, each of the strings "baba",
   "abab", "aabb" and "abba" is an anagram of "aabb", and strings "aaab",
   "aab" and "aabc" are not anagrams of "aabb".
-
 
 
   A set of strings is anagram-free if it contains no pair of strings which
@@ -71,4 +74,3 @@ copyright: |-
   TopCoder, Inc. Any unauthorized use or reproduction of this information
   without the prior written consent of TopCoder, Inc. is strictly
   prohibited. &copy;2010, TopCoder, Inc. All rights reserved.
-formName: anagramfree

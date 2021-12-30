@@ -6,13 +6,15 @@ Also uses components from lib. -->
     import { draggable } from "svelte-drag";
     import Submission from "./Submission.svelte";
     import { submitting , sliderX } from "../stores.js";
-    $submitting = false;
-    import { onMount } from "svelte";
 
+    $submitting = false;
+
+    import { onMount } from "svelte";
     import Ex from "./Ex.svelte";
   
     let lefx = 100
     let sliderEl
+
     onMount(() => {
         lefx =  $sliderX
         // sliderEl.style.left =  `calc(50% - 6px - ${sliderX}px);`
@@ -27,14 +29,13 @@ Also uses components from lib. -->
     const handleSubmitAPT = (e) => {
         e.preventDefault();
 
-   
+         
     }
 
 </script>
 
 
 <Submission />
-
 <svelte:head>
     <title>CompSci 101, Fall 2021 APT {data.name}</title>
 </svelte:head>
@@ -43,7 +44,6 @@ Also uses components from lib. -->
     <div
     class="slider-X"
     bind:this={sliderEl}
-    
     use:draggable={{
         axis: "x",
         bounds: { left: 350, right: 400 },
@@ -53,6 +53,7 @@ Also uses components from lib. -->
             lefx = offsetX
         },
     }}
+
 />
    <section class="info" style={`width: calc(50% + ${$sliderX}px);`}>
         <div class="question">

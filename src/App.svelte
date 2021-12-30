@@ -38,7 +38,7 @@ See lib to see the components rendered here  -->
 
 		setColors($lightMode);
 
-		
+
 		
 		let tx = [
 			...new Set(
@@ -293,10 +293,22 @@ See lib to see the components rendered here  -->
 {:else if $url.includes("/APTX/")  }
 	<APT data={   {...aptsX.filter(x=>x.name == allapts[$APTXInfo.index].name)[0],tags: allapts[$APTXInfo.index].tags }  }  />
 {:else}
-	Y
+	 <h1 class="arctic" >404</h1>
+	 <a class="arctic" href="/">Back</a>
 {/if}
 
 <style>
+	.arctic{
+		text-align: center;
+		margin-top: 100px;
+		width: 100vw;
+		display: block;
+	}
+	h1.arctic{	
+		font-size: 100px;
+		height: 100px;
+		margin-top: calc(50vh - 200px);
+	}
 	.logo {
 		fill: var(--section-f);
 		position: fixed;
